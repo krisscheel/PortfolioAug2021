@@ -1,0 +1,22 @@
+@import 'setup';
+@import 'variables';
+@import 'header';
+@import 'aboutMe';
+@import 'work';
+@import 'skills';
+@import 'contact';
+@import 'footer';
+
+.sectionOne, .sectionThree, footer {
+  background-color: $primaryColorTwo;
+}
+.sectionTwo, .sectionFour {
+  background-color: $backgroundColor;
+}
+
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+

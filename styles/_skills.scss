@@ -1,0 +1,25 @@
+.skills {
+  height: 100vh;
+    h2 {
+    padding-top: 100px;
+    font-family: $h2Font;
+    font-size: 4rem;
+    color: $primaryColorOne;
+  }
+    .skillsSVG ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+    p {
+      font-family: $h2Font;
+      color: $primaryColorOne;
+      padding-top: 5px;
+    }
+  }
+}

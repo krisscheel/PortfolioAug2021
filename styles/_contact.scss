@@ -1,0 +1,90 @@
+.contactMe {
+  background-color: $backgroundColor;
+  margin: 200px;
+  h2 {
+  padding-top: 100px;
+    font-family: $h2Font;
+    font-weight: 400;
+    font-size: 4rem;
+    color: $primaryColorOne;
+    align-content: center;
+  }
+  .contactBox {
+    border: 2px solid $accentColorTwo;
+    background-color: $backgroundColor;
+    margin: 100px;
+    box-shadow: -10px 10px $primaryColorThree;
+    form {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-style: none;
+      .contactFormTop {
+        display: flex;
+        flex-direction: row;
+        border-style: none;
+        label {
+          font-family: $h2Font;
+          font-size: 1rem;
+          color: $primaryColorOne;
+        }
+        .nameField, .emailField {
+          display: flex;
+          flex-direction: column;
+          border-style: none;
+          }
+        }
+        .username, .email {
+          width: 380px;
+          height: 40px;
+          margin: 20px;
+        }
+        textarea {
+          width: 800px;
+          font-family: $h2Font;
+          font-size: 1rem;
+          padding-left: 5px;
+          border-style: none;
+          border: 2px solid $accentColorTwo;
+          }
+          .submitButton {
+            margin: 30px 0;
+            height: 60px;
+            display: block;
+            width: 100%;
+            background-color: $primaryColorOne;
+            color: $backgroundColor;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            &:hover {
+              background-color: $primaryColorFour;
+              color: $primaryColorOne;
+              border: none;
+            }
+          }
+      }
+    }
+  }
+  
+.contactLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+  .fab {
+    font-size: 2rem;
+    display: inline;
+    padding: 40px;
+    color: $primaryColorOne;
+  }
+  a {
+    color: $primaryColorOne;
+    text-decoration: none;
+    padding-top: 40px;
+    text-decoration: none;
+    }
+}
+
+
