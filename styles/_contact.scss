@@ -13,7 +13,7 @@
     border: 2px solid $accentColorTwo;
     background-color: $backgroundColor;
     margin: 100px;
-    box-shadow: -10px 10px $primaryColorThree;
+    box-shadow: -10px 10px $accentColorOne;
     form {
       padding: 50px;
       display: flex;
@@ -59,7 +59,7 @@
             font-size: 1.5rem;
             border-radius: 30px;
             &:hover {
-              background-color: $primaryColorFour;
+              background-color: $primaryColorThree;
               color: $primaryColorOne;
               border: none;
             }
