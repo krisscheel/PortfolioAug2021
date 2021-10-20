@@ -261,9 +261,32 @@ div.progress {
   top: 0;
   left: 0;
   width: 0%;
-  height: 5px;
-  background-color: #050748;
+  height: 10px;
+  background-color: #a7e1f8;
+  border: 1px solid #000000;
   z-index: 1;
+}
+
+div.leftNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+}
+
+div.leftNav div {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  margin: 5px 10px 0 0;
+  -webkit-transition: border 0.25s;
+  transition: border 0.25s;
 }
 
 header img {

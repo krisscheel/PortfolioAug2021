@@ -22,7 +22,12 @@
 
 <body>
 
+  <!--scroll progress bar-->
   <div class="progress"></div>
+
+
+
+
   <!--navigation-->
   <div class="nav wrapper">
     <ul>
@@ -36,6 +41,15 @@
   </div>
 
   <header>
+
+  <!--left side navigation-->
+  <div class="leftNav">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+
     <img src="Kristen_logo.jpg">
     <h1>Kristen <span></span> Scheel</h1>
     <h2>Freelance Web Developer & Data Journalist based in Ottawa, Canada.</h2>
@@ -44,7 +58,7 @@
 
   <main>
     <!--ABOUT ME section-->
-    <section class="sectionOne">
+    <section class="sectionOne" data-sect="1">
       <div class="aboutMe wrapper" id="aboutMe">
         <h2>About Me</h2>
         <div class="aboutMeContent">
@@ -85,7 +99,7 @@
   </section>
 
     <!--WORK section-->
-    <section class="sectionTwo">
+    <section class="sectionTwo" data-sect="Work">
       <div class="work wrapper" id="work">
         <h2>My Work</h2>
       </div>
@@ -93,7 +107,7 @@
     
 
     <!--SKILLS section-->
-    <section class="sectionThree">
+    <section class="sectionThree" data-sect="Skills">
       <div class="skills wrapper" id="skills">
         <div class="skillsSVG">
           <h2>Skills & Technologies</h2>
@@ -298,7 +312,7 @@
     </section>
     
   <!--CONTACT ME section-->
-    <section class="sectionFour">
+    <section class="sectionFour" data-sect="Contact Me">
       <div class="contactMe wrapper" id="contactMe">
         <h2>Contact Me</h2>
         <div class="contactBox">
