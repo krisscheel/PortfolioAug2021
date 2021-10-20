@@ -19,6 +19,16 @@
   }
 }
 
+div.progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 5px;
+	background-color: $primaryColorOne;
+	z-index: 1;
+}
+
 header img {
   width: 250px;
   height: 150px;
