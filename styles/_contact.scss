@@ -10,10 +10,9 @@
     align-content: center;
   }
   .contactBox {
-    border: 2px solid $accentColorTwo;
-    background-color: $backgroundColor;
+    border: 1px solid #000000;
+    background-color: $backgroundColor2;
     margin: 100px;
-    box-shadow: -10px 10px $accentColorOne;
     form {
       padding: 50px;
       display: flex;
@@ -54,14 +53,14 @@
             height: 60px;
             display: block;
             width: 100%;
-            background-color: $primaryColorOne;
-            color: $backgroundColor;
+            background-color: $mutedColorThree;
+            color: $primaryColorOne;
             font-size: 1.5rem;
             border-radius: 30px;
+            border: 1px solid #000000;
             &:hover {
-              background-color: $primaryColorThree;
-              color: $primaryColorOne;
-              border: none;
+              background-color: $primaryColorOne;
+              color: $backgroundColor2;
             }
           }
       }

@@ -314,6 +314,7 @@ h2 {
 .intro {
   min-height: 120vh;
   padding: 200px 0 200px 0;
+  background-color: #fffdf7;
 }
 
 div.leftNav {
@@ -386,8 +387,7 @@ button {
 .aboutMe .aboutMeContent img {
   width: 25%;
   margin: 100px 0 100px 0;
-  -webkit-box-shadow: -10px 5px 5px #f8fb05;
-          box-shadow: -10px 5px 5px #f8fb05;
+  border: 1px solid #000000;
   border-radius: 200px;
 }
 
@@ -481,11 +481,9 @@ button {
 }
 
 .contactMe .contactBox {
-  border: 2px solid #d6d6d6;
-  background-color: #fDffff;
+  border: 1px solid #000000;
+  background-color: #fffdf7;
   margin: 100px;
-  -webkit-box-shadow: -10px 10px #f8fb05;
-          box-shadow: -10px 10px #f8fb05;
 }
 
 .contactMe .contactBox form {
@@ -554,16 +552,16 @@ button {
   height: 60px;
   display: block;
   width: 100%;
-  background-color: #050748;
-  color: #fDffff;
+  background-color: #ffe581;
+  color: #050748;
   font-size: 1.5rem;
   border-radius: 30px;
+  border: 1px solid #000000;
 }
 
 .contactMe .contactBox form .submitButton:hover {
-  background-color: #cddef7;
-  color: #050748;
-  border: none;
+  background-color: #050748;
+  color: #fffdf7;
 }
 
 .contactLinks {
@@ -614,10 +612,12 @@ footer p {
 
 .sectionOne, .sectionThree, footer {
   background-color: #e0fddf;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .sectionTwo, .sectionFour {
-  background-color: #fDffff;
+  background-color: #fffdf7;
 }
 
 .wrapper {

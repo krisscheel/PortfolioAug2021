@@ -9,10 +9,12 @@
 @import 'footer';
 
 .sectionOne, .sectionThree, footer {
-  background-color: $primaryColorTwo;
+  background-color: $mutedColorFour;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 .sectionTwo, .sectionFour {
-  background-color: $backgroundColor;
+  background-color: $backgroundColor2;
 }
 
 .wrapper {
