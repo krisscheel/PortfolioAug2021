@@ -629,6 +629,7 @@ footer p {
 
 .sectionOne {
   background-color: #a7e1f8;
+  border: 1px solid #000000;
 }
 
 .sectionThree, footer {
