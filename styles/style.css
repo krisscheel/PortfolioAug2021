@@ -213,12 +213,11 @@ textarea {
 }
 
 header {
-  height: 64px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffbccc;
-  border: 1px solid #000000;
+  background-color: #e0fddf;
   width: 100%;
   z-index: 1;
   display: -webkit-box;
@@ -235,6 +234,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 48px 0 48px;
+  border-bottom: 1px solid #000000;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+header.scrolled {
+  background-color: #fffdf7;
 }
 
 header h1, header nav {
@@ -313,9 +319,17 @@ h2 {
 }
 
 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 120vh;
   padding: 200px 0 200px 0;
   background-color: #fffdf7;
+}
+
+.intro h1, .intro h2 {
+  max-width: 450px;
+  padding: 40px;
 }
 
 div.leftNav {
@@ -344,12 +358,13 @@ div.leftNav div {
 
 div.progress {
   position: fixed;
-  top: 60px;
+  top: 80px;
   left: 0;
   width: 0%;
   height: 10px;
   background-color: #ffe581;
-  border: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
   z-index: 1;
 }
 
@@ -361,6 +376,14 @@ button {
   font-size: 1.5rem;
   border-radius: 50px;
   padding: 5px;
+}
+
+.aboutMe img {
+  width: 25%;
+  margin: 100px 0 100px 0;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  justify-items: right;
 }
 
 .aboutMe h2 {
@@ -383,13 +406,6 @@ button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.aboutMe .aboutMeContent img {
-  width: 25%;
-  margin: 100px 0 100px 0;
-  border: 1px solid #000000;
-  border-radius: 200px;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -611,7 +627,11 @@ footer p {
   padding: 100px;
 }
 
-.sectionOne, .sectionThree, footer {
+.sectionOne {
+  background-color: #a7e1f8;
+}
+
+.sectionThree, footer {
   background-color: #e0fddf;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;

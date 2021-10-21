@@ -8,7 +8,11 @@
 @import 'contact';
 @import 'footer';
 
-.sectionOne, .sectionThree, footer {
+.sectionOne {
+  background-color: $mutedColorOne;
+}
+
+.sectionThree, footer {
   background-color: $mutedColorFour;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;

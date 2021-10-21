@@ -5,6 +5,8 @@ const sections = document.querySelectorAll("section")
 const circleTags = document.querySelectorAll("div.circle")
 let selectedSection = 0
 
+const headerTag = document.querySelector("header")
+
 
 //when we scroll the page, make a progress bar that keeps track of the distance
 document.addEventListener("scroll", function () {
@@ -38,4 +40,22 @@ document.addEventListener("scroll", function () {
       }
     }
   })
+})
+
+
+//change the color of the fixed header as the user scrolls down the page
+const toggleHeader = function () {
+  const pixels = window.pageYOffset
+
+  if (pixels > 300) {
+    headerTag.classList.add("scrolled")
+  } else {
+    headerTag.classList.remove("scrolled")
+  }
+}
+
+toggleHeader()
+
+document.addEventListener("scroll", function () {
+  toggleHeader()
 })
