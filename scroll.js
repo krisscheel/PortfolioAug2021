@@ -42,6 +42,13 @@ document.addEventListener("scroll", function () {
   })
 })
 
+const fadeBox = function () {
+  const pixels = window.pageYOffset
+  const alpha = Math.min(pixels / 1000, 0.5)
+
+  headerTag.style.boxShadow = `0 0 10px rgba(0, 0, 0, ${alpha})`
+}
+
 
 //change the color of the fixed header as the user scrolls down the page
 const toggleHeader = function () {
@@ -54,8 +61,10 @@ const toggleHeader = function () {
   }
 }
 
+fadeBox()
 toggleHeader()
 
 document.addEventListener("scroll", function () {
   toggleHeader()
+  fadeBox()
 })

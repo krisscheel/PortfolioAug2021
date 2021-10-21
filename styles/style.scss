@@ -8,17 +8,12 @@
 @import 'contact';
 @import 'footer';
 
-.sectionOne {
-  background-color: $mutedColorOne;
-  border: 1px solid #000000;
+
+.intro, .sectionThree, footer {
+  background-color: $mutedColorFour;
 }
 
-.sectionThree, footer {
-  background-color: $mutedColorFour;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-}
-.sectionTwo, .sectionFour {
+.sectionOne, .sectionTwo, .sectionFour {
   background-color: $backgroundColor2;
 }
 
