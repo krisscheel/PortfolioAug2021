@@ -234,9 +234,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 48px 0 48px;
-  border-bottom: 1px solid #000000;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header.scrolled {
@@ -363,8 +364,6 @@ div.progress {
   width: 0%;
   height: 10px;
   background-color: #ffe581;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
   z-index: 1;
 }
 

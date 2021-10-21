@@ -12,9 +12,9 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 48px 0 48px;
-	border-bottom: 1px solid #000000;
 
 	transition: background-color 0.5s;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header.scrolled {
