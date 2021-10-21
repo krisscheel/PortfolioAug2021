@@ -331,13 +331,13 @@ div.leftNav div {
   background-color: #ffffff;
   width: 30px;
   height: 30px;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 50%;
   margin: 5px 10px 0 0;
 }
 
 .selected {
-  background-color: #050748 !important;
+  background-color: #ffe581 !important;
 }
 
 div.progress {
