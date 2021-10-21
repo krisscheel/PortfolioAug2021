@@ -2,7 +2,8 @@ const pixelsTag = document.querySelector("div.pixels")
 const bodyTag = document.querySelector("body")
 const progressTag = document.querySelector("div.progress")
 const sections = document.querySelectorAll("section")
-const circleTag = document.querySelector("div.circle")
+const circleTags = document.querySelectorAll("div.circle")
+let selectedSection = 0
 
 
 //when we scroll the page, make a progress bar that keeps track of the distance
@@ -23,8 +24,18 @@ document.addEventListener("scroll", function () {
   const pixels = window.pageYOffset
 
   sections.forEach(section => {
-    if (section.offsetTop - 100 <= pixels) {
-      circleTag.style.backgroundColor = section.getAttribute("data-sect")
+    if (section.offsetTop - 200 <= pixels) {
+      const sectionNumber = parseInt(section.getAttribute("data-sect"))
+      if (sectionNumber != selectedSection) {
+        let selector = `div.circle[data-circle="${selectedSection}"`
+        const selectedCircleTag = document.querySelector(selector)
+        selectedCircleTag.classList.remove("selected")
+
+        selector = `div.circle[data-circle="${sectionNumber}"]`
+        const newCircle = document.querySelector(selector)
+        newCircle.classList.add("selected")
+        selectedSection = sectionNumber
+      }
     }
   })
 })

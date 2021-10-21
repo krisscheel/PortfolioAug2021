@@ -285,8 +285,10 @@ div.leftNav div {
   border: 2px solid #000000;
   border-radius: 50%;
   margin: 5px 10px 0 0;
-  -webkit-transition: border 0.25s;
-  transition: border 0.25s;
+}
+
+.selected {
+  background-color: #050748 !important;
 }
 
 header img {
@@ -427,7 +429,7 @@ header button {
 }
 
 .work {
-  height: 40vh;
+  height: 140vh;
 }
 
 .work h2 {
