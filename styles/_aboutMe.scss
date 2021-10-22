@@ -1,10 +1,14 @@
 .aboutMe {
+  padding: 0 20px 20px 100px;
+  display: flex;
+  flex-direction: row;
   img {
     width: 25%;
     margin: 100px 0 100px 0;
     border: 1px solid #000000;
     border-radius: 200px;
     justify-items: right;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
     }
   h2 {
     padding-top: 100px;
@@ -12,17 +16,13 @@
     font-weight: 400;
     font-size: 4rem;
     color: $primaryColorOne;
-    align-content: center;
   }
   .aboutMeContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 0 0 0 40px;
     .aboutMeParaAndLinks {
       display: flex;
       //flex-wrap: wrap;
       align-items: center;
-      padding-left: 50px;
       width: 55%;
       p {
         font-family: $headerFontThree;

@@ -8,13 +8,20 @@
 @import 'contact';
 @import 'footer';
 
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
-.intro, .sectionThree, footer {
-  background-color: $mutedColorFour;
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
-.sectionOne, .sectionTwo, .sectionFour {
+.intro, .sectionTwo, .sectionFour {
   background-color: $backgroundColor2;
+}
+
+.sectionOne, .sectionThree, footer {
+  background-color: $mutedColorFour;
 }
 
 .wrapper {

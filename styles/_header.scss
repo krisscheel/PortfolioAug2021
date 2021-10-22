@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $mutedColorFour;
+	background-color: $backgroundColor2;
 	width: 100%;
 	z-index: 1;
 	display: flex;
@@ -18,11 +18,19 @@ header {
 }
 
 header.scrolled {
-	background-color: $backgroundColor2;
+	background-color: $mutedColorFour;
 }
 
-header h1, header nav {
+.name {
+	display: flex;
+	flex-wrap: wrap;
+	width: 200px;
+}
+
+header h1, header.name header nav {
 	flex: 1;
+	font-family: 'Major Mono Display', monospace;
+	color: $primaryColorOne;
 }
 
 header nav {

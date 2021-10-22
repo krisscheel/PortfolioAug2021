@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -217,7 +219,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #e0fddf;
+  background-color: #fffdf7;
   width: 100%;
   z-index: 1;
   display: -webkit-box;
@@ -241,13 +243,24 @@ header {
 }
 
 header.scrolled {
-  background-color: #fffdf7;
+  background-color: #e0fddf;
 }
 
-header h1, header nav {
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+}
+
+header h1, header.name header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  font-family: 'Major Mono Display', monospace;
+  color: #050748;
 }
 
 header nav {
@@ -320,17 +333,40 @@ h2 {
 }
 
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 120vh;
-  padding: 200px 0 200px 0;
+  padding-top: 150px;
+  min-height: 100vh;
   background-color: #fffdf7;
 }
 
-.intro h1, .intro h2 {
-  max-width: 450px;
-  padding: 40px;
+.intro h1 {
+  font-size: 4rem;
+  max-width: 60%;
+  padding: 2% 0 2% 0;
+  color: #050748;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro h2 {
+  max-width: 60%;
+  font-size: 2rem;
+  padding: 2%;
+}
+
+.leftIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 100px;
 }
 
 div.leftNav {
@@ -342,6 +378,7 @@ div.leftNav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  padding: 100px 0 0 20px;
 }
 
 div.leftNav div {
@@ -377,12 +414,25 @@ button {
   padding: 5px;
 }
 
+.aboutMe {
+  padding: 0 20px 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .aboutMe img {
   width: 25%;
   margin: 100px 0 100px 0;
   border: 1px solid #000000;
   border-radius: 200px;
   justify-items: right;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .aboutMe h2 {
@@ -391,20 +441,10 @@ button {
   font-weight: 400;
   font-size: 4rem;
   color: #050748;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .aboutMe .aboutMeContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 0 0 0 40px;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -414,7 +454,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 50px;
   width: 55%;
 }
 
@@ -626,12 +665,21 @@ footer p {
   padding: 100px;
 }
 
-.intro, .sectionThree, footer {
-  background-color: #e0fddf;
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.sectionOne, .sectionTwo, .sectionFour {
+.intro, .sectionTwo, .sectionFour {
   background-color: #fffdf7;
+}
+
+.sectionOne, .sectionThree, footer {
+  background-color: #e0fddf;
 }
 
 .wrapper {

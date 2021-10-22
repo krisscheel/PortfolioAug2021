@@ -19,21 +19,36 @@
 }
 
 .intro {
-  display: flex;
-  min-height: 120vh;
-  padding: 200px 0 200px 0;
+  padding-top: 150px;
+  min-height: 100vh;
   background-color: $backgroundColor2;
-  
-  h1, h2 {
-    max-width: 450px;
-    padding: 40px;
+  h1 {
+    font-size: 4rem;
+    max-width: 60%;
+    padding: 2% 0 2% 0;
+    color: $primaryColorOne;
+    font-family: 'Montserrat', sans-serif;
   }
+  h2 {
+    max-width: 60%;
+    font-size: 2rem;
+    padding: 2%;
+  }
+}
+
+.leftIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding-left: 100px;
 }
 
 div.leftNav {
   display: flex;
   flex-direction: column;
   position: fixed;
+  padding: 100px 0 0 20px;
 }
 
 div.leftNav div {
