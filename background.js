@@ -1,12 +1,12 @@
-const sections = document.querySelectorAll("section")
-const bodyTag = document.querySelector("body")
+const backgroundSections = document.querySelectorAll("section")
+const backgroundBodyTag = document.querySelector("body")
 
 const addMovement = function () {
   const topViewport = window.pageYOffset
   const midViewport = topViewport + (window.innerHeight / 2)
 
   //find the middle of each section
-  sections.forEach((section, index) => {
+  backgroundSections.forEach((section, index) => {
     const topSection = section.offsetTop
     const midSection = topSection + (section.offsetHeight / 2)
 
@@ -16,7 +16,7 @@ const addMovement = function () {
     //check the background color
     if (distanceToSection > -100) {
       const dataBackground = section.getAttribute("data-background")
-      bodyTag.style.backgroundColor = "red"
+      backgroundBodyTag.style.backgroundColor = dataBackground
     }
 
   })
