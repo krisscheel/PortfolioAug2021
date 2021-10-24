@@ -433,7 +433,7 @@ button {
   width: 25%;
   margin: 100px 0 100px 0;
   border: 1px solid #000000;
-  border-radius: 200px;
+  border-radius: 50%;
   justify-items: right;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -678,12 +678,23 @@ footer p {
   }
 }
 
-.intro, .sectionTwo, .sectionFour {
+body {
   background-color: #fffdf7;
+  -webkit-transition: background-color 0.75s;
+  transition: background-color 0.75s;
 }
 
-.sectionOne, .sectionThree, footer {
-  background-color: #e0fddf;
+div.stamps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+div.stamps img {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .wrapper {

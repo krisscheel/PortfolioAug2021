@@ -16,13 +16,30 @@
 	100% { opacity: 1; }
 }
 
-.intro, .sectionTwo, .sectionFour {
+body {
   background-color: $backgroundColor2;
+  transition: background-color 0.75s;
 }
 
-.sectionOne, .sectionThree, footer {
-  background-color: $mutedColorFour;
+div.stamps {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
+
+div.stamps img {
+	position:absolute;
+	transform: translate(-50%, -50%)
+}
+
+//.intro, .sectionTwo, .sectionFour {
+  //background-color: $backgroundColor2;
+//} 
+
+//.sectionOne, .sectionThree, footer {
+  //background-color: $backgroundColor2;
+//}
 
 .wrapper {
   width: 90vw;
