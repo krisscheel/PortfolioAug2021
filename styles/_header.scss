@@ -1,10 +1,10 @@
 
 header {
-	height: 80px;
+	height: 120px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $backgroundColor2;
+	background-color: $backgroundColor;
 	width: 100%;
 	z-index: 1;
 	display: flex;
@@ -17,8 +17,15 @@ header {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header img {
+	width: 90px;
+}
+
 header.scrolled {
-	background-color: $mutedColorFour;
+	background-color: $primaryColorOne;
+	a {
+		color: $backgroundColor;
+	}
 }
 
 .name {
@@ -29,7 +36,7 @@ header.scrolled {
 
 header h1, header.name header nav {
 	flex: 1;
-	font-family: 'Major Mono Display', monospace;
+	font-family: $h1Font;
 	color: $primaryColorOne;
 }
 
@@ -39,24 +46,15 @@ header nav {
 
 header a {
 	margin: 0 0 0 16px;
+	font-family: $h1Font;
+	font-weight: 300;
 }
 
 a {
-	color: #052837;
+	color: $primaryColorOne;
 	text-decoration: none;
 }
 
-h1 {
-	font-size: 34px;
-	font-weight: 900;
-	font-style: italic;
-}
-
-h2 {
-	font-size: 48px;
-	font-weight: 500;
-	line-height: 1.25;
-}
 
 
 

@@ -11,21 +11,24 @@
 
 <!--google fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald:wght@200;400;700&display=swap"
   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
+
+  <!--Rubik fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--Inter fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
   <title>Kristen Scheel</title>
 </head>
 
 <header>
   <div class="name">
-    <h1>KS</h1>
-  </div>
-
-  <div class="face">
-    <img src="face.svg">
+    <img src="ks_logo_v2.jpg">
   </div>
 
   <!--top navigation-->
@@ -56,8 +59,8 @@
 
     <div class="leftIntro">
       <h1>Kristen Scheel</h1>
-      <h2>Freelance Web Developer & Data Journalist based in Ottawa, Canada.</h2>
-      <button class="workWithMe">work with me</button>
+      <h2>Freelance web developer based in Ottawa, Canada.</h2>
+      <!--<button class="workWithMe">work with me</button>-->
     </div>
     
 </section>
@@ -322,7 +325,14 @@
       <div class="contactMe wrapper" id="contactMe">
         <h2>Contact Me</h2>
         <div class="contactBox">
-          <form action="https://formspree.io/mqkyvaoa" method="POST">
+          <img src="plant.jpg">
+          <div class="rightFormOverlay front">
+            <h3>Let's Chat</h3>
+            <p>I'm currently available for freelance web development projects including custom website builds, Shopify store design and development, and data visualization projects. Lets chat about how we can work together</p>
+            <button class="register-button">get in touch</button>
+          </div>
+
+          <form class="back" action="https://formspree.io/mqkyvaoa" method="POST">
             <div class="contactFormTop">
               <div class="nameField">
                 <label class="sr-only" for="username">Full Name</label>
@@ -338,15 +348,8 @@
               <button class="submitButton">submit</button>
             </div>
           </form>
+
         </div>
-        
-        <div class="contactLinks">
-          <a href="https://github.com/krisscheel" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/kristenscheel/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/kscheel" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://medium.com/@kristenscheel" target="_blank"><i class="fab fa-medium"></i></a>
-        </div>
-      </div>
     </section>
 
     <div class="stamps"></div>
@@ -356,6 +359,13 @@
   <!--Footer-->
   <footer>
     <div class="wrapper">
+      <div class="contactLinks">
+        <a href="https://github.com/krisscheel" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kristenscheel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/kscheel" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://medium.com/@kristenscheel" target="_blank"><i class="fab fa-medium"></i></a>
+      </div>
+    </div>
       <p>Copyright © 2021 Kristen Scheel</p>
     </div>
   </footer>
@@ -364,7 +374,11 @@
 
 <script src="scroll.js"></script>
 <script src="animation.js"></script>
-<script src="background.js"></script>
+
 <script src="stamps.js"></script>
+<script src="register.js"></script>
+<script src="background.js"></script>
+
+
 
 </html>
