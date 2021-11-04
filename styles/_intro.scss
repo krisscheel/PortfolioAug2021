@@ -2,7 +2,6 @@
 .intro {
   padding-top: 15%;
   min-height: 100vh;
-  background-color: $backgroundColor2;
   h1 {
     font-size: 8rem;
     max-width: 80%;
@@ -27,6 +26,11 @@
   justify-content: left;
   align-items: left;
   padding-left: 100px;
+  background-image: url(plant2.jpeg);
+  height: 100%;
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
   h2 {
     padding: 0;
     margin: auto;

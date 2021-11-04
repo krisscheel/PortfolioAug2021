@@ -2,7 +2,7 @@
   background-color: $backgroundColor;
   margin: 200px;
   h2 {
-  padding-top: 100px;
+    padding-top: 100px;
     font-family: $h2Font;
     font-weight: 400;
     font-size: 4rem;
@@ -10,9 +10,63 @@
     align-content: center;
   }
   .contactBox {
-    border: 1px solid #000000;
-    background-color: $backgroundColor2;
-    margin: 100px;
+    background-color: $primaryColorThree;
+    margin: 50px 100px 0 100px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 100%;
+    }
+
+    .front, 
+    .back {
+      grid-area: 1/1;
+    }
+
+    .front {
+      transition: transform 0.5s ease;
+    }
+
+    /* togle this class using javascript */
+    .front.slide-up {
+      transform:  translateY(-100%);
+      }
+
+    .rightFormOverlay {
+      padding: 0 0 0 80px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+
+      h3 {
+        padding: 50px 0 30px 0;
+        font-family: $h1Font;
+        font-weight: 300;
+        font-size: 3rem;
+        }
+        p {
+        font-family: $h1Font;
+        color: $primaryColorOne;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 3rem;
+        width: 90%;
+        }
+      .register-button {
+        background-color: $primaryColorThree;
+        border: 2px solid $primaryColorOne;
+        font-family: $h1Font;
+        color: $primaryColorOne;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding: 10px;
+        margin-top: 3%;
+      }
+    }
+
     form {
       padding: 50px;
       display: flex;
@@ -22,7 +76,7 @@
       border-style: none;
       .contactFormTop {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         border-style: none;
         label {
           font-family: $h2Font;
@@ -30,34 +84,29 @@
           color: $primaryColorOne;
         }
         .nameField, .emailField {
-          display: flex;
-          flex-direction: column;
           border-style: none;
           }
         }
         .username, .email {
-          width: 380px;
           height: 40px;
           margin: 20px;
+          border-style: none;
         }
         textarea {
-          width: 800px;
+          width: 400px;
           font-family: $h2Font;
           font-size: 1rem;
           padding-left: 5px;
           border-style: none;
-          border: 2px solid $accentColorTwo;
           }
           .submitButton {
             margin: 30px 0;
             height: 60px;
             display: block;
             width: 100%;
-            background-color: $mutedColorThree;
-            color: $primaryColorOne;
+            background-color: $primaryColorOne;
+            color: $backgroundColor;
             font-size: 1.5rem;
-            border-radius: 30px;
-            border: 1px solid #000000;
             &:hover {
               background-color: $primaryColorOne;
               color: $backgroundColor2;

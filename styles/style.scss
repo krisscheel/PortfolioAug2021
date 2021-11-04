@@ -20,11 +20,15 @@
   background-color: $backgroundColor;
 }
 
-.sectionOne, .sectionThree, footer {
+.sectionOne, footer {
   background-color: $mutedColorFour;
 }
 
-h2 {
+.sectionThree {
+  background-color: $mutedColorThree;
+}
+
+h2, h3 {
   font-family: $h1Font;
   font-weight: 300;
 }

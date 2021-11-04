@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $backgroundColor2;
+	background-color: $backgroundColor;
 	width: 100%;
 	z-index: 1;
 	display: flex;
@@ -23,6 +23,9 @@ header img {
 
 header.scrolled {
 	background-color: $primaryColorOne;
+	a {
+		color: $backgroundColor;
+	}
 }
 
 .name {
@@ -48,7 +51,7 @@ header a {
 }
 
 a {
-	color: #052837;
+	color: $primaryColorOne;
 	text-decoration: none;
 }
 
