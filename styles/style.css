@@ -215,7 +215,7 @@ textarea {
 }
 
 header {
-  height: 80px;
+  height: 120px;
   position: fixed;
   top: 0;
   left: 0;
@@ -242,8 +242,12 @@ header {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header img {
+  width: 90px;
+}
+
 header.scrolled {
-  background-color: #e0fddf;
+  background-color: #050748;
 }
 
 .name {
@@ -259,7 +263,7 @@ header h1, header.name header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Inter", sans-serif;
   color: #050748;
 }
 
@@ -269,6 +273,8 @@ header nav {
 
 header a {
   margin: 0 0 0 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -276,80 +282,28 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 34px;
-  font-weight: 900;
-  font-style: italic;
-}
-
-h2 {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.25;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(0, 24px);
-            transform: translate(0, 24px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(0, 24px);
-            transform: translate(0, 24px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@-webkit-keyframes hyphen {
-  0% {
-    width: 0.5em;
-  }
-  100% {
-    width: 1em;
-  }
-}
-
-@keyframes hyphen {
-  0% {
-    width: 0.5em;
-  }
-  100% {
-    width: 1em;
-  }
-}
-
 .intro {
-  padding-top: 150px;
+  padding-top: 15%;
   min-height: 100vh;
   background-color: #fffdf7;
 }
 
 .intro h1 {
-  font-size: 10rem;
+  font-size: 8rem;
   max-width: 80%;
-  padding: 2% 0 2% 0;
+  padding: 5% 0 2% 0;
   color: #050748;
-  font-family: "Oswald", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  margin: auto;
 }
 
 .intro h2 {
-  max-width: 60%;
+  max-width: 40%;
   font-size: 2rem;
   padding: 2%;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
 }
 
 .leftIntro {
@@ -371,6 +325,7 @@ h2 {
 
 .leftIntro h2 {
   padding: 0;
+  margin: auto;
 }
 
 div.leftNav {
@@ -408,16 +363,6 @@ div.progress {
   z-index: 1;
 }
 
-button {
-  background-color: #ffe581;
-  color: #000000;
-  border: 1px solid #000000;
-  width: 200px;
-  font-size: 1.5rem;
-  border-radius: 50px;
-  padding: 5px;
-}
-
 .aboutMe {
   padding: 0 20px 20px 100px;
   display: -webkit-box;
@@ -432,7 +377,7 @@ button {
 .aboutMe img {
   width: 25%;
   margin: 100px 0 100px 0;
-  border: 1px solid #000000;
+  border: 1px solid #050748;
   border-radius: 200px;
   justify-items: right;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -440,15 +385,15 @@ button {
 }
 
 .aboutMe h2 {
-  padding-top: 100px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  padding: 100px 0 30px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   font-size: 4rem;
   color: #050748;
 }
 
 .aboutMe .aboutMeContent {
-  padding: 0 0 0 40px;
+  padding: 0 0 0 80px;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -458,14 +403,15 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 55%;
+  width: 75%;
+  line-height: 2;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #050748;
   font-size: 2.5rem;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -478,18 +424,18 @@ button {
 
 .work h2 {
   padding-top: 100px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 4rem;
   color: #050748;
 }
 
 .skills {
-  height: 100vh;
+  height: 180vh;
 }
 
 .skills h2 {
   padding-top: 100px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 4rem;
   color: #050748;
 }
@@ -519,19 +465,19 @@ button {
 }
 
 .skills li p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #050748;
   padding-top: 5px;
 }
 
 .contactMe {
-  background-color: #fDffff;
+  background-color: #ffffff;
   margin: 200px;
 }
 
 .contactMe h2 {
   padding-top: 100px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   color: #050748;
@@ -575,7 +521,7 @@ button {
 }
 
 .contactMe .contactBox form .contactFormTop label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   color: #050748;
 }
@@ -599,7 +545,7 @@ button {
 
 .contactMe .contactBox form textarea {
   width: 800px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   padding-left: 5px;
   border-style: none;
@@ -652,7 +598,7 @@ button {
 }
 
 footer {
-  height: 20vh;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,10 +609,19 @@ footer {
 }
 
 footer p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #050748;
   font-size: 1rem;
   padding: 100px;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -679,11 +634,21 @@ footer p {
 }
 
 .intro, .sectionTwo, .sectionFour {
-  background-color: #fffdf7;
+  background-color: #ffffff;
 }
 
 .sectionOne, .sectionThree, footer {
   background-color: #e0fddf;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
 }
 
 .wrapper {

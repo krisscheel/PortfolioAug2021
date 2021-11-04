@@ -17,11 +17,21 @@
 }
 
 .intro, .sectionTwo, .sectionFour {
-  background-color: $backgroundColor2;
+  background-color: $backgroundColor;
 }
 
 .sectionOne, .sectionThree, footer {
   background-color: $mutedColorFour;
+}
+
+h2 {
+  font-family: $h1Font;
+  font-weight: 300;
+}
+
+p {
+  font-family: $h1Font;
+  font-weight: 100;
 }
 
 .wrapper {
