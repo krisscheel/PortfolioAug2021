@@ -16,6 +16,7 @@
 	100% { opacity: 1; }
 }
 
+
 .intro, .sectionTwo, .sectionFour {
   background-color: $backgroundColor;
 }
@@ -36,6 +37,29 @@ h2, h3 {
 p {
   font-family: $h1Font;
   font-weight: 100;
+}
+
+@keyframes spin {
+	0% { transform: translate(-50%, -50%) rotate(0deg) }
+	100% { transform: translate(-50%, -50%) rotate(360deg) }
+}
+
+body {
+  background-color: $backgroundColor2;
+  transition: background-color 0.5s;
+	//overflow: hidden;
+}
+
+div.stamps {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+}
+
+div.stamps img {
+	position:absolute;
+	animation: spin 30s linear infinite;
 }
 
 .wrapper {
