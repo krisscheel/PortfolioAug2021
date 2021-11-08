@@ -16,17 +16,12 @@
 	100% { opacity: 1; }
 }
 
-
 .intro, .sectionTwo, .sectionFour {
   background-color: $backgroundColor;
 }
 
-.sectionOne, footer {
+.sectionThree, footer {
   background-color: $mutedColorFour;
-}
-
-.sectionThree {
-  background-color: $mutedColorThree;
 }
 
 h2, h3 {
