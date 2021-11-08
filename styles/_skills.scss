@@ -6,20 +6,28 @@
     font-size: 4rem;
     color: $primaryColorOne;
   }
-    .skillsSVG ul {
+    .skillsIcons ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 50px;
   }
   li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 50xp;
     p {
       font-family: $h2Font;
       color: $primaryColorOne;
       padding-top: 5px;
     }
   }
+}
+
+.fa-brands {
+  color: $primaryColorOne;
+  width: 200px;
 }

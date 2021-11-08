@@ -3,13 +3,12 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  background-color: $primaryColorOne;
-  color: $backgroundColor;
+  background-color: $primaryColorThree;
+  color: $primaryColorOne;
   img {
     width: 25%;
     height: 50%;
     margin: 100px 0 100px 0;
-    border: 1px solid $primaryColorOne;
     justify-items: right;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
     }

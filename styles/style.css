@@ -398,15 +398,14 @@ button {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100vh;
-  background-color: #050748;
-  color: #ffffff;
+  background-color: #cddef7;
+  color: #050748;
 }
 
 .aboutMe img {
   width: 25%;
   height: 50%;
   margin: 100px 0 100px 0;
-  border: 1px solid #050748;
   justify-items: right;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -467,7 +466,7 @@ button {
   color: #050748;
 }
 
-.skills .skillsSVG ul {
+.skills .skillsIcons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,6 +476,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 50px;
 }
 
 .skills li {
@@ -488,13 +488,20 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 100px;
+  width: 200px;
+  height: 200px;
+  padding: 50xp;
 }
 
 .skills li p {
   font-family: "Rubik", sans-serif;
   color: #050748;
   padding-top: 5px;
+}
+
+.fa-brands {
+  color: #050748;
+  width: 200px;
 }
 
 .contactMe {
