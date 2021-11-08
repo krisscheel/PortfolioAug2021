@@ -324,7 +324,7 @@ a {
       -ms-flex-align: left;
           align-items: left;
   padding-left: 100px;
-  background-image: url(plant2.jpeg);
+  background-image: url(../plant2.jpg);
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -380,6 +380,7 @@ div.progress {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100vh;
 }
 
 .aboutMe img {
@@ -715,6 +716,20 @@ footer p {
   background-color: #e0fddf;
 }
 
+.sectionThree {
+  background-color: #ffeda8;
+}
+
+h2, h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
@@ -739,8 +754,8 @@ footer p {
 
 body {
   background-color: #fffdf7;
-  -webkit-transition: background-color 0.75s;
-  transition: background-color 0.75s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 div.stamps {
@@ -754,20 +769,6 @@ div.stamps img {
   position: absolute;
   -webkit-animation: spin 30s linear infinite;
           animation: spin 30s linear infinite;
-}
-
-.sectionThree {
-  background-color: #ffeda8;
-}
-
-h2, h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  font-weight: 100;
 }
 
 .wrapper {
