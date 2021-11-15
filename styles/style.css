@@ -221,7 +221,7 @@ header {
   left: 0;
   background-color: #ffffff;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,8 +287,38 @@ a {
 }
 
 .intro {
-  padding-top: 15%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.intro .introCover {
+  background-color: #e0fddf;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  width: 50%;
+  height: 70%;
+}
+
+.intro .leftSide {
+  width: 50%;
+  padding-top: 15%;
+  background-image: url(../plant2.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.intro .rightSide {
+  width: 50%;
+  padding-top: 15%;
+  background-color: #ffffff;
 }
 
 .intro h1 {
@@ -298,15 +328,14 @@ a {
   color: #050748;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  margin: auto;
 }
 
 .intro h2 {
   max-width: 40%;
   font-size: 2rem;
-  padding: 2%;
   font-family: "Inter", sans-serif;
   font-weight: 100;
+  color: #050748;
 }
 
 .leftIntro {
@@ -323,17 +352,6 @@ a {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  padding-left: 100px;
-  background-image: url(plant2.jpeg);
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
-
-.leftIntro h2 {
-  padding: 0;
-  margin: auto;
 }
 
 div.leftNav {
@@ -361,18 +379,18 @@ div.leftNav div {
   background-color: #ffeda8 !important;
 }
 
-div.progress {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 0%;
-  height: 10px;
-  background-color: #ffeda8;
-  z-index: 1;
+button {
+  background-color: #050748;
+  color: #ffffff;
+  width: 150px;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
 }
 
 .aboutMe {
-  padding: 0 20px 20px 100px;
+  padding: 100px 20px 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,13 +398,15 @@ div.progress {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100vh;
+  background-color: #cddef7;
+  color: #050748;
 }
 
 .aboutMe img {
   width: 25%;
+  height: 50%;
   margin: 100px 0 100px 0;
-  border: 1px solid #050748;
-  border-radius: 50%;
   justify-items: right;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -397,7 +417,6 @@ div.progress {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 4rem;
-  color: #050748;
 }
 
 .aboutMe .aboutMeContent {
@@ -417,7 +436,6 @@ div.progress {
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks p {
   font-family: "Inter", sans-serif;
-  color: #050748;
   font-size: 2.5rem;
   font-weight: 100;
   line-height: 3rem;
@@ -428,6 +446,7 @@ div.progress {
 
 .work {
   height: 140vh;
+  padding-top: 100px;
 }
 
 .work h2 {
@@ -442,13 +461,13 @@ div.progress {
 }
 
 .skills h2 {
-  padding-top: 100px;
+  padding-top: 200px;
   font-family: "Rubik", sans-serif;
   font-size: 4rem;
   color: #050748;
 }
 
-.skills .skillsSVG ul {
+.skills .skillsIcons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,6 +477,7 @@ div.progress {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 50px;
 }
 
 .skills li {
@@ -469,13 +489,20 @@ div.progress {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 100px;
+  width: 200px;
+  height: 200px;
+  padding: 50xp;
 }
 
 .skills li p {
   font-family: "Rubik", sans-serif;
   color: #050748;
   padding-top: 5px;
+}
+
+.fa-brands {
+  color: #050748;
+  width: 200px;
 }
 
 .contactMe {
@@ -495,7 +522,7 @@ div.progress {
 
 .contactMe .contactBox {
   background-color: #cddef7;
-  margin: 50px 100px 0 100px;
+  margin: 0 100px 0 100px;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +538,13 @@ div.progress {
   height: 100%;
 }
 
+.contactMe .contactBox .contactBoxRight {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
 .contactMe .contactBox .front,
 .contactMe .contactBox .back {
   -ms-grid-row: 1;
@@ -519,33 +553,38 @@ div.progress {
 }
 
 .contactMe .contactBox .front {
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
 
 .contactMe .contactBox .front.slide-up {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
 }
 
-.contactMe .contactBox .rightFormOverlay {
-  padding: 0 0 0 80px;
+.contactMe .contactBox .back.recieved {
+  background-color: red;
+}
+
+.contactMe .contactBox .front {
+  background-color: #cddef7;
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  place-items: left;
+  z-index: 1;
   overflow: hidden;
 }
 
-.contactMe .contactBox .rightFormOverlay h3 {
+.contactMe .contactBox .front h3 {
   padding: 50px 0 30px 0;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 3rem;
 }
 
-.contactMe .contactBox .rightFormOverlay p {
+.contactMe .contactBox .front p {
   font-family: "Inter", sans-serif;
   color: #050748;
   font-size: 2rem;
@@ -554,9 +593,9 @@ div.progress {
   width: 90%;
 }
 
-.contactMe .contactBox .rightFormOverlay .register-button {
+.contactMe .contactBox .front .register-button {
   background-color: #cddef7;
-  border: 2px solid #050748;
+  width: 200px;
   font-family: "Inter", sans-serif;
   color: #050748;
   font-weight: 300;
@@ -564,10 +603,10 @@ div.progress {
   line-height: 3rem;
   padding: 10px;
   margin-top: 3%;
+  border: 1px solid #050748;
 }
 
 .contactMe .contactBox form {
-  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,12 +614,12 @@ div.progress {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   border-style: none;
 }
 
@@ -621,45 +660,18 @@ div.progress {
 
 .contactMe .contactBox form .submitButton {
   margin: 30px 0;
-  height: 60px;
+  height: 40px;
   display: block;
   width: 100%;
   background-color: #050748;
   color: #ffffff;
   font-size: 1.5rem;
+  border: none;
 }
 
 .contactMe .contactBox form .submitButton:hover {
   background-color: #050748;
   color: #fffdf7;
-}
-
-.contactLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 20px;
-}
-
-.contactLinks .fab {
-  font-size: 2rem;
-  display: inline;
-  padding: 40px;
-  color: #050748;
-}
-
-.contactLinks a {
-  color: #050748;
-  text-decoration: none;
-  padding-top: 40px;
-  text-decoration: none;
 }
 
 footer {
@@ -680,6 +692,31 @@ footer {
 
 footer .contactLinks {
   padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
+footer .contactLinks .fab {
+  font-size: 2rem;
+  display: inline;
+  padding: 40px;
+  color: #050748;
+}
+
+footer .contactLinks a {
+  color: #050748;
+  text-decoration: none;
+  padding-top: 40px;
+  text-decoration: none;
 }
 
 footer p {
@@ -711,8 +748,20 @@ footer p {
   background-color: #ffffff;
 }
 
-.sectionOne, footer {
+.sectionThree, footer {
   background-color: #e0fddf;
+}
+
+h2, h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: #050748;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  color: #050748;
 }
 
 @-webkit-keyframes spin {
@@ -739,8 +788,8 @@ footer p {
 
 body {
   background-color: #fffdf7;
-  -webkit-transition: background-color 0.75s;
-  transition: background-color 0.75s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 div.stamps {
@@ -754,20 +803,6 @@ div.stamps img {
   position: absolute;
   -webkit-animation: spin 30s linear infinite;
           animation: spin 30s linear infinite;
-}
-
-.sectionThree {
-  background-color: #ffeda8;
-}
-
-h2, h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  font-weight: 100;
 }
 
 .wrapper {

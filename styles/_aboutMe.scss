@@ -1,15 +1,14 @@
 .aboutMe {
-  padding: 0 20px 20px 100px;
+  padding: 100px 20px 20px 100px;
   display: flex;
   flex-direction: row;
   height: 100vh;
+  background-color: $primaryColorThree;
+  color: $primaryColorOne;
   img {
     width: 25%;
+    height: 50%;
     margin: 100px 0 100px 0;
-
-    border: 1px solid $primaryColorOne;
-
-    border-radius: 50%;
     justify-items: right;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
     }
@@ -18,7 +17,6 @@
     font-family: $h1Font;
     font-weight: 300;
     font-size: 4rem;
-    color: $primaryColorOne;
   }
   .aboutMeContent {
     padding: 0 0 0 80px;
@@ -29,20 +27,12 @@
       line-height: 2;
       p {
         font-family: $h1Font;
-        color: $primaryColorOne;
         font-size: 2.5rem;
         font-weight: 100;
         line-height: 3rem;
         align-items: center;
       }
-      //.linkButtons {
-       // height: 80px;
-      //}
-      //.linkButtons svg {
-       // margin: 3px;
-       // border: 5px solid $primaryColorOne;
-       // border-radius: 100px;
-      //}
+
     }
   }
 }
