@@ -2,7 +2,7 @@
   background-color: $backgroundColor;
   margin: 200px;
   h2 {
-    padding-top: 100px;
+    padding: 100px 0 100px 0;
     font-family: $h2Font;
     font-weight: 400;
     font-size: 4rem;
@@ -20,7 +20,6 @@
     }
     .contactBoxRight {
       display: grid;
-      place-items: center;
       overflow: hidden;
     }
     .front, 
@@ -35,18 +34,15 @@
       transform:  translateY(-120%);
     }
 
-    .back.recieved {
-      background-color: red;
-    }
-
     .front {
       background-color: $primaryColorThree;
       display: grid;
       place-items: left;
       z-index: 1;
       overflow: hidden;
+      padding-left: 50px;
       h3 {
-        padding: 50px 0 30px 0;
+        padding: 50px 0 0 0;
         font-family: $h1Font;
         font-weight: 300;
         font-size: 3rem;
@@ -61,25 +57,28 @@
         }
       .register-button {
         background-color: $primaryColorThree;
-        width: 200px;
+        width: 300px;
         font-family: $h1Font;
         color: $primaryColorOne;
         font-weight: 300;
         font-size: 1.5rem;
-        line-height: 3rem;
-        padding: 10px;
-        margin-top: 3%;
+        margin: 20px 0 40px 0;
         border: 1px solid $primaryColorOne;
+      }
+      .register-button:hover {
+        background-color: $primaryColorOne;
+        color: $backgroundColor;
       }
     }
 
     form {
       display: flex;
       flex-direction: column;
-      justify-content: left;
       align-items: left;
       border-style: none;
+      padding: 50px 50px 0 50px;
       .contactFormTop {
+        width: 50%;
         display: flex;
         flex-direction: column;
         border-style: none;
@@ -94,30 +93,39 @@
         }
         .username, .email {
           height: 40px;
-          margin: 20px;
+          width: 100%;
+          margin: 20px 0 20px 0;
           border-style: none;
+          color: $textGrey;
         }
-        textarea {
-          width: 400px;
-          font-family: $h2Font;
-          font-size: 1rem;
-          padding-left: 5px;
-          border-style: none;
+        .contactFormBottom {
+          textarea {
+            width: 100%;
+            font-family: $h2Font;
+            font-size: 1rem;
+            padding-left: 5px;
+            border-style: none;
+            color: $textGrey;
           }
           .submitButton {
-            margin: 30px 0;
             height: 40px;
-            display: block;
-            width: 100%;
-            background-color: $primaryColorOne;
-            color: $backgroundColor;
+            //display: block;
+            width: 50%;
+            background-color: $primaryColorThree;
+            color: $primaryColorOne;
             font-size: 1.5rem;
             border: none;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            border: 1px solid $primaryColorOne;
             &:hover {
               background-color: $primaryColorOne;
-              color: $backgroundColor2;
+              color: $backgroundColor;
+              
             }
           }
+        }
       }
     }
   }

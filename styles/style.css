@@ -510,7 +510,7 @@ button {
 }
 
 .contactMe h2 {
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 4rem;
@@ -540,7 +540,6 @@ button {
 .contactMe .contactBox .contactBoxRight {
   display: -ms-grid;
   display: grid;
-  place-items: center;
   overflow: hidden;
 }
 
@@ -563,10 +562,6 @@ button {
           transform: translateY(-120%);
 }
 
-.contactMe .contactBox .back.recieved {
-  background-color: red;
-}
-
 .contactMe .contactBox .front {
   background-color: #cddef7;
   display: -ms-grid;
@@ -574,10 +569,11 @@ button {
   place-items: left;
   z-index: 1;
   overflow: hidden;
+  padding-left: 50px;
 }
 
 .contactMe .contactBox .front h3 {
-  padding: 50px 0 30px 0;
+  padding: 50px 0 0 0;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 3rem;
@@ -594,15 +590,18 @@ button {
 
 .contactMe .contactBox .front .register-button {
   background-color: #cddef7;
-  width: 200px;
+  width: 300px;
   font-family: "Inter", sans-serif;
   color: #050748;
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 3rem;
-  padding: 10px;
-  margin-top: 3%;
+  margin: 20px 0 40px 0;
   border: 1px solid #050748;
+}
+
+.contactMe .contactBox .front .register-button:hover {
+  background-color: #050748;
+  color: #ffffff;
 }
 
 .contactMe .contactBox form {
@@ -613,16 +612,15 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
   border-style: none;
+  padding: 50px 50px 0 50px;
 }
 
 .contactMe .contactBox form .contactFormTop {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,32 +643,37 @@ button {
 
 .contactMe .contactBox form .username, .contactMe .contactBox form .email {
   height: 40px;
-  margin: 20px;
+  width: 100%;
+  margin: 20px 0 20px 0;
   border-style: none;
+  color: #8b8c89;
 }
 
-.contactMe .contactBox form textarea {
-  width: 400px;
+.contactMe .contactBox form .contactFormBottom textarea {
+  width: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   padding-left: 5px;
   border-style: none;
+  color: #8b8c89;
 }
 
-.contactMe .contactBox form .submitButton {
-  margin: 30px 0;
+.contactMe .contactBox form .contactFormBottom .submitButton {
   height: 40px;
-  display: block;
-  width: 100%;
-  background-color: #050748;
-  color: #ffffff;
+  width: 50%;
+  background-color: #cddef7;
+  color: #050748;
   font-size: 1.5rem;
   border: none;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #050748;
 }
 
-.contactMe .contactBox form .submitButton:hover {
+.contactMe .contactBox form .contactFormBottom .submitButton:hover {
   background-color: #050748;
-  color: #fffdf7;
+  color: #ffffff;
 }
 
 footer {
