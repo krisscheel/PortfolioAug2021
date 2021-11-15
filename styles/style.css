@@ -287,7 +287,7 @@ a {
 }
 
 .intro {
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,7 +317,7 @@ a {
 
 .intro .rightSide {
   width: 50%;
-  padding-top: 15%;
+  padding-top: 12%;
   background-color: #ffffff;
 }
 
@@ -390,7 +390,7 @@ button {
 }
 
 .aboutMe {
-  padding: 100px 20px 20px 100px;
+  padding: 0 20px 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +398,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100vh;
+  height: 80vh;
   background-color: #cddef7;
   color: #050748;
 }
@@ -446,7 +446,6 @@ button {
 
 .work {
   height: 140vh;
-  padding-top: 100px;
 }
 
 .work h2 {
@@ -457,11 +456,11 @@ button {
 }
 
 .skills {
-  height: 120vh;
+  height: 100vh;
 }
 
 .skills h2 {
-  padding-top: 200px;
+  padding: 100px 0 100px 0;
   font-family: "Rubik", sans-serif;
   font-size: 4rem;
   color: #050748;
@@ -471,16 +470,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
 }
 
-.skills li {
+.skills .skillsIcons ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,18 +490,18 @@ button {
   text-align: center;
   width: 200px;
   height: 200px;
-  padding: 50xp;
+  padding: 100xp;
 }
 
-.skills li p {
+.skills .skillsIcons ul li p {
   font-family: "Rubik", sans-serif;
   color: #050748;
   padding-top: 5px;
 }
 
-.fa-brands {
+.skills .skillsIcons ul li .fa-brands {
   color: #050748;
-  width: 200px;
+  font-size: 5rem;
 }
 
 .contactMe {
@@ -679,18 +678,82 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60vh;
+}
+
+footer p {
+  font-family: "Rubik", sans-serif;
+  color: #050748;
+  font-size: 1.5rem;
+}
+
+footer .footerLeft {
+  width: 60%;
+}
+
+footer .footerLeft .copyright {
+  text-align: left;
+  padding: 40% 0 0 20%;
+}
+
+footer .footerLeft .copyright p {
+  font-size: 1rem;
+}
+
+footer .footerRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 30vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 40%;
+  padding-top: 5%;
 }
 
-footer .contactLinks {
+footer .footerRight .footerPara {
+  width: 60%;
+}
+
+footer .footerRight .newsSignUp {
+  width: 60%;
+  border-bottom: 3px solid #050748;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1rem;
+  padding-top: 3%;
+}
+
+footer .footerRight .newsSignUp input {
+  background-color: #e0fddf;
+  border: none;
+  text-align: left;
+}
+
+footer .footerRight .newsSignUp .formButton {
+  background-color: #e0fddf;
+  color: #050748;
+  font-size: 2rem;
+  text-align: right;
+}
+
+footer .footerRight .contactLinks {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,31 +762,23 @@ footer .contactLinks {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 20px;
 }
 
-footer .contactLinks .fab {
-  font-size: 2rem;
+footer .footerRight .contactLinks .fab {
+  font-size: 1.8rem;
   display: inline;
-  padding: 40px;
+  padding: 20px;
   color: #050748;
 }
 
-footer .contactLinks a {
-  color: #050748;
-  text-decoration: none;
-  padding-top: 40px;
-  text-decoration: none;
+footer .footerRight .contactLinks .fa-github {
+  padding-left: 0;
 }
 
-footer p {
-  font-family: "Rubik", sans-serif;
+footer .footerRight .contactLinks a {
   color: #050748;
-  font-size: 1rem;
-  padding: 50px;
+  text-decoration: none;
 }
 
 @-webkit-keyframes fadein {
