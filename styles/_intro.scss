@@ -37,6 +37,7 @@
     font-size: 2rem;
     font-family: $h1Font;
     font-weight: 100;
+    color: $primaryColorOne;
   }
 }
 
@@ -67,7 +68,7 @@ div.leftNav div {
   background-color: $mutedColorThree !important; 
 }
 
- button {
+button {
   background-color: $primaryColorOne;
   color: $backgroundColor;
   width: 150px;

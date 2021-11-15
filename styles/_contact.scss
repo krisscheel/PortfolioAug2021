@@ -35,6 +35,10 @@
       transform:  translateY(-120%);
     }
 
+    .back.recieved {
+      background-color: red;
+    }
+
     .front {
       background-color: $primaryColorThree;
       display: grid;
