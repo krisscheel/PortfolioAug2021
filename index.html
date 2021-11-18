@@ -22,13 +22,16 @@
 
   <!--Inter fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!--Abril Fatface & Poppins-->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
   
   <title>Kristen Scheel</title>
 </head>
 
 <header>
   <div class="name">
-    <img src="ks_logo_v2.jpg">
+    <p>KS</p>
   </div>
 
   <!--top navigation-->
@@ -49,7 +52,15 @@
 
   <section class="intro" data-sect="0">
 
-    <div class="introCover"></div>
+    <div class="introCover">
+      <div class="rightSide">
+        <div class="leftIntro">
+          <h1>Kristen Scheel</h1>
+          <h2>Freelance web developer based in Ottawa, Canada.</h2>
+          <button class="workWithMe">work with me</button>
+        </div>
+      </div>
+    </div>
 
     <div class="leftSide">
       <!--left side navigation-->
@@ -63,13 +74,7 @@
 
     </div>
 
-    <div class="rightSide">
-        <div class="leftIntro">
-          <h1>Kristen Scheel</h1>
-          <h2>Freelance web developer based in Ottawa, Canada.</h2>
-          <button class="workWithMe">work with me</button>
-        </div>
-    </div>
+
     
 </section>
  
@@ -97,7 +102,7 @@
 
     <!--SKILLS section-->
     <section class="sectionThree" data-sect="3" data-background="#e0fddf">
-      <div class="skills wrapper" id="skills">
+      <div class="skills" id="skills">
         <div class="skillsIcons">
           <h2>Skills & Technologies</h2>
           <ul>
@@ -118,11 +123,6 @@
             <li>
               <i class="fa-brands fa-js-square"></i>
               <p>JavaScript</p>
-            </li>
-           
-            <li>
-              <i class="fa-brands fa-google"></i>
-              <p>Firebase</p>
             </li>
 
             <li>
@@ -155,7 +155,7 @@
       <div class="contactMe wrapper" id="contactMe">
         <h2>Contact Me</h2>
         <div class="contactBox">
-          <img src="plant.jpg">
+          <img src="modern4.jpg">
 
           <div class="contactBoxRight">
             
@@ -165,24 +165,24 @@
             <button class="register-button">get in touch</button>
           </div>
 
-          <div class="form back">
-            <form action="https://formspree.io/mqkyvaoa" method="POST">
-              <div class="contactFormTop">
-                <div class="nameField">
-                  <label class="sr-only" for="username">Full Name</label>
-                  <input type="text" name="username" placeholder=" Name" id="username" class="username">
+            <div class="form back">
+              <form action="https://formspree.io/mqkyvaoa" method="POST">
+                <div class="contactFormTop">
+                  <div class="nameField">
+                    <label class="sr-only" for="username">Full Name</label>
+                    <input type="text" name="username" placeholder=" Name" id="username" class="username">
+                  </div>
+                  <div class="emailField">
+                    <label class="sr-only" for="email">Email Address</label>
+                    <input type="email" name="email" placeholder=" Email address" id="email" class="email">
+                  </div>
                 </div>
-                <div class="emailField">
-                  <label class="sr-only" for="email">Email Address</label>
-                  <input type="email" name="email" placeholder=" Email address" id="email" class="email">
+                <div class="contactFormBottom">
+                  <textarea name="comment" cols="55" rows="10">Message</textarea>
+                  <button class="submitButton">submit</button>
                 </div>
-              </div>
-              <div class="contactFormBottom">
-                <textarea name="comment" cols="55" rows="10">Message</textarea>
-                <button class="submitButton">submit</button>
-              </div>
-            </form>
-          </div>
+              </form>
+        </div>
 
 
   </div>
@@ -197,16 +197,11 @@
   <footer>
 
       <div class="footerLeft">
-        <div class="copyright">
-          <p>Copyright © 2021 Kristen Scheel</p>
-        </div>
-      </div>
-
-      <div class="footerRight">
         <div class="footerPara">
-          <p>Let's stay in touch! Sign up for my newsletter, i'll email once a month with new projects i'm working on.</p>
+          <h3>SIGN UP</h3>
+          <p>Recieve monthly updates on the projects I'm working on.</p>
         </div>
-       
+        
         <div class="footerForm">
           <form action="https://formspree.io/mqkyvaoa" method="POST">
             <div class="newsSignUp">
@@ -222,6 +217,17 @@
           <a href="https://www.linkedin.com/in/kristenscheel/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://twitter.com/kscheel" target="_blank"><i class="fab fa-twitter"></i></a>
           <a href="https://medium.com/@kristenscheel" target="_blank"><i class="fab fa-medium"></i></a>
+        </div>
+      </div>
+
+      <div class="footerRight">
+
+        <div class="footerLogo">
+          <p>KS</p>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright © 2021 Kristen Scheel</p>
         </div>
       </div>
   </footer>

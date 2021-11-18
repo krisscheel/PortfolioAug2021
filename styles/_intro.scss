@@ -5,47 +5,49 @@
   flex-direction: row;
   position: relative;
   .introCover {
-    background-color: $primaryColorTwo;
+    background-color: $backgroundColor;
     position: absolute;
     top: 20%;
-    left: 45%;
+    left: 35%;
     width: 50%;
     height: 70%;
+    border: 20px solid $primaryColorOne;
+    .rightSide {
+      width: 100%;
+      padding: 3% 0 0 7%;
+      background-color: $backgroundColor;
+      align-items: left;
+      justify-content: left;
+      .leftIntro {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        h1 {
+        font-size: 7rem;
+        max-width: 80%;
+        padding: 5% 0 2% 0;
+        color: $primaryColorOne;
+        font-family: $h2Font;
+        font-weight: 400;
+        }
+      h2 {
+        max-width: 60%;
+        font-size: 2rem;
+        font-family: $h2Font;
+        font-weight: 100;
+        color: $primaryColorOne;
+      }
+    }
   }
+}
   .leftSide {
   width: 50%;
   padding-top: 15%;
-  background-image: url(../plant2.jpeg);
+  background-image: url(../modern3.jpeg);
   background-position: 50% 50%;
   background-size: cover;
   }
-  .rightSide {
-  width: 50%;
-  padding-top: 12%;
-  background-color: $backgroundColor;
-  }
-  h1 {
-    font-size: 8rem;
-    max-width: 80%;
-    padding: 5% 0 2% 0;
-    color: $primaryColorOne;
-    font-family: $h1Font;
-    font-weight: 300;
-  }
-  h2 {
-    max-width: 40%;
-    font-size: 2rem;
-    font-family: $h1Font;
-    font-weight: 100;
-    color: $primaryColorOne;
-  }
-}
-
-.leftIntro {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
 }
 
 div.leftNav {
@@ -65,7 +67,7 @@ div.leftNav div {
 }
 
 .selected {
-  background-color: $mutedColorThree !important; 
+  background-color: $primaryColorTwo !important; 
 }
 
 button {

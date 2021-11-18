@@ -21,19 +21,13 @@
 }
 
 .sectionThree, footer {
-  background-color: $mutedColorFour;
+  background-color: $primaryColorOne;
+  color: $backgroundColor;
 }
 
 h2, h3 {
-  font-family: $h1Font;
+  font-family: $h2Font;
   font-weight: 300;
-  color: $primaryColorOne;
-}
-
-p {
-  font-family: $h1Font;
-  font-weight: 100;
-  color: $primaryColorOne;
 }
 
 @keyframes spin {

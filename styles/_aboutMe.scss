@@ -3,20 +3,21 @@
   display: flex;
   flex-direction: row;
   height: 80vh;
-  background-color: $primaryColorThree;
-  color: $primaryColorOne;
+  background-color: $primaryColorOne;
+  color: $backgroundColor;
   img {
-    width: 25%;
-    height: 50%;
+    width: 55%;
+    height: 75%;
     margin: 100px 0 100px 0;
     justify-items: right;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
     }
   h2 {
     padding: 100px 0 30px 0;
-    font-family: $h1Font;
-    font-weight: 300;
+    font-family: $h2Font;
+    font-weight: 400;
     font-size: 4rem;
+    color: $backgroundColor;
   }
   .aboutMeContent {
     padding: 0 0 0 80px;
@@ -25,14 +26,15 @@
       align-items: center;
       width: 75%;
       line-height: 2;
+      color: $backgroundColor;
       p {
-        font-family: $h1Font;
+        font-family: $h2Font;
         font-size: 2.5rem;
         font-weight: 100;
         line-height: 3rem;
         align-items: center;
+        color: $backgroundColor;
       }
-
     }
   }
 }

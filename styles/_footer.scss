@@ -2,47 +2,60 @@ footer {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
-  height: 60vh;
+  height: 70vh;
+  color: $backgroundColor;
   p {
     font-family: $h2Font;
-    color: $primaryColorOne;
     font-size: 1.5rem;
+    color: $backgroundColor;
     }
-  .footerLeft {
+  .footerRight {
     width: 60%;
+    display: flex;
+    flex-direction: row;
+    .footerLogo p {
+		font-family: 'Major Mono Display', monospace;
+		font-size: 5rem;
+		color: $backgroundColor;
+      }
     .copyright {
-      text-align: left;
-      padding: 40% 0 0 20%;
       p {
         font-size: 1rem;
       }
     }
   }
-  .footerRight {
+  .footerLeft {
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 40%;
-    padding-top: 5%;
+    padding: 8% 0 0 10%;
+    h3 {
+      color: $backgroundColor;
+      font-size: 2rem;
+      font-family: $h2Font;
+      padding: 10px 0 10px 0;
+    }
     .footerPara {
       width: 60%;
+      font-weight: 100;
     }
     .newsSignUp {
       width: 60%;
-      border-bottom: 3px solid $primaryColorOne;
+      border-bottom: 3px solid $backgroundColor;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       font-size: 1rem;
       padding-top: 3%;
       input {
-        background-color: $primaryColorTwo;
+        background-color: $primaryColorOne;
         border: none;
         text-align: left;
       }
       .formButton {
-        background-color: $primaryColorTwo;
-        color: $primaryColorOne;
+        background-color: $primaryColorOne;
+        color: $backgroundColor;
         font-size: 2rem;
         text-align: right;
       }
@@ -56,13 +69,13 @@ footer {
       font-size: 1.8rem;
       display: inline;
       padding: 20px;
-      color: $primaryColorOne;
+      color: $backgroundColor;
     }
     .fa-github {
       padding-left: 0;
     }
     a {
-      color: $primaryColorOne;
+      color: $backgroundColor;
       text-decoration: none;
       }
     }

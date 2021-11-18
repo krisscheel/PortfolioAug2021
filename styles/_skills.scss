@@ -1,31 +1,36 @@
 .skills {
-  height: 100vh;
+  height: 120vh;
+  align-content: center;
     h2 {
     padding: 100px 0 100px 0;
     font-family: $h2Font;
+    font-weight: 400;
     font-size: 4rem;
-    color: $primaryColorOne;
+    color: $backgroundColor;
+    padding: 100px 0 0 100px;
   }
     .skillsIcons ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
+    margin: 0 auto;
     li {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 200px;
     height: 200px;
-    padding: 100xp;
+    padding: 180px;
+    color: $backgroundColor;
     p {
       font-family: $h2Font;
-      color: $primaryColorOne;
+      color: $backgroundColor;
       padding-top: 5px;
     }
     .fa-brands {
-      color: $primaryColorOne;
-      font-size: 5rem;
+      color: $backgroundColor;
+      font-size: 6rem;
       }
     }
   } 

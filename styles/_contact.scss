@@ -10,17 +10,22 @@
     align-content: center;
   }
   .contactBox {
-    background-color: $primaryColorThree;
+    background-color: $primaryColorOne;
     margin: 0 100px 0 100px;
     height: 60vh;
     display: flex;
     flex-direction: row;
+    color: $backgroundColor;
+    border: 20px solid $primaryColorOne;
     img {
       height: 100%;
+      border: 10px solid $primaryColorOne;
     }
     .contactBoxRight {
       display: grid;
       overflow: hidden;
+      border: 10px solid $primaryColorOne;
+      height: 100%;
     }
     .front, 
     .back {
@@ -35,7 +40,8 @@
     }
 
     .front {
-      background-color: $primaryColorThree;
+      background-color: $primaryColorOne;
+      color: $backgroundColor;
       display: grid;
       place-items: left;
       z-index: 1;
@@ -43,40 +49,46 @@
       padding-left: 50px;
       h3 {
         padding: 50px 0 0 0;
-        font-family: $h1Font;
-        font-weight: 300;
+        font-family: $h2Font;
+        font-weight: 400;
         font-size: 3rem;
+        color: $backgroundColor;
         }
         p {
-        font-family: $h1Font;
-        color: $primaryColorOne;
-        font-size: 2rem;
+        font-family: $h2Font;
+        color: $backgroundColor;
+        font-size: 1.5rem;
         font-weight: 100;
         line-height: 3rem;
         width: 90%;
+        padding: 0;
         }
       .register-button {
-        background-color: $primaryColorThree;
+        background-color: $primaryColorOne;
         width: 300px;
-        font-family: $h1Font;
-        color: $primaryColorOne;
-        font-weight: 300;
-        font-size: 1.5rem;
+        height: 50px;
+        font-family: $h2Font;
+        color: $backgroundColor;
+        font-weight: 400;
+        font-size: 1rem;
         margin: 20px 0 40px 0;
-        border: 1px solid $primaryColorOne;
+        border: 1px solid $backgroundColor;
       }
       .register-button:hover {
-        background-color: $primaryColorOne;
-        color: $backgroundColor;
+        background-color: $backgroundColor;
+        color: $primaryColorOne;
       }
     }
 
     form {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: left;
       border-style: none;
       padding: 50px 50px 0 50px;
+      background-color: $backgroundColor;
+      color: $primaryColorOne;
       .contactFormTop {
         width: 50%;
         display: flex;
@@ -86,43 +98,49 @@
           font-family: $h2Font;
           font-size: 1rem;
           color: $primaryColorOne;
+          margin: 0;
         }
         .nameField, .emailField {
-          border-style: none;
+          margin: 0;
+          border-bottom: 2px solid $primaryColorOne;
           }
         }
         .username, .email {
           height: 40px;
           width: 100%;
-          margin: 20px 0 20px 0;
+          margin: 20px 0 10px 0;
           border-style: none;
           color: $textGrey;
+          line-height: 1;
+          padding-top: 30px;
         }
         .contactFormBottom {
+          padding-top: 5%;
           textarea {
-            width: 100%;
+            width: 50%;
+            height: 100px;
             font-family: $h2Font;
             font-size: 1rem;
-            padding-left: 5px;
+            padding: 0 0 0 5px;
             border-style: none;
             color: $textGrey;
+            border: 2px solid $primaryColorOne;
           }
           .submitButton {
-            height: 40px;
-            //display: block;
             width: 50%;
-            background-color: $primaryColorThree;
+            font-family: $h2Font;
             color: $primaryColorOne;
+            font-weight: 400;
             font-size: 1.5rem;
-            border: none;
+            margin: 20px 0 40px 0;
+            background-color: $primaryColorOne;
+            color: $backgroundColor;
             text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-            border: 1px solid $primaryColorOne;
+            margin-top: 5%;
             &:hover {
-              background-color: $primaryColorOne;
-              color: $backgroundColor;
-              
+              background-color: $backgroundColor;
+              color: $primaryColorOne;
+              border: 1px solid $primaryColorOne;
             }
           }
         }
