@@ -1,9 +1,11 @@
 footer {
   margin-top: 100px;
-  display: flex;
-  flex-direction: row;
   height: 70vh;
   color: $backgroundColor;
+  .footerTop {
+    display: flex;
+    flex-direction: row;
+  }
   p {
     font-family: $h2Font;
     font-size: 1.5rem;

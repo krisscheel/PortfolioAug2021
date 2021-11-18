@@ -721,6 +721,11 @@ button {
 
 footer {
   margin-top: 100px;
+  height: 70vh;
+  color: #ffffff;
+}
+
+footer .footerTop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,8 +733,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 70vh;
-  color: #ffffff;
 }
 
 footer p {
