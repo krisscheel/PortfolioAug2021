@@ -5,24 +5,15 @@ footer {
   .footerTop {
     display: flex;
     flex-direction: row;
-  }
-  p {
-    font-family: $h2Font;
-    font-size: 1.5rem;
-    color: $backgroundColor;
-    }
-  .footerRight {
+    .footerRight {
     width: 60%;
-    display: flex;
-    flex-direction: row;
-    .footerLogo p {
-		font-family: 'Major Mono Display', monospace;
-		font-size: 5rem;
-		color: $backgroundColor;
-      }
-    .copyright {
+    .footerLogo {
+      text-align: center;
+      padding-top: 20%;
       p {
-        font-size: 1rem;
+      font-family: 'Major Mono Display', monospace;
+      font-size: 5rem;
+      color: $backgroundColor;
       }
     }
   }
@@ -79,6 +70,18 @@ footer {
     a {
       color: $backgroundColor;
       text-decoration: none;
+      }
+    }
+  }
+  }
+  .footerBottom {
+    padding-top: 100px;
+    .copyright {
+      text-align: center;
+      p {
+        font-family: $h2Font;
+        font-weight: 100;
+        font-size: 1rem;
       }
     }
   }

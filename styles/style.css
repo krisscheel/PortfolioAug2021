@@ -350,7 +350,7 @@ a {
 }
 
 .intro .introCover .rightSide .leftIntro h2 {
-  max-width: 60%;
+  max-width: 50%;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -401,7 +401,7 @@ button {
 }
 
 .aboutMe {
-  padding: 0 20px 20px 100px;
+  padding: 0 0 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +459,7 @@ button {
 }
 
 .work {
-  height: 140vh;
+  height: 260vh;
 }
 
 .work h2 {
@@ -468,6 +468,59 @@ button {
   font-weight: 400;
   font-size: 4rem;
   color: #000000;
+}
+
+.work .workSamples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px;
+}
+
+.work .workSamples .sampleOneBox {
+  width: 100%;
+}
+
+.work .workSamples .sampleOneBox .sampleOne {
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  width: 60%;
+  height: 60vh;
+  margin: 20px;
+}
+
+.work .workSamples .sampleOneBox .sampleOne img {
+  width: 400px;
+  padding: 10px;
+}
+
+.work .workSamples .sampleTwoBox {
+  padding-top: 100px;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo {
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  width: 60%;
+  height: 60vh;
+  margin: 20px;
+  float: right;
+}
+
+.work .workSamples .sampleThreeBox {
+  padding-top: 100px;
+}
+
+.work .workSamples .sampleThreeBox .sampleThree {
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  width: 60%;
+  height: 60vh;
+  margin: 20px;
 }
 
 .skills {
@@ -510,14 +563,14 @@ button {
   text-align: center;
   width: 200px;
   height: 200px;
-  padding: 180px;
+  padding: 150px;
   color: #ffffff;
 }
 
 .skills .skillsIcons ul li p {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .skills .skillsIcons ul li .fa-brands {
@@ -736,34 +789,22 @@ footer .footerTop {
           flex-direction: row;
 }
 
-footer p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-footer .footerRight {
+footer .footerTop .footerRight {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-footer .footerRight .footerLogo p {
+footer .footerTop .footerRight .footerLogo {
+  text-align: center;
+  padding-top: 20%;
+}
+
+footer .footerTop .footerRight .footerLogo p {
   font-family: 'Major Mono Display', monospace;
   font-size: 5rem;
   color: #ffffff;
 }
 
-footer .footerRight .copyright p {
-  font-size: 1rem;
-}
-
-footer .footerLeft {
+footer .footerTop .footerLeft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,19 +819,19 @@ footer .footerLeft {
   padding: 8% 0 0 10%;
 }
 
-footer .footerLeft h3 {
+footer .footerTop .footerLeft h3 {
   color: #ffffff;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   padding: 10px 0 10px 0;
 }
 
-footer .footerLeft .footerPara {
+footer .footerTop .footerLeft .footerPara {
   width: 60%;
   font-weight: 100;
 }
 
-footer .footerLeft .newsSignUp {
+footer .footerTop .footerLeft .newsSignUp {
   width: 60%;
   border-bottom: 3px solid #ffffff;
   display: -webkit-box;
@@ -807,20 +848,20 @@ footer .footerLeft .newsSignUp {
   padding-top: 3%;
 }
 
-footer .footerLeft .newsSignUp input {
+footer .footerTop .footerLeft .newsSignUp input {
   background-color: #000000;
   border: none;
   text-align: left;
 }
 
-footer .footerLeft .newsSignUp .formButton {
+footer .footerTop .footerLeft .newsSignUp .formButton {
   background-color: #000000;
   color: #ffffff;
   font-size: 2rem;
   text-align: right;
 }
 
-footer .footerLeft .contactLinks {
+footer .footerTop .footerLeft .contactLinks {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,20 +873,34 @@ footer .footerLeft .contactLinks {
   padding-bottom: 20px;
 }
 
-footer .footerLeft .contactLinks .fab {
+footer .footerTop .footerLeft .contactLinks .fab {
   font-size: 1.8rem;
   display: inline;
   padding: 20px;
   color: #ffffff;
 }
 
-footer .footerLeft .contactLinks .fa-github {
+footer .footerTop .footerLeft .contactLinks .fa-github {
   padding-left: 0;
 }
 
-footer .footerLeft .contactLinks a {
+footer .footerTop .footerLeft .contactLinks a {
   color: #ffffff;
   text-decoration: none;
+}
+
+footer .footerBottom {
+  padding-top: 100px;
+}
+
+footer .footerBottom .copyright {
+  text-align: center;
+}
+
+footer .footerBottom .copyright p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 @-webkit-keyframes fadein {
@@ -870,7 +925,7 @@ footer .footerLeft .contactLinks a {
   background-color: #ffffff;
 }
 
-.sectionThree, footer {
+.sectionOne, .sectionThree, footer {
   background-color: #000000;
   color: #ffffff;
 }
@@ -900,12 +955,6 @@ h2, h3 {
     -webkit-transform: translate(-50%, -50%) rotate(360deg);
             transform: translate(-50%, -50%) rotate(360deg);
   }
-}
-
-body {
-  background-color: #fffdf7;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
 }
 
 div.stamps {
