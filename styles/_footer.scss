@@ -32,6 +32,11 @@ footer {
     .footerPara {
       width: 60%;
       font-weight: 100;
+      font-family: $h2Font;
+      p {
+        font-family: $h2Font;
+        font-weight: 100;
+      }
     }
     .newsSignUp {
       width: 60%;

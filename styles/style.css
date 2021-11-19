@@ -829,6 +829,12 @@ footer .footerTop .footerLeft h3 {
 footer .footerTop .footerLeft .footerPara {
   width: 60%;
   font-weight: 100;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .footerTop .footerLeft .footerPara p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
 }
 
 footer .footerTop .footerLeft .newsSignUp {
