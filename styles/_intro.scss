@@ -1,17 +1,18 @@
 
 .intro {
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: row;
   position: relative;
+  background-color: $accentColorTwo;
   .introCover {
     background-color: $backgroundColor;
     position: absolute;
     top: 20%;
-    left: 35%;
-    width: 50%;
+    left: 30%;
+    width: 60%;
     height: 70%;
-    border: 20px solid $primaryColorOne;
+    border: 1px solid $primaryColorOne;
     .rightSide {
       width: 100%;
       padding: 3% 0 0 7%;
@@ -26,27 +27,42 @@
         h1 {
         font-size: 7rem;
         max-width: 80%;
-        padding: 5% 0 2% 0;
+        padding: 8% 0 2% 0;
         color: $primaryColorOne;
-        font-family: $h2Font;
+        font-family: $h1Font;
         font-weight: 400;
         }
-      h2 {
+        h2 {
         max-width: 50%;
         font-size: 2rem;
-        font-family: $h2Font;
+        font-family: $bodyFont;
         font-weight: 100;
         color: $primaryColorOne;
+        margin: 4% 0 4% 0;
+        line-height: 3rem;
+        }
+        button {
+        background-color: $backgroundColor;
+        color: $primaryColorOne;
+        border: 1px solid $primaryColorOne;
+        border-radius: 50px;
+        box-shadow: 5px 5px $primaryColorOne;
+        width: 150px;
+        font-size: 1rem;
+        margin-top: 8%;
+        padding: 10px;
+        margin-top: 20px;
       }
     }
   }
 }
   .leftSide {
-  width: 50%;
+  width: 70%;
   padding-top: 15%;
-  background-image: url(../modern3.jpeg);
+  background-image: url(../plant5.jpeg);
   background-position: 50% 50%;
   background-size: cover;
+  border: 1px solid $primaryColorOne;
   }
 }
 
@@ -67,15 +83,6 @@ div.leftNav div {
 }
 
 .selected {
-  background-color: $primaryColorTwo !important; 
+  background-color: $accentColorOne !important; 
 }
 
-button {
-  background-color: $primaryColorOne;
-  color: $backgroundColor;
-  width: 150px;
-  font-size: 1rem;
-  padding: 10px;
-  margin-top: 20px;
-  border: none;
-  }

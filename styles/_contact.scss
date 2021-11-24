@@ -16,15 +16,15 @@
     display: flex;
     flex-direction: row;
     color: $backgroundColor;
-    border: 20px solid $primaryColorOne;
+    border: 1px solid $primaryColorOne;
     img {
       height: 100%;
-      border: 10px solid $primaryColorOne;
+      border: 1px solid $primaryColorOne;
     }
     .contactBoxRight {
       display: grid;
       overflow: hidden;
-      border: 10px solid $primaryColorOne;
+      border: 1px solid $primaryColorOne;
       height: 100%;
     }
     .front, 
@@ -55,7 +55,7 @@
         color: $backgroundColor;
         }
         p {
-        font-family: $h2Font;
+        font-family: $bodyFont;
         color: $backgroundColor;
         font-size: 1.5rem;
         font-weight: 100;
@@ -67,16 +67,19 @@
         background-color: $primaryColorOne;
         width: 300px;
         height: 50px;
-        font-family: $h2Font;
+        font-family: $bodyFont;
         color: $backgroundColor;
         font-weight: 400;
         font-size: 1rem;
         margin: 20px 0 40px 0;
         border: 1px solid $backgroundColor;
+        border-radius: 50px;
+        box-shadow: 5px 5px $backgroundColor;
       }
       .register-button:hover {
         background-color: $backgroundColor;
         color: $primaryColorOne;
+        box-shadow: none;
       }
     }
 
@@ -128,19 +131,21 @@
           }
           .submitButton {
             width: 50%;
-            font-family: $h2Font;
+            font-family: $bodyFont;
             color: $primaryColorOne;
             font-weight: 400;
             font-size: 1.5rem;
             margin: 20px 0 40px 0;
-            background-color: $primaryColorOne;
-            color: $backgroundColor;
+            background-color: $backgroundColor;
             text-align: center;
             margin-top: 5%;
+            border-radius: 50px;
+            box-shadow: 5px 5px $primaryColorOne;
             &:hover {
-              background-color: $backgroundColor;
-              color: $primaryColorOne;
+              background-color: $primaryColorOne;
+              color: $backgroundColor;
               border: 1px solid $primaryColorOne;
+              box-shadow: none;
             }
           }
         }

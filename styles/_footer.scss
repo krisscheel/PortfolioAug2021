@@ -11,7 +11,7 @@ footer {
       text-align: center;
       padding-top: 20%;
       p {
-      font-family: 'Major Mono Display', monospace;
+      font-family: $logoFont;
       font-size: 5rem;
       color: $backgroundColor;
       }
@@ -31,11 +31,9 @@ footer {
     }
     .footerPara {
       width: 60%;
-      font-weight: 100;
-      font-family: $h2Font;
       p {
-        font-family: $h2Font;
-        font-weight: 100;
+      font-weight: 100;
+      font-family: $bodyFont;
       }
     }
     .newsSignUp {
@@ -84,7 +82,7 @@ footer {
     .copyright {
       text-align: center;
       p {
-        font-family: $h2Font;
+        font-family: $bodyFont;
         font-weight: 100;
         font-size: 1rem;
       }
