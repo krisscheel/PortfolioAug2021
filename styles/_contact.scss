@@ -59,7 +59,7 @@
         color: $backgroundColor;
         font-size: 1.5rem;
         font-weight: 100;
-        line-height: 3rem;
+        line-height: 2.5rem;
         width: 90%;
         padding: 0;
         }
@@ -145,7 +145,7 @@
               background-color: $primaryColorOne;
               color: $backgroundColor;
               border: 1px solid $primaryColorOne;
-              box-shadow: none;
+              box-shadow: 5px 5px $backgroundColor;
             }
           }
         }

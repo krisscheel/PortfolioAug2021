@@ -302,7 +302,6 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  background-color: #fff1f0;
 }
 
 .intro .introCover {
@@ -359,7 +358,7 @@ a {
   font-weight: 100;
   color: #000000;
   margin: 4% 0 4% 0;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 .intro .introCover .rightSide .leftIntro button {
@@ -374,6 +373,13 @@ a {
   margin-top: 8%;
   padding: 10px;
   margin-top: 20px;
+}
+
+.intro .introCover .rightSide .leftIntro button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-box-shadow: 5px 5px #ffffff;
+          box-shadow: 5px 5px #ffffff;
 }
 
 .intro .leftSide {
@@ -453,7 +459,7 @@ div.leftNav div {
       -ms-flex-align: center;
           align-items: center;
   width: 75%;
-  line-height: 2;
+  line-height: 2.5rem;
   color: #ffffff;
 }
 
@@ -461,7 +467,7 @@ div.leftNav div {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 100;
-  line-height: 3rem;
+  line-height: 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -681,7 +687,7 @@ div.leftNav div {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 100;
-  line-height: 3rem;
+  line-height: 2.5rem;
   width: 90%;
   padding: 0;
 }
@@ -794,8 +800,8 @@ div.leftNav div {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #000000;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 5px 5px #ffffff;
+          box-shadow: 5px 5px #ffffff;
 }
 
 footer {
@@ -888,6 +894,7 @@ footer .footerTop .footerLeft .newsSignUp .formButton {
   color: #ffffff;
   font-size: 2rem;
   text-align: right;
+  border: none;
 }
 
 footer .footerTop .footerLeft .contactLinks {
@@ -930,6 +937,24 @@ footer .footerBottom .copyright p {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-size: 1rem;
+}
+
+@media (max-width: 3000px) {
+  .intro .introCover .rightSide {
+    height: 40%;
+  }
+  .intro .introCover .rightSide .leftIntro h1 {
+    font-size: 4rem;
+    width: 100%;
+  }
+  .intro .introCover .rightSide .leftIntro h2 {
+    font-size: 2rem;
+    max-width: 80%;
+    line-height: 2.5rem;
+  }
+  .intro .introCover .rightSide .leftIntro button {
+    padding-top: 0px;
+  }
 }
 
 @-webkit-keyframes fadein {

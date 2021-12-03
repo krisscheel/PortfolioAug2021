@@ -1,0 +1,24 @@
+@media (max-width: 3000px) {
+  .intro {
+  .introCover {
+    .rightSide {
+      height: 40%;
+      .leftIntro {
+        h1 {
+          font-size: 4rem;
+          width: 100%;
+        }
+        h2 {
+          font-size: 2rem;
+          max-width: 80%;
+          line-height: 2.5rem;
+        }
+        button {
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+  }
+}
+
