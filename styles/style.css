@@ -939,7 +939,7 @@ footer .footerBottom .copyright p {
   font-size: 1rem;
 }
 
-@media (max-width: 3000px) {
+@media (max-width: 2000px) {
   .intro .introCover .rightSide {
     height: 40%;
   }
@@ -954,6 +954,9 @@ footer .footerBottom .copyright p {
   }
   .intro .introCover .rightSide .leftIntro button {
     padding-top: 0px;
+  }
+  .skills .skillsIcons ul {
+    width: 100%;
   }
 }
 
