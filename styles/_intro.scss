@@ -7,11 +7,12 @@
   .introCover {
     background-color: $backgroundColor;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 30%;
     width: 60%;
     height: 70%;
     border: 1px solid $primaryColorOne;
+    box-shadow: 5px 5px;
     .rightSide {
       width: 100%;
       padding: 3% 0 0 7%;
@@ -48,9 +49,9 @@
         box-shadow: 5px 5px $primaryColorOne;
         width: 150px;
         font-size: 1rem;
-        margin-top: 8%;
-        padding: 10px;
         margin-top: 20px;
+        padding-top: 10px;
+        height: 40px;
       }
       button:hover {
         background-color: $primaryColorOne;

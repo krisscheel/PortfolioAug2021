@@ -12,11 +12,12 @@
   .contactBox {
     background-color: $primaryColorOne;
     margin: 0 100px 0 100px;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     color: $backgroundColor;
     border: 1px solid $primaryColorOne;
+    box-shadow: -5px -5px;
     img {
       height: 100%;
       border: 1px solid $primaryColorOne;
@@ -65,8 +66,8 @@
         }
       .register-button {
         background-color: $primaryColorOne;
-        width: 300px;
-        height: 50px;
+        width: 150px;
+        height: 40px;
         font-family: $bodyFont;
         color: $backgroundColor;
         font-weight: 400;
@@ -130,7 +131,9 @@
             border: 2px solid $primaryColorOne;
           }
           .submitButton {
-            width: 50%;
+            width: 150px;
+            height: 40px;
+            display: block;
             font-family: $bodyFont;
             color: $primaryColorOne;
             font-weight: 400;

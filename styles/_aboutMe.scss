@@ -2,12 +2,14 @@
   padding: 0 0 20px 100px;
   display: flex;
   flex-direction: row;
-  height: 80vh;
+  height: 70vh;
   background-color: $primaryColorOne;
   color: $backgroundColor;
   img {
-    width: 55%;
-    height: 75%;
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 50%;
     margin: 100px 0 100px 0;
     justify-items: right;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
