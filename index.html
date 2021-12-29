@@ -187,8 +187,7 @@
             <button class="register-button">get in touch</button>
           </div>
 
-            <div class="form back">
-              <form action="https://formspree.io/mqkyvaoa" method="POST">
+            <div id="contactForm" class="contactForm back">
                 <div class="contactFormTop">
                   <div class="nameField">
                     <label class="sr-only" for="username">Full Name</label>
@@ -200,12 +199,14 @@
                   </div>
                 </div>
                 <div class="contactFormBottom">
-                  <textarea name="comment" cols="55" rows="10">Message</textarea>
-                  <button class="submitButton">submit</button>
+                  <textarea name="comment" cols="55" rows="10" id="comment">Message</textarea>
+                  <button id="contactSubmit" class="submitButton">submit</button>
                 </div>
-              </form>
-        </div>
+            </div>
 
+            <div id="contactThankYou" class="contactThankYou">
+              <h2>Thank you for submitting!</h2>
+            </div>
 
   </div>
   </div>
@@ -265,7 +266,7 @@
   <!--<script src="stamps.js"></script>-->
 <script src="register.js"></script>
 <script src="background.js"></script>
-
+<script src="form.js"></script>
 
 
 </html>

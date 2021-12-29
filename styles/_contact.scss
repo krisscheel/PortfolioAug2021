@@ -29,15 +29,29 @@
       height: 100%;
     }
     .front, 
-    .back {
+    .back,
+    .contactThankYou {
       grid-area: 1/1;
+      h2 {
+      color: white;
+      }
+      
     }
     .front {
       transition: transform 0.8s ease;
     }
+    .contactForm {
+      transition: transform 0.8s ease;
+      z-index: 1;
+    }
+
     /* togle this class using javascript */
     .front.slide-up {
       transform:  translateY(-120%);
+    }
+
+    .contactForm.slide-up {
+      transform: translateY(-120%);
     }
 
     .front {
@@ -45,7 +59,7 @@
       color: $backgroundColor;
       display: grid;
       place-items: left;
-      z-index: 1;
+      z-index: 2;
       overflow: hidden;
       padding-left: 50px;
       h3 {
@@ -84,7 +98,7 @@
       }
     }
 
-    form {
+    .contactForm {
       height: 100%;
       display: flex;
       flex-direction: column;
