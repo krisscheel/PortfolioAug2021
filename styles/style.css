@@ -650,10 +650,17 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .front,
-.contactMe .contactBox .back {
+.contactMe .contactBox .back,
+.contactMe .contactBox .contactThankYou {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: 1/1;
+}
+
+.contactMe .contactBox .front h2,
+.contactMe .contactBox .back h2,
+.contactMe .contactBox .contactThankYou h2 {
+  color: white;
 }
 
 .contactMe .contactBox .front {
@@ -663,7 +670,20 @@ div.leftNav div {
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
 
+.contactMe .contactBox .contactForm {
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  z-index: 1;
+}
+
 .contactMe .contactBox .front.slide-up {
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+}
+
+.contactMe .contactBox .contactForm.slide-up {
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
 }
@@ -674,7 +694,7 @@ div.leftNav div {
   display: -ms-grid;
   display: grid;
   place-items: left;
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
   padding-left: 50px;
 }
@@ -719,7 +739,7 @@ div.leftNav div {
           box-shadow: none;
 }
 
-.contactMe .contactBox form {
+.contactMe .contactBox .contactForm {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,7 +757,7 @@ div.leftNav div {
   color: #000000;
 }
 
-.contactMe .contactBox form .contactFormTop {
+.contactMe .contactBox .contactForm .contactFormTop {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,19 +769,19 @@ div.leftNav div {
   border-style: none;
 }
 
-.contactMe .contactBox form .contactFormTop label {
+.contactMe .contactBox .contactForm .contactFormTop label {
   font-family: "swear-display", serif;
   font-size: 1rem;
   color: #000000;
   margin: 0;
 }
 
-.contactMe .contactBox form .contactFormTop .nameField, .contactMe .contactBox form .contactFormTop .emailField {
+.contactMe .contactBox .contactForm .contactFormTop .nameField, .contactMe .contactBox .contactForm .contactFormTop .emailField {
   margin: 0;
   border-bottom: 2px solid #000000;
 }
 
-.contactMe .contactBox form .username, .contactMe .contactBox form .email {
+.contactMe .contactBox .contactForm .username, .contactMe .contactBox .contactForm .email {
   height: 40px;
   width: 100%;
   margin: 20px 0 10px 0;
@@ -771,11 +791,11 @@ div.leftNav div {
   padding-top: 30px;
 }
 
-.contactMe .contactBox form .contactFormBottom {
+.contactMe .contactBox .contactForm .contactFormBottom {
   padding-top: 5%;
 }
 
-.contactMe .contactBox form .contactFormBottom textarea {
+.contactMe .contactBox .contactForm .contactFormBottom textarea {
   width: 50%;
   height: 100px;
   font-family: "swear-display", serif;
@@ -786,7 +806,7 @@ div.leftNav div {
   border: 2px solid #000000;
 }
 
-.contactMe .contactBox form .contactFormBottom .submitButton {
+.contactMe .contactBox .contactForm .contactFormBottom .submitButton {
   width: 150px;
   height: 40px;
   display: block;
@@ -803,7 +823,7 @@ div.leftNav div {
           box-shadow: 5px 5px #000000;
 }
 
-.contactMe .contactBox form .contactFormBottom .submitButton:hover {
+.contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #000000;
