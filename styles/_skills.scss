@@ -6,7 +6,7 @@
     font-family: $h2Font;
     font-weight: 400;
     font-size: 4rem;
-    color: $backgroundColor;
+    color: $outlineColor;
     padding: 100px 0 0 100px;
   }
     .skillsIcons ul {
@@ -24,14 +24,14 @@
     width: 200px;
     height: 200px;
     padding: 150px;
-    color: $backgroundColor;
+    color: $outlineColor;
     p {
       font-family: $bodyFont;
-      color: $backgroundColor;
+      color: $outlineColor;
       padding-top: 4px;
     }
     .fa-brands {
-      color: $backgroundColor;
+      color: $outlineColor;
       font-size: 6rem;
       }
     }

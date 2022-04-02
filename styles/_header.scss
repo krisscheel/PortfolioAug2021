@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $outlineColor;
+	background-color: $primaryColorOne;
 	width: 100%;
 	z-index: 10;
 	display: flex;
@@ -16,25 +16,40 @@ header {
 	border-bottom: 1px solid $outlineColor;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	nav a {
-		color: $primaryColorOne;
+		color: $outlineColor;
 		font-family: $bodyFont;
 		font-weight: 100;
 		padding: 16px;
 		font-size: 1.5rem;
+		transition: 0.5s;
+		margin: 5px;
 	}
 	p {
 		font-family: $logoFont;
 		font-weight: 300;
 		font-style: normal;
 		font-size: 5rem;
-		color: $primaryColorOne;
+		color: $outlineColor;
 	}
 }
 
 header.scrolled {
 	background-color: $primaryColorOne;
-	a {
-		color: $outlineColor;
+	.aboutMeLink {
+		background-color: $accentColorFive;
+		border: 1px solid $outlineColor;
+	}
+	.workLink {
+		background-color: $accentColorOne;
+		border: 1px solid $outlineColor;
+	}
+	.skillsLink {
+		background-color: $accentColorSeven;
+		border: 1px solid $outlineColor;
+	}
+	.contactMeLink {
+		background-color: $primaryColorOne;
+		border: 1px solid $outlineColor;
 	}
 	p {
 		color: $outlineColor;

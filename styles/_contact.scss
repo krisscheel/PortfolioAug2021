@@ -15,7 +15,7 @@
     height: 70vh;
     display: flex;
     flex-direction: row;
-    color: $primaryColorOne;
+    color: $outlineColor;
     border: 1px solid $outlineColor;
     box-shadow: -5px -5px;
     img {
@@ -33,7 +33,7 @@
     .contactThankYou {
       grid-area: 1/1;
       h2 {
-      color: $primaryColorOne;
+      color: $outlineColor;
       }
       
     }
@@ -56,7 +56,7 @@
 
     .front {
       background-color: $primaryColorOne;
-      color: $backgroundColor;
+      color: $outlineColor;
       display: grid;
       place-items: left;
       z-index: 2;
@@ -67,11 +67,11 @@
         font-family: $h2Font;
         font-weight: 400;
         font-size: 3rem;
-        color: $backgroundColor;
+        color: $outlineColor;
         }
         p {
         font-family: $bodyFont;
-        color: $backgroundColor;
+        color: $outlineColor;
         font-size: 1.5rem;
         font-weight: 100;
         line-height: 2.5rem;
@@ -83,16 +83,16 @@
         width: 150px;
         height: 40px;
         font-family: $bodyFont;
-        color: $backgroundColor;
+        color: $outlineColor;
         font-weight: 400;
         font-size: 1rem;
         margin: 20px 0 40px 0;
-        border: 1px solid $backgroundColor;
+        border: 1px solid $outlineColor;
         border-radius: 50px;
-        box-shadow: 5px 5px $backgroundColor;
+        box-shadow: 5px 5px $outlineColor;
       }
       .register-button:hover {
-        background-color: $backgroundColor;
+        background-color: $outlineColor;
         color: $primaryColorOne;
         box-shadow: none;
       }
@@ -105,7 +105,7 @@
       align-items: left;
       border-style: none;
       padding: 50px 50px 0 50px;
-      background-color: $backgroundColor;
+      background-color: $outlineColor;
       color: $primaryColorOne;
       .contactFormTop {
         width: 50%;
@@ -153,16 +153,16 @@
             font-weight: 400;
             font-size: 1.5rem;
             margin: 20px 0 40px 0;
-            background-color: $backgroundColor;
+            background-color: $outlineColor;
             text-align: center;
             margin-top: 5%;
             border-radius: 50px;
             box-shadow: 5px 5px $primaryColorOne;
             &:hover {
               background-color: $primaryColorOne;
-              color: $backgroundColor;
+              color: $outlineColor;
               border: 1px solid $primaryColorOne;
-              box-shadow: 5px 5px $backgroundColor;
+              box-shadow: 5px 5px $outlineColor;
             }
           }
         }

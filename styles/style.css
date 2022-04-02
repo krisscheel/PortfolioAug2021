@@ -219,7 +219,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -244,11 +244,14 @@ header {
 }
 
 header nav a {
-  color: #ffffff;
+  color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   padding: 16px;
   font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 5px;
 }
 
 header p {
@@ -256,15 +259,31 @@ header p {
   font-weight: 300;
   font-style: normal;
   font-size: 5rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 header.scrolled {
   background-color: #ffffff;
 }
 
-header.scrolled a {
-  color: #000000;
+header.scrolled .aboutMeLink {
+  background-color: #BAD79F;
+  border: 1px solid #000000;
+}
+
+header.scrolled .workLink {
+  background-color: #F2C9B3;
+  border: 1px solid #000000;
+}
+
+header.scrolled .skillsLink {
+  background-color: #B9D9D8;
+  border: 1px solid #000000;
+}
+
+header.scrolled .contactMeLink {
+  background-color: #ffffff;
+  border: 1px solid #000000;
 }
 
 header.scrolled p {
@@ -557,7 +576,7 @@ div.leftNav div {
   font-family: "swear-display", serif;
   font-weight: 400;
   font-size: 4rem;
-  color: #F7EAC2;
+  color: #000000;
   padding: 100px 0 0 100px;
 }
 
@@ -593,17 +612,17 @@ div.leftNav div {
   width: 200px;
   height: 200px;
   padding: 150px;
-  color: #F7EAC2;
+  color: #000000;
 }
 
 .skills .skillsIcons ul li p {
   font-family: "Poppins", sans-serif;
-  color: #F7EAC2;
+  color: #000000;
   padding-top: 4px;
 }
 
 .skills .skillsIcons ul li .fa-brands {
-  color: #F7EAC2;
+  color: #000000;
   font-size: 6rem;
 }
 
@@ -633,7 +652,7 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: #ffffff;
+  color: #000000;
   border: 1px solid #000000;
   -webkit-box-shadow: -5px -5px;
           box-shadow: -5px -5px;
@@ -664,7 +683,7 @@ div.leftNav div {
 .contactMe .contactBox .front h2,
 .contactMe .contactBox .back h2,
 .contactMe .contactBox .contactThankYou h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contactMe .contactBox .front {
@@ -694,7 +713,7 @@ div.leftNav div {
 
 .contactMe .contactBox .front {
   background-color: #ffffff;
-  color: #F7EAC2;
+  color: #000000;
   display: -ms-grid;
   display: grid;
   place-items: left;
@@ -708,12 +727,12 @@ div.leftNav div {
   font-family: "swear-display", serif;
   font-weight: 400;
   font-size: 3rem;
-  color: #F7EAC2;
+  color: #000000;
 }
 
 .contactMe .contactBox .front p {
   font-family: "Poppins", sans-serif;
-  color: #F7EAC2;
+  color: #000000;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2.5rem;
@@ -726,18 +745,18 @@ div.leftNav div {
   width: 150px;
   height: 40px;
   font-family: "Poppins", sans-serif;
-  color: #F7EAC2;
+  color: #000000;
   font-weight: 400;
   font-size: 1rem;
   margin: 20px 0 40px 0;
-  border: 1px solid #F7EAC2;
+  border: 1px solid #000000;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #F7EAC2;
-          box-shadow: 5px 5px #F7EAC2;
+  -webkit-box-shadow: 5px 5px #000000;
+          box-shadow: 5px 5px #000000;
 }
 
 .contactMe .contactBox .front .register-button:hover {
-  background-color: #F7EAC2;
+  background-color: #000000;
   color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -757,7 +776,7 @@ div.leftNav div {
           align-items: left;
   border-style: none;
   padding: 50px 50px 0 50px;
-  background-color: #F7EAC2;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -819,7 +838,7 @@ div.leftNav div {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 20px 0 40px 0;
-  background-color: #F7EAC2;
+  background-color: #000000;
   text-align: center;
   margin-top: 5%;
   border-radius: 50px;
@@ -829,10 +848,10 @@ div.leftNav div {
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {
   background-color: #ffffff;
-  color: #F7EAC2;
+  color: #000000;
   border: 1px solid #ffffff;
-  -webkit-box-shadow: 5px 5px #F7EAC2;
-          box-shadow: 5px 5px #F7EAC2;
+  -webkit-box-shadow: 5px 5px #000000;
+          box-shadow: 5px 5px #000000;
 }
 
 footer {
