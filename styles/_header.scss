@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $primaryColorOne;
+	background-color: $outlineColor;
 	width: 100%;
 	z-index: 10;
 	display: flex;
@@ -13,9 +13,10 @@ header {
 	align-items: center;
 	padding: 0 48px 0 48px;
 	transition: background-color 0.5s;
+	border-bottom: 1px solid $outlineColor;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	nav a {
-		color: $backgroundColor;
+		color: $primaryColorOne;
 		font-family: $bodyFont;
 		font-weight: 100;
 		padding: 16px;
@@ -26,17 +27,17 @@ header {
 		font-weight: 300;
 		font-style: normal;
 		font-size: 5rem;
-		color: $backgroundColor;
+		color: $primaryColorOne;
 	}
 }
 
 header.scrolled {
-	background-color: $backgroundColor;
+	background-color: $primaryColorOne;
 	a {
-		color: $primaryColorOne;
+		color: $outlineColor;
 	}
 	p {
-		color: $primaryColorOne;
+		color: $outlineColor;
 	}
 }
 

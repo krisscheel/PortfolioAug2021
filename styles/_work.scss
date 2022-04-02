@@ -5,7 +5,7 @@
     font-family: $h2Font;
     font-weight: 400;
     font-size: 4rem;
-    color: $primaryColorOne;
+    color: $outlineColor;
   }
   .workSamples {
     display: flex;
@@ -28,8 +28,8 @@
 .sampleTwoBox {
   padding-top: 100px;
     .sampleTwo {
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: $primaryColorOne;
+    border: 1px solid $outlineColor;
     width: 60%;
     height: 60vh;
     margin: 20px;
@@ -39,8 +39,8 @@
 .sampleThreeBox {
   padding-top: 100px;
   .sampleThree {
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: $primaryColorOne;
+    border: 1px solid $outlineColor;
     width: 60%;
     height: 60vh;
     margin: 20px;

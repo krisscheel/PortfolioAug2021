@@ -1,7 +1,8 @@
 footer {
   margin-top: 100px;
-  height: 70vh;
-  color: $backgroundColor;
+  height: 45vh;
+  color: $primaryColorOne;
+  background-color: $outlineColor;
   .footerTop {
     display: flex;
     flex-direction: row;
@@ -13,7 +14,7 @@ footer {
       p {
       font-family: $logoFont;
       font-size: 5rem;
-      color: $backgroundColor;
+      color: $primaryColorOne;
       }
     }
   }
@@ -24,7 +25,7 @@ footer {
     width: 40%;
     padding: 8% 0 0 10%;
     h3 {
-      color: $backgroundColor;
+      color: $primaryColorOne;
       font-size: 2rem;
       font-family: $h2Font;
       padding: 10px 0 10px 0;
@@ -34,24 +35,25 @@ footer {
       p {
       font-weight: 100;
       font-family: $bodyFont;
+      color: $primaryColorOne;
       }
     }
     .newsSignUp {
       width: 60%;
-      border-bottom: 3px solid $backgroundColor;
+      border-bottom: 3px solid $primaryColorOne;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       font-size: 1rem;
       padding-top: 3%;
       input {
-        background-color: $primaryColorOne;
+        background-color: $outlineColor;
         border: none;
         text-align: left;
       }
       .formButton {
-        background-color: $primaryColorOne;
-        color: $backgroundColor;
+        background-color: $outlineColor;
+        color: $primaryColorOne;
         font-size: 2rem;
         text-align: right;
         border: none;
@@ -66,22 +68,23 @@ footer {
       font-size: 1.8rem;
       display: inline;
       padding: 20px;
-      color: $backgroundColor;
+      color: $primaryColorOne;
     }
     .fa-github {
       padding-left: 0;
     }
     a {
-      color: $backgroundColor;
+      color: $primaryColorOne;
       text-decoration: none;
       }
     }
   }
   }
   .footerBottom {
-    padding-top: 100px;
+    padding-top: 30px;
     .copyright {
       text-align: center;
+      color: $primaryColorOne;
       p {
         font-family: $bodyFont;
         font-weight: 100;

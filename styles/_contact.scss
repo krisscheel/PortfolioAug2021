@@ -1,12 +1,12 @@
 .contactMe {
-  background-color: $backgroundColor;
+  background-color: $primaryColorOne;
   margin: 200px;
   h2 {
     padding: 100px 0 100px 0;
     font-family: $h2Font;
     font-weight: 400;
     font-size: 4rem;
-    color: $primaryColorOne;
+    color: $outlineColor;
     align-content: center;
   }
   .contactBox {
@@ -15,8 +15,8 @@
     height: 70vh;
     display: flex;
     flex-direction: row;
-    color: $backgroundColor;
-    border: 1px solid $primaryColorOne;
+    color: $primaryColorOne;
+    border: 1px solid $outlineColor;
     box-shadow: -5px -5px;
     img {
       height: 100%;
@@ -33,7 +33,7 @@
     .contactThankYou {
       grid-area: 1/1;
       h2 {
-      color: white;
+      color: $primaryColorOne;
       }
       
     }

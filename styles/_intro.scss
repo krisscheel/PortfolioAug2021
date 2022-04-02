@@ -5,18 +5,17 @@
   flex-direction: row;
   position: relative;
   .introCover {
-    background-color: $backgroundColor;
+    background-color: $primaryColorOne;
     position: absolute;
     top: 25%;
-    left: 30%;
-    width: 60%;
-    height: 70%;
-    border: 1px solid $primaryColorOne;
-    box-shadow: 5px 5px;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+    border: 1px solid $outlineColor;
     .rightSide {
       width: 100%;
       padding: 3% 0 0 7%;
-      background-color: $backgroundColor;
+      background-color: $primaryColorOne;
       align-items: left;
       justify-content: left;
       .leftIntro {
@@ -25,10 +24,10 @@
         justify-content: left;
         align-items: left;
         h1 {
-        font-size: 7rem;
+        font-size: 8rem;
         max-width: 80%;
         padding: 8% 0 2% 0;
-        color: $primaryColorOne;
+        color: $outlineColor;
         font-family: $h1Font;
         font-weight: 400;
         }
@@ -37,25 +36,24 @@
         font-size: 2rem;
         font-family: $bodyFont;
         font-weight: 100;
-        color: $primaryColorOne;
+        color: $outlineColor;
         margin: 4% 0 4% 0;
         line-height: 2.5rem;
         }
         button {
-        background-color: $backgroundColor;
+        background-color: $outlineColor;
         color: $primaryColorOne;
-        border: 1px solid $primaryColorOne;
+        border: 1px solid $outlineColor;
         border-radius: 50px;
-        box-shadow: 5px 5px $primaryColorOne;
         width: 150px;
         font-size: 1rem;
         margin-top: 20px;
-        padding-top: 10px;
-        height: 40px;
+        height: 45px;
+        align-items: center;
       }
       button:hover {
         background-color: $primaryColorOne;
-        color: $backgroundColor;
+        color: $outlineColor;
         box-shadow: 5px 5px $backgroundColor;
       }
     }
@@ -64,10 +62,8 @@
   .leftSide {
   width: 70%;
   padding-top: 15%;
-  background-image: url(../plant5.jpeg);
-  background-position: 50% 50%;
-  background-size: cover;
-  border: 1px solid $primaryColorOne;
+  background-color: $accentColorSeven;
+  border-right: 1px solid $outlineColor;
   }
 }
 
@@ -88,6 +84,6 @@ div.leftNav div {
 }
 
 .selected {
-  background-color: $accentColorOne !important; 
+  background-color: $accentColorTwo !important; 
 }
 
