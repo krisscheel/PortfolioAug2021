@@ -247,11 +247,11 @@ header nav a {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
-  padding: 16px;
+  padding: 25px;
   font-size: 1.5rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin: 5px;
+  height: 100%;
 }
 
 header p {
