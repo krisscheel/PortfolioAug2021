@@ -17,16 +17,20 @@
     flex-direction: row;
     color: $outlineColor;
     border: 1px solid $outlineColor;
-    box-shadow: -5px -5px;
-    img {
+    margin-bottom: 100px;
+    .contactRectangle {
       height: 100%;
+      width: 100%;
       border: 1px solid $primaryColorOne;
+      background-color: $accentColorTwo;
+      border-right: 1px solid $outlineColor;
     }
     .contactBoxRight {
       display: grid;
       overflow: hidden;
       border: 1px solid $primaryColorOne;
       height: 100%;
+      background-color: $accentColorOne;
     }
     .front, 
     .back,
@@ -39,10 +43,12 @@
     }
     .front {
       transition: transform 0.8s ease;
+      background-color: $accentColorOne;
     }
     .contactForm {
       transition: transform 0.8s ease;
       z-index: 1;
+      background-color: $accentColorOne;
     }
 
     /* togle this class using javascript */
@@ -55,7 +61,7 @@
     }
 
     .front {
-      background-color: $primaryColorOne;
+      background-color: $accentColorOne;;
       color: $outlineColor;
       display: grid;
       place-items: left;
@@ -105,7 +111,7 @@
       align-items: left;
       border-style: none;
       padding: 50px 50px 0 50px;
-      background-color: $outlineColor;
+      background-color: $accentColorOne;
       color: $primaryColorOne;
       .contactFormTop {
         width: 50%;

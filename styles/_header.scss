@@ -1,10 +1,10 @@
 
 header {
-	height: 120px;
+	height: 90px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $primaryColorOne;
+	background-color: $outlineColor;
 	width: 100%;
 	z-index: 10;
 	display: flex;
@@ -12,9 +12,21 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 48px 0 48px;
-	transition: background-color 0.5s;
 	border-bottom: 1px solid $outlineColor;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	.links {
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+	}
 	nav a {
 		color: $outlineColor;
 		font-family: $bodyFont;
@@ -22,14 +34,18 @@ header {
 		padding: 25px;
 		font-size: 1.5rem;
 		transition: 0.5s;
-		height: 100%;
 	}
 	p {
 		font-family: $logoFont;
 		font-weight: 300;
 		font-style: normal;
 		font-size: 5rem;
-		color: $outlineColor;
+		color: $primaryColorOne;
+	}
+	.aboutMeLink, .workLink, .skillsLink, .contactMeLink {
+		background-color: $outlineColor;
+		color: $primaryColorOne;
+		transition: background-color 0.5s ease-out;
 	}
 }
 
@@ -37,24 +53,36 @@ header.scrolled {
 	background-color: $primaryColorOne;
 	.aboutMeLink {
 		background-color: $accentColorFive;
-		border: 1px solid $outlineColor;
+		border-left: 1px solid $outlineColor;
+		border-right: 1px solid $outlineColor;
 	}
+	.aboutMeLink:hover {
+	background-color: $accentColorSix;
+}
 	.workLink {
 		background-color: $accentColorOne;
-		border: 1px solid $outlineColor;
+		border-right: 1px solid $outlineColor;
+	}
+	.workLink:hover {
+		background-color: $accentColorTwo;
 	}
 	.skillsLink {
 		background-color: $accentColorSeven;
-		border: 1px solid $outlineColor;
+		border-right: 1px solid $outlineColor;
+	}
+	.skillsLink:hover {
+		background-color: $accentColorEight;
 	}
 	.contactMeLink {
 		background-color: $primaryColorOne;
-		border: 1px solid $outlineColor;
+		border-right: 1px solid $outlineColor;
 	}
 	p {
 		color: $outlineColor;
 	}
 }
+
+
 
 .name {
 	display: flex;

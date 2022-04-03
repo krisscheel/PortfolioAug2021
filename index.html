@@ -40,10 +40,18 @@
 
   <!--top navigation-->
   <nav>
-        <a class="aboutMeLink" href="#aboutMe">ABOUT</a>
-        <a class="workLink" href="#work">WORK</a>
-        <a class="skillsLink" href="#skills">SKILLS</a>
-        <a class="contactMeLink" href="#contactMe">CONTACT</a>
+    <div class=" links aboutMeLink">
+      <a href="#aboutMe">ABOUT</a>
+    </div>
+    <div class="links workLink">
+      <a href="#work">WORK</a>
+    </div>
+    <div class="links skillsLink">
+      <a href="#skills">SKILLS</a> 
+    </div>
+    <div class="links contactMeLink">
+      <a href="#contactMe">CONTACT</a>
+    </div>
   </nav>
 
 </header>
@@ -86,10 +94,12 @@
     <!--ABOUT ME section-->
     <section class="sectionOne" data-sect="1">
       <div class="spacerOne"></div>
-      <div class="aboutMe wrapper" id="aboutMe">
+      <div class="aboutMe" id="aboutMe">
 
         <div class="myPhoto">
-          <img src="Kristen_web_B&W.png">
+          <div>
+            <img src="Kristen_web_B&W.png">
+          </div>
         </div>
 
         <div class="aboutMeContent">
@@ -125,6 +135,7 @@
           
         </div>      
       </div>
+      <div class="spacerTwo"></div>
     </section>
     
 
@@ -176,6 +187,7 @@
           </ul>
         </div>
       </div>
+      <div class="spacerTwo"></div>
     </section>
     
   <!--CONTACT ME section-->
@@ -183,8 +195,8 @@
       <div class="contactMe wrapper" id="contactMe">
         <h2>Contact Me</h2>
         <div class="contactBox">
-          <img src="minimal1.jpeg">
-
+          <div class="contactRectangle">
+          </div>
           <div class="contactBoxRight">
             
             <div class="rightFormOverlay front">
@@ -213,7 +225,6 @@
             <div id="contactThankYou" class="contactThankYou">
               <h2>Thank you for submitting!</h2>
             </div>
-
   </div>
   </div>
 </section>

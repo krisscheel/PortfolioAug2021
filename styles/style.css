@@ -215,11 +215,11 @@ textarea {
 }
 
 header {
-  height: 120px;
+  height: 90px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #000000;
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -236,11 +236,37 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 48px 0 48px;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
   border-bottom: 1px solid #000000;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .links {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav a {
@@ -251,7 +277,6 @@ header nav a {
   font-size: 1.5rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  height: 100%;
 }
 
 header p {
@@ -259,7 +284,14 @@ header p {
   font-weight: 300;
   font-style: normal;
   font-size: 5rem;
-  color: #000000;
+  color: #ffffff;
+}
+
+header .aboutMeLink, header .workLink, header .skillsLink, header .contactMeLink {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 
 header.scrolled {
@@ -268,22 +300,35 @@ header.scrolled {
 
 header.scrolled .aboutMeLink {
   background-color: #BAD79F;
-  border: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+header.scrolled .aboutMeLink:hover {
+  background-color: #96AB81;
 }
 
 header.scrolled .workLink {
   background-color: #F2C9B3;
-  border: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+header.scrolled .workLink:hover {
+  background-color: #EAA27C;
 }
 
 header.scrolled .skillsLink {
   background-color: #B9D9D8;
-  border: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+header.scrolled .skillsLink:hover {
+  background-color: #99B6B7;
 }
 
 header.scrolled .contactMeLink {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border-right: 1px solid #000000;
 }
 
 header.scrolled p {
@@ -365,7 +410,7 @@ a {
 .intro .introCover .rightSide .leftIntro h1 {
   font-size: 8rem;
   max-width: 80%;
-  padding: 8% 0 2% 0;
+  padding: 4% 0 2% 0;
   color: #000000;
   font-family: "swear-display", serif;
   font-weight: 400;
@@ -373,12 +418,12 @@ a {
 
 .intro .introCover .rightSide .leftIntro h2 {
   max-width: 50%;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   color: #000000;
-  margin: 4% 0 4% 0;
-  line-height: 2.5rem;
+  margin: 1% 0 2% 0;
+  line-height: 4rem;
 }
 
 .intro .introCover .rightSide .leftIntro button {
@@ -388,8 +433,8 @@ a {
   border-radius: 50px;
   width: 150px;
   font-size: 1rem;
-  margin-top: 20px;
-  height: 45px;
+  margin-top: 2px;
+  height: 55px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -435,7 +480,6 @@ div.leftNav div {
 }
 
 .aboutMe {
-  padding: 0 0 20px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,30 +489,32 @@ div.leftNav div {
           flex-direction: row;
   height: 70vh;
   background-color: #BAD79F;
-  color: #F7EAC2;
 }
 
 .aboutMe .myPhoto {
+  padding: 100px 40px 40px 100px;
   background-color: #96AB81;
-  width: 30%;
-  height: 100%;
   border-right: 1px solid #000000;
+  width: 45%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aboutMe .myPhoto img {
   width: 500px;
   border-radius: 50%;
-  margin: 50px 0 100px 0;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #000000;
 }
 
 .aboutMe h2 {
-  padding: 100px 0 30px 0;
+  padding: 100px 0 100px 0;
   font-family: "swear-display", serif;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #000000;
 }
 
@@ -484,16 +530,16 @@ div.leftNav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75%;
   line-height: 2.5rem;
   color: #000000;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks p {
+  padding: 0 200px 100px 0;
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 100;
-  line-height: 2.5rem;
+  line-height: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -566,7 +612,7 @@ div.leftNav div {
 }
 
 .skills {
-  height: 120vh;
+  height: 90vh;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -591,7 +637,7 @@ div.leftNav div {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .skills .skillsIcons ul li {
@@ -654,14 +700,16 @@ div.leftNav div {
           flex-direction: row;
   color: #000000;
   border: 1px solid #000000;
-  -webkit-box-shadow: -5px -5px;
-          box-shadow: -5px -5px;
+  margin-bottom: 100px;
   /* togle this class using javascript */
 }
 
-.contactMe .contactBox img {
+.contactMe .contactBox .contactRectangle {
   height: 100%;
+  width: 100%;
   border: 1px solid #ffffff;
+  background-color: #EAA27C;
+  border-right: 1px solid #000000;
 }
 
 .contactMe .contactBox .contactBoxRight {
@@ -670,6 +718,7 @@ div.leftNav div {
   overflow: hidden;
   border: 1px solid #ffffff;
   height: 100%;
+  background-color: #F2C9B3;
 }
 
 .contactMe .contactBox .front,
@@ -691,6 +740,7 @@ div.leftNav div {
   transition: -webkit-transform 0.8s ease;
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  background-color: #F2C9B3;
 }
 
 .contactMe .contactBox .contactForm {
@@ -699,6 +749,7 @@ div.leftNav div {
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   z-index: 1;
+  background-color: #F2C9B3;
 }
 
 .contactMe .contactBox .front.slide-up {
@@ -712,7 +763,7 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .front {
-  background-color: #ffffff;
+  background-color: #F2C9B3;
   color: #000000;
   display: -ms-grid;
   display: grid;
@@ -776,7 +827,7 @@ div.leftNav div {
           align-items: left;
   border-style: none;
   padding: 50px 50px 0 50px;
-  background-color: #000000;
+  background-color: #F2C9B3;
   color: #ffffff;
 }
 
