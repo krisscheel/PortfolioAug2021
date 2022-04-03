@@ -21,14 +21,12 @@
     .contactRectangle {
       height: 100%;
       width: 100%;
-      border: 1px solid $primaryColorOne;
       background-color: $accentColorTwo;
       border-right: 1px solid $outlineColor;
     }
     .contactBoxRight {
       display: grid;
       overflow: hidden;
-      border: 1px solid $primaryColorOne;
       height: 100%;
       background-color: $accentColorOne;
     }

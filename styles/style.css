@@ -383,12 +383,6 @@ a {
   width: 100%;
   padding: 3% 0 0 7%;
   background-color: #ffffff;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
 }
 
 .intro .introCover .rightSide .leftIntro {
@@ -399,12 +393,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
 }
 
 .intro .introCover .rightSide .leftIntro h1 {
@@ -427,11 +415,13 @@ a {
 }
 
 .intro .introCover .rightSide .leftIntro button {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   border: 1px solid #000000;
   border-radius: 50px;
-  width: 150px;
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+  width: 200px;
   font-size: 1rem;
   margin-top: 2px;
   height: 55px;
@@ -441,8 +431,8 @@ a {
 }
 
 .intro .introCover .rightSide .leftIntro button:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   -webkit-box-shadow: 5px 5px #F7EAC2;
           box-shadow: 5px 5px #F7EAC2;
 }
@@ -707,7 +697,6 @@ div.leftNav div {
 .contactMe .contactBox .contactRectangle {
   height: 100%;
   width: 100%;
-  border: 1px solid #ffffff;
   background-color: #EAA27C;
   border-right: 1px solid #000000;
 }
@@ -716,7 +705,6 @@ div.leftNav div {
   display: -ms-grid;
   display: grid;
   overflow: hidden;
-  border: 1px solid #ffffff;
   height: 100%;
   background-color: #F2C9B3;
 }

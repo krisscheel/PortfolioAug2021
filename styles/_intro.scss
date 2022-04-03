@@ -16,13 +16,9 @@
       width: 100%;
       padding: 3% 0 0 7%;
       background-color: $primaryColorOne;
-      align-items: left;
-      justify-content: left;
       .leftIntro {
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        align-items: left;
         h1 {
         font-size: 8rem;
         max-width: 80%;
@@ -41,19 +37,20 @@
         line-height: 4rem;
         }
         button {
-        background-color: $outlineColor;
-        color: $primaryColorOne;
+        background-color: $primaryColorOne;
+        color: $outlineColor;
         border: 1px solid $outlineColor;
         border-radius: 50px;
-        width: 150px;
+        box-shadow: 5px 5px;
+        width: 200px;
         font-size: 1rem;
         margin-top: 2px;
         height: 55px;
         align-items: center;
       }
       button:hover {
-        background-color: $primaryColorOne;
-        color: $outlineColor;
+        background-color: $outlineColor;
+        color: $primaryColorOne;
         box-shadow: 5px 5px $backgroundColor;
       }
     }
