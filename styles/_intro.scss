@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  background-color: $outlineColor;
   .introCover {
-    background-color: $primaryColorOne;
+    background-color: $backgroundColor2;
     position: absolute;
     top: 25%;
     left: 15%;
@@ -15,7 +16,7 @@
     .rightSide {
       width: 100%;
       padding: 3% 0 0 7%;
-      background-color: $primaryColorOne;
+      background-color: $backgroundColor2;
       .leftIntro {
         display: flex;
         flex-direction: column;
@@ -29,12 +30,12 @@
         }
         h2 {
         max-width: 50%;
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-family: $bodyFont;
         font-weight: 100;
         color: $outlineColor;
         margin: 1% 0 2% 0;
-        line-height: 4rem;
+        line-height: 2.8rem;
         }
         button {
         background-color: $primaryColorOne;
@@ -45,7 +46,7 @@
         width: 200px;
         font-size: 1rem;
         margin-top: 2px;
-        height: 55px;
+        height: 80px;
         align-items: center;
       }
       button:hover {
@@ -59,7 +60,7 @@
   .leftSide {
   width: 70%;
   padding-top: 15%;
-  background-color: $accentColorSeven;
+  background-color: $primaryColorOne;
   border-right: 1px solid $outlineColor;
   }
 }

@@ -18,7 +18,7 @@ header {
 		height: 100%;
 		justify-content: center;
 		align-items: center;
-		padding-top: 30px;
+		padding-top: 50px;
 	}
 	nav {
 		display: flex;
@@ -28,9 +28,9 @@ header {
 		justify-content: center;
 	}
 	nav a {
-		color: $outlineColor;
+		color: $primaryColorOne;
 		font-family: $bodyFont;
-		font-weight: 100;
+		font-weight: 300;
 		padding: 25px;
 		font-size: 1.5rem;
 		transition: 0.5s;
@@ -39,7 +39,7 @@ header {
 		font-family: $logoFont;
 		font-weight: 300;
 		font-style: normal;
-		font-size: 5rem;
+		font-size: 3rem;
 		color: $primaryColorOne;
 	}
 	.aboutMeLink, .workLink, .skillsLink, .contactMeLink {
@@ -50,35 +50,38 @@ header {
 }
 
 header.scrolled {
-	background-color: $primaryColorOne;
-	.aboutMeLink {
-		background-color: $accentColorFive;
-		border-left: 1px solid $outlineColor;
-		border-right: 1px solid $outlineColor;
-	}
-	.aboutMeLink:hover {
-	background-color: $accentColorSix;
-}
-	.workLink {
-		background-color: $accentColorOne;
-		border-right: 1px solid $outlineColor;
-	}
-	.workLink:hover {
-		background-color: $accentColorTwo;
-	}
-	.skillsLink {
-		background-color: $accentColorSeven;
-		border-right: 1px solid $outlineColor;
-	}
-	.skillsLink:hover {
-		background-color: $accentColorEight;
-	}
-	.contactMeLink {
-		background-color: $primaryColorOne;
-		border-right: 1px solid $outlineColor;
-	}
+	background-color: $outlineColor;
+		.aboutMeLink, .workLink, .skillsLink, .contactMeLink {
+		background-color: $outlineColor;
+		}
+	// .aboutMeLink {
+	// 	background-color: $accentColorFive;
+	// 	border-left: 1px solid $outlineColor;
+	// 	border-right: 1px solid $outlineColor;
+	// }
+// 	.aboutMeLink:hover {
+// 	background-color: $accentColorSix;
+// }
+// 	.workLink {
+// 		background-color: $accentColorOne;
+// 		border-right: 1px solid $outlineColor;
+// 	}
+// 	.workLink:hover {
+// 		background-color: $accentColorTwo;
+// 	}
+// 	.skillsLink {
+// 		background-color: $accentColorSeven;
+// 		border-right: 1px solid $outlineColor;
+// 	}
+// 	.skillsLink:hover {
+// 		background-color: $accentColorEight;
+// 	}
+// 	.contactMeLink {
+// 		background-color: $primaryColorOne;
+// 		border-right: 1px solid $outlineColor;
+// 	}
 	p {
-		color: $outlineColor;
+		color: $primaryColorOne;
 	}
 }
 

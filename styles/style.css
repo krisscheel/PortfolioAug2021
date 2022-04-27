@@ -249,7 +249,7 @@ header .links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 header nav {
@@ -270,9 +270,9 @@ header nav {
 }
 
 header nav a {
-  color: #000000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   padding: 25px;
   font-size: 1.5rem;
   -webkit-transition: 0.5s;
@@ -280,10 +280,10 @@ header nav a {
 }
 
 header p {
-  font-family: "swear-display-cilati", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #ffffff;
 }
 
@@ -295,44 +295,15 @@ header .aboutMeLink, header .workLink, header .skillsLink, header .contactMeLink
 }
 
 header.scrolled {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
-header.scrolled .aboutMeLink {
-  background-color: #BAD79F;
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
-}
-
-header.scrolled .aboutMeLink:hover {
-  background-color: #96AB81;
-}
-
-header.scrolled .workLink {
-  background-color: #F2C9B3;
-  border-right: 1px solid #000000;
-}
-
-header.scrolled .workLink:hover {
-  background-color: #EAA27C;
-}
-
-header.scrolled .skillsLink {
-  background-color: #B9D9D8;
-  border-right: 1px solid #000000;
-}
-
-header.scrolled .skillsLink:hover {
-  background-color: #99B6B7;
-}
-
-header.scrolled .contactMeLink {
-  background-color: #ffffff;
-  border-right: 1px solid #000000;
+header.scrolled .aboutMeLink, header.scrolled .workLink, header.scrolled .skillsLink, header.scrolled .contactMeLink {
+  background-color: #000000;
 }
 
 header.scrolled p {
-  color: #000000;
+  color: #ffffff;
 }
 
 .name {
@@ -348,7 +319,7 @@ header h1, header.name header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
 }
 
@@ -367,10 +338,11 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
+  background-color: #000000;
 }
 
 .intro .introCover {
-  background-color: #ffffff;
+  background-color: #edece8;
   position: absolute;
   top: 25%;
   left: 15%;
@@ -382,7 +354,7 @@ a {
 .intro .introCover .rightSide {
   width: 100%;
   padding: 3% 0 0 7%;
-  background-color: #ffffff;
+  background-color: #edece8;
 }
 
 .intro .introCover .rightSide .leftIntro {
@@ -400,18 +372,18 @@ a {
   max-width: 80%;
   padding: 4% 0 2% 0;
   color: #000000;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
 .intro .introCover .rightSide .leftIntro h2 {
   max-width: 50%;
-  font-size: 4rem;
-  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
   font-weight: 100;
   color: #000000;
   margin: 1% 0 2% 0;
-  line-height: 4rem;
+  line-height: 2.8rem;
 }
 
 .intro .introCover .rightSide .leftIntro button {
@@ -424,7 +396,7 @@ a {
   width: 200px;
   font-size: 1rem;
   margin-top: 2px;
-  height: 55px;
+  height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -440,7 +412,7 @@ a {
 .intro .leftSide {
   width: 70%;
   padding-top: 15%;
-  background-color: #B9D9D8;
+  background-color: #ffffff;
   border-right: 1px solid #000000;
 }
 
@@ -478,12 +450,12 @@ div.leftNav div {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 70vh;
-  background-color: #BAD79F;
+  background-color: #000000;
 }
 
 .aboutMe .myPhoto {
   padding: 100px 40px 40px 100px;
-  background-color: #96AB81;
+  background-color: #000000;
   border-right: 1px solid #000000;
   width: 45%;
   height: 100%;
@@ -493,23 +465,24 @@ div.leftNav div {
 }
 
 .aboutMe .myPhoto img {
-  width: 500px;
+  width: 300px;
   border-radius: 50%;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #000000;
+  margin: 0 auto;
 }
 
 .aboutMe h2 {
   padding: 100px 0 100px 0;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 6rem;
   color: #000000;
 }
 
 .aboutMe .aboutMeContent {
-  background-color: #BAD79F;
+  background-color: #edece8;
   padding: 0 0 0 80px;
 }
 
@@ -522,14 +495,15 @@ div.leftNav div {
           align-items: center;
   line-height: 2.5rem;
   color: #000000;
+  width: 80%;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks p {
   padding: 0 200px 100px 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
   font-weight: 100;
-  line-height: 5rem;
+  line-height: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -542,7 +516,7 @@ div.leftNav div {
 
 .work h2 {
   padding-top: 100px;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   color: #000000;
@@ -572,12 +546,16 @@ div.leftNav div {
 }
 
 .work .workSamples .sampleOneBox .sampleOne img {
-  width: 400px;
+  width: 800px;
   padding: 10px;
 }
 
 .work .workSamples .sampleTwoBox {
   padding-top: 100px;
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .work .workSamples .sampleTwoBox .sampleTwo {
@@ -587,6 +565,41 @@ div.leftNav div {
   height: 60vh;
   margin: 20px;
   float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo img {
+  width: 800px;
+  padding: 10px;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo button {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+  width: 200px;
+  height: 80px;
+  font-size: 1rem;
+  margin-top: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-box-shadow: 5px 5px #F7EAC2;
+          box-shadow: 5px 5px #F7EAC2;
 }
 
 .work .workSamples .sampleThreeBox {
@@ -609,7 +622,7 @@ div.leftNav div {
 
 .skills h2 {
   padding: 100px 0 100px 0;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   color: #000000;
@@ -652,7 +665,7 @@ div.leftNav div {
 }
 
 .skills .skillsIcons ul li p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000000;
   padding-top: 4px;
 }
@@ -669,7 +682,7 @@ div.leftNav div {
 
 .contactMe h2 {
   padding: 100px 0 100px 0;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   color: #000000;
@@ -763,14 +776,14 @@ div.leftNav div {
 
 .contactMe .contactBox .front h3 {
   padding: 50px 0 0 0;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   color: #000000;
 }
 
 .contactMe .contactBox .front p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 100;
@@ -781,9 +794,9 @@ div.leftNav div {
 
 .contactMe .contactBox .front .register-button {
   background-color: #ffffff;
-  width: 150px;
-  height: 40px;
-  font-family: "Poppins", sans-serif;
+  width: 200px;
+  height: 80px;
+  font-family: "Inter", sans-serif;
   color: #000000;
   font-weight: 400;
   font-size: 1rem;
@@ -832,7 +845,7 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .contactForm .contactFormTop label {
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #ffffff;
   margin: 0;
@@ -860,7 +873,7 @@ div.leftNav div {
 .contactMe .contactBox .contactForm .contactFormBottom textarea {
   width: 50%;
   height: 100px;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   padding: 0 0 0 5px;
   border-style: none;
@@ -869,10 +882,10 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton {
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 80px;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   font-weight: 400;
   font-size: 1.5rem;
@@ -920,7 +933,7 @@ footer .footerTop .footerRight .footerLogo {
 }
 
 footer .footerTop .footerRight .footerLogo p {
-  font-family: "swear-display-cilati", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 5rem;
   color: #ffffff;
 }
@@ -943,7 +956,7 @@ footer .footerTop .footerLeft {
 footer .footerTop .footerLeft h3 {
   color: #ffffff;
   font-size: 2rem;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   padding: 10px 0 10px 0;
 }
 
@@ -953,7 +966,7 @@ footer .footerTop .footerLeft .footerPara {
 
 footer .footerTop .footerLeft .footerPara p {
   font-weight: 100;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
 }
 
@@ -1026,7 +1039,7 @@ footer .footerBottom .copyright {
 }
 
 footer .footerBottom .copyright p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 100;
   font-size: 1rem;
 }
@@ -1052,6 +1065,12 @@ footer .footerBottom .copyright p {
   }
 }
 
+.dataVisOne {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -1070,13 +1089,17 @@ footer .footerBottom .copyright p {
   }
 }
 
-.sectionTwo, .sectionFour {
+.sectionTwo {
+  background-color: #edece8;
+}
+
+.sectionFour {
   background-color: #ffffff;
   border-bottom: 1px solid #000000;
 }
 
 .intro {
-  background: #99B6B7;
+  background: #ffffff;
   border-bottom: 1px solid #000000;
 }
 
@@ -1109,7 +1132,7 @@ footer .footerBottom .copyright p {
 }
 
 h2, h3 {
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
 

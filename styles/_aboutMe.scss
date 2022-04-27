@@ -2,20 +2,21 @@
   display: flex;
   flex-direction: row;
   height: 70vh;
-  background-color: $accentColorFive;
+  background-color: $outlineColor;
   .myPhoto {
     padding: 100px 40px 40px 100px;
-    background-color: $accentColorSix;
+    background-color: $outlineColor;
     border-right: 1px solid $outlineColor;
     width: 45%;
     height: 100%;
     justify-content: center;
     img {
-    width: 500px;
+    width: 300px;
     border-radius: 50%;
     //margin: 50px 0 100px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border: 1px solid $outlineColor;
+    margin: 0 auto;
     }
   }
   h2 {
@@ -26,7 +27,7 @@
     color: $outlineColor;
   }
   .aboutMeContent {
-    background-color: $accentColorFive;
+    background-color: $backgroundColor2;
     padding: 0 0 0 80px;
     .aboutMeParaAndLinks {
       display: flex;
@@ -34,12 +35,13 @@
       //width: 75%;
       line-height: 2.5rem;
       color: $outlineColor;
+      width: 80%;
       p {
         padding: 0 200px 100px 0;
         font-family: $bodyFont;
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-weight: 100;
-        line-height: 5rem;
+        line-height: 3rem;
         align-items: center;
         color: $outlineColor;
       }

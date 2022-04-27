@@ -20,13 +20,15 @@
       height: 60vh;
       margin: 20px;
         img {
-        width: 400px;
+        width: 800px;
         padding: 10px;
         }
       }
     }
 .sampleTwoBox {
   padding-top: 100px;
+  float: right;
+  align-items: center;
     .sampleTwo {
     background-color: $primaryColorOne;
     border: 1px solid $outlineColor;
@@ -34,7 +36,33 @@
     height: 60vh;
     margin: 20px;
     float: right;
+    align-items: center;
+    position: relative;
+    img {
+      width: 800px;
+      padding: 10px;
+      }
+    button {
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      background-color: $primaryColorOne;
+      color: $outlineColor;
+      border: 1px solid $outlineColor;
+      border-radius: 50px;
+      box-shadow: 5px 5px;
+      width: 200px;
+      height: 80px;
+      font-size: 1rem;
+      margin-top: 2px;
+      align-items: center;
     }
+    button:hover {
+      background-color: $outlineColor;
+      color: $primaryColorOne;
+      box-shadow: 5px 5px $backgroundColor;
+    }
+  }
 }
 .sampleThreeBox {
   padding-top: 100px;
