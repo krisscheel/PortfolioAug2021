@@ -4,24 +4,12 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  background-color: $outlineColor;
-  .introCover {
-    background-color: $backgroundColor2;
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    width: 70%;
-    height: 60%;
-    border: 1px solid $outlineColor;
     .rightSide {
       width: 100%;
-      padding: 3% 0 0 7%;
-      background-color: $backgroundColor2;
-      .leftIntro {
-        display: flex;
-        flex-direction: column;
+      padding: 14% 0 0 20%;
+      background-color: $primaryColorOne;
         h1 {
-        font-size: 8rem;
+        font-size: 10rem;
         max-width: 80%;
         padding: 4% 0 2% 0;
         color: $outlineColor;
@@ -30,7 +18,7 @@
         }
         h2 {
         max-width: 50%;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-family: $bodyFont;
         font-weight: 100;
         color: $outlineColor;
@@ -56,32 +44,21 @@
       }
     }
   }
-}
-  .leftSide {
-  width: 70%;
-  padding-top: 15%;
-  background-color: $primaryColorOne;
-  border-right: 1px solid $outlineColor;
-  }
-}
 
 div.leftNav {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  padding: 100px 0 0 20px;
-}
-
-div.leftNav div {
-  background-color: #ffffff;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  margin: 5px 10px 0 0;
-}
-
-.selected {
-  background-color: $accentColorTwo !important; 
-}
-
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding: 500px 0 0 20px;
+      }
+      div.leftNav div {
+        background-color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $outlineColor;
+        border-radius: 50%;
+        margin: 5px 10px 0 0;
+      }
+      .selected {
+        background-color: $accentColorTwo !important; 
+      }

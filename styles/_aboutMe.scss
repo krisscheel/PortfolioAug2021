@@ -1,40 +1,39 @@
 .aboutMe {
   display: flex;
   flex-direction: row;
-  height: 70vh;
+  height: 60vh;
   background-color: $outlineColor;
+  border-top: 1px solid $outlineColor;
   .myPhoto {
-    padding: 100px 40px 40px 100px;
+    padding: 120px 40px 40px 140px;
     background-color: $outlineColor;
-    border-right: 1px solid $outlineColor;
     width: 45%;
     height: 100%;
     justify-content: center;
+    align-items: center;
     img {
     width: 300px;
     border-radius: 50%;
-    //margin: 50px 0 100px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border: 1px solid $outlineColor;
     margin: 0 auto;
     }
   }
   h2 {
-    padding: 100px 0 100px 0;
+    padding: 120px 0 40px 0;
     font-family: $h2Font;
     font-weight: 400;
     font-size: 6rem;
-    color: $outlineColor;
+    color: $primaryColorOne;
   }
   .aboutMeContent {
-    background-color: $backgroundColor2;
-    padding: 0 0 0 80px;
+    background-color: $outlineColor;
     .aboutMeParaAndLinks {
       display: flex;
       align-items: center;
       //width: 75%;
       line-height: 2.5rem;
-      color: $outlineColor;
+      color: $primaryColorOne;
       width: 80%;
       p {
         padding: 0 200px 100px 0;
@@ -43,7 +42,7 @@
         font-weight: 100;
         line-height: 3rem;
         align-items: center;
-        color: $outlineColor;
+        color: $primaryColorOne;
       }
     }
   }

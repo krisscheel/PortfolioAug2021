@@ -219,7 +219,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -236,9 +236,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 48px 0 48px;
-  border-bottom: 1px solid #000000;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header .links {
@@ -270,7 +267,7 @@ header nav {
 }
 
 header nav a {
-  color: #ffffff;
+  color: #0100F2;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   padding: 25px;
@@ -288,18 +285,17 @@ header p {
 }
 
 header .aboutMeLink, header .workLink, header .skillsLink, header .contactMeLink {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #0100F2;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
 header.scrolled {
-  background-color: #000000;
-}
-
-header.scrolled .aboutMeLink, header.scrolled .workLink, header.scrolled .skillsLink, header.scrolled .contactMeLink {
-  background-color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #0100F2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header.scrolled p {
@@ -338,58 +334,37 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  background-color: #000000;
 }
 
-.intro .introCover {
-  background-color: #edece8;
-  position: absolute;
-  top: 25%;
-  left: 15%;
-  width: 70%;
-  height: 60%;
-  border: 1px solid #000000;
-}
-
-.intro .introCover .rightSide {
+.intro .rightSide {
   width: 100%;
-  padding: 3% 0 0 7%;
-  background-color: #edece8;
+  padding: 14% 0 0 20%;
+  background-color: #ffffff;
 }
 
-.intro .introCover .rightSide .leftIntro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.intro .introCover .rightSide .leftIntro h1 {
-  font-size: 8rem;
+.intro .rightSide h1 {
+  font-size: 10rem;
   max-width: 80%;
   padding: 4% 0 2% 0;
-  color: #000000;
+  color: #0100F2;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
-.intro .introCover .rightSide .leftIntro h2 {
+.intro .rightSide h2 {
   max-width: 50%;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Inter", sans-serif;
   font-weight: 100;
-  color: #000000;
+  color: #0100F2;
   margin: 1% 0 2% 0;
   line-height: 2.8rem;
 }
 
-.intro .introCover .rightSide .leftIntro button {
+.intro .rightSide button {
   background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #0100F2;
+  border: 1px solid #0100F2;
   border-radius: 50px;
   -webkit-box-shadow: 5px 5px;
           box-shadow: 5px 5px;
@@ -402,18 +377,11 @@ a {
           align-items: center;
 }
 
-.intro .introCover .rightSide .leftIntro button:hover {
-  background-color: #000000;
+.intro .rightSide button:hover {
+  background-color: #0100F2;
   color: #ffffff;
   -webkit-box-shadow: 5px 5px #F7EAC2;
           box-shadow: 5px 5px #F7EAC2;
-}
-
-.intro .leftSide {
-  width: 70%;
-  padding-top: 15%;
-  background-color: #ffffff;
-  border-right: 1px solid #000000;
 }
 
 div.leftNav {
@@ -425,20 +393,20 @@ div.leftNav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  padding: 100px 0 0 20px;
+  padding: 500px 0 0 20px;
 }
 
 div.leftNav div {
   background-color: #ffffff;
   width: 30px;
   height: 30px;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   border-radius: 50%;
   margin: 5px 10px 0 0;
 }
 
 .selected {
-  background-color: #EAA27C !important;
+  background-color: #B2C2F6 !important;
 }
 
 .aboutMe {
@@ -449,19 +417,22 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 70vh;
-  background-color: #000000;
+  height: 60vh;
+  background-color: #0100F2;
+  border-top: 1px solid #0100F2;
 }
 
 .aboutMe .myPhoto {
-  padding: 100px 40px 40px 100px;
-  background-color: #000000;
-  border-right: 1px solid #000000;
+  padding: 120px 40px 40px 140px;
+  background-color: #0100F2;
   width: 45%;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutMe .myPhoto img {
@@ -469,21 +440,20 @@ div.leftNav div {
   border-radius: 50%;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   margin: 0 auto;
 }
 
 .aboutMe h2 {
-  padding: 100px 0 100px 0;
+  padding: 120px 0 40px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 6rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 .aboutMe .aboutMeContent {
-  background-color: #edece8;
-  padding: 0 0 0 80px;
+  background-color: #0100F2;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -494,7 +464,7 @@ div.leftNav div {
       -ms-flex-align: center;
           align-items: center;
   line-height: 2.5rem;
-  color: #000000;
+  color: #ffffff;
   width: 80%;
 }
 
@@ -507,7 +477,7 @@ div.leftNav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #000000;
+  color: #ffffff;
 }
 
 .work {
@@ -515,11 +485,11 @@ div.leftNav div {
 }
 
 .work h2 {
-  padding-top: 100px;
+  padding: 120px 0 40px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  color: #000000;
+  font-size: 6rem;
+  color: #0100F2;
 }
 
 .work .workSamples {
@@ -560,7 +530,7 @@ div.leftNav div {
 
 .work .workSamples .sampleTwoBox .sampleTwo {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   width: 60%;
   height: 60vh;
   margin: 20px;
@@ -581,8 +551,8 @@ div.leftNav div {
   right: -20px;
   bottom: -20px;
   background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #0100F2;
+  border: 1px solid #0100F2;
   border-radius: 50px;
   -webkit-box-shadow: 5px 5px;
           box-shadow: 5px 5px;
@@ -596,7 +566,7 @@ div.leftNav div {
 }
 
 .work .workSamples .sampleTwoBox .sampleTwo button:hover {
-  background-color: #000000;
+  background-color: #0100F2;
   color: #ffffff;
   -webkit-box-shadow: 5px 5px #F7EAC2;
           box-shadow: 5px 5px #F7EAC2;
@@ -608,7 +578,7 @@ div.leftNav div {
 
 .work .workSamples .sampleThreeBox .sampleThree {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   width: 60%;
   height: 60vh;
   margin: 20px;
@@ -621,12 +591,11 @@ div.leftNav div {
 }
 
 .skills h2 {
-  padding: 100px 0 100px 0;
+  padding: 120px 0 40px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  color: #000000;
-  padding: 100px 0 0 100px;
+  font-size: 6rem;
+  color: #0100F2;
 }
 
 .skills .skillsIcons ul {
@@ -661,17 +630,17 @@ div.leftNav div {
   width: 200px;
   height: 200px;
   padding: 150px;
-  color: #000000;
+  color: #0100F2;
 }
 
 .skills .skillsIcons ul li p {
   font-family: "Inter", sans-serif;
-  color: #000000;
+  color: #0100F2;
   padding-top: 4px;
 }
 
 .skills .skillsIcons ul li .fa-brands {
-  color: #000000;
+  color: #0100F2;
   font-size: 6rem;
 }
 
@@ -681,11 +650,11 @@ div.leftNav div {
 }
 
 .contactMe h2 {
-  padding: 100px 0 100px 0;
+  padding: 120px 0 100px 0;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 4rem;
-  color: #000000;
+  color: #0100F2;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -701,8 +670,8 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: #000000;
-  border: 1px solid #000000;
+  color: #0100F2;
+  border: 1px solid #0100F2;
   margin-bottom: 100px;
   /* togle this class using javascript */
 }
@@ -710,8 +679,8 @@ div.leftNav div {
 .contactMe .contactBox .contactRectangle {
   height: 100%;
   width: 100%;
-  background-color: #EAA27C;
-  border-right: 1px solid #000000;
+  background-color: #B2C2F6;
+  border-right: 1px solid #0100F2;
 }
 
 .contactMe .contactBox .contactBoxRight {
@@ -719,7 +688,7 @@ div.leftNav div {
   display: grid;
   overflow: hidden;
   height: 100%;
-  background-color: #F2C9B3;
+  background-color: #E9FFD6;
 }
 
 .contactMe .contactBox .front,
@@ -733,7 +702,7 @@ div.leftNav div {
 .contactMe .contactBox .front h2,
 .contactMe .contactBox .back h2,
 .contactMe .contactBox .contactThankYou h2 {
-  color: #000000;
+  color: #0100F2;
 }
 
 .contactMe .contactBox .front {
@@ -741,7 +710,7 @@ div.leftNav div {
   transition: -webkit-transform 0.8s ease;
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
-  background-color: #F2C9B3;
+  background-color: #E9FFD6;
 }
 
 .contactMe .contactBox .contactForm {
@@ -750,7 +719,7 @@ div.leftNav div {
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   z-index: 1;
-  background-color: #F2C9B3;
+  background-color: #E9FFD6;
 }
 
 .contactMe .contactBox .front.slide-up {
@@ -764,8 +733,8 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .front {
-  background-color: #F2C9B3;
-  color: #000000;
+  background-color: #E9FFD6;
+  color: #0100F2;
   display: -ms-grid;
   display: grid;
   place-items: left;
@@ -779,12 +748,12 @@ div.leftNav div {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 3rem;
-  color: #000000;
+  color: #0100F2;
 }
 
 .contactMe .contactBox .front p {
   font-family: "Inter", sans-serif;
-  color: #000000;
+  color: #0100F2;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2.5rem;
@@ -797,18 +766,18 @@ div.leftNav div {
   width: 200px;
   height: 80px;
   font-family: "Inter", sans-serif;
-  color: #000000;
+  color: #0100F2;
   font-weight: 400;
   font-size: 1rem;
   margin: 20px 0 40px 0;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #000000;
-          box-shadow: 5px 5px #000000;
+  -webkit-box-shadow: 5px 5px #0100F2;
+          box-shadow: 5px 5px #0100F2;
 }
 
 .contactMe .contactBox .front .register-button:hover {
-  background-color: #000000;
+  background-color: #0100F2;
   color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -828,7 +797,7 @@ div.leftNav div {
           align-items: left;
   border-style: none;
   padding: 50px 50px 0 50px;
-  background-color: #F2C9B3;
+  background-color: #E9FFD6;
   color: #ffffff;
 }
 
@@ -890,7 +859,7 @@ div.leftNav div {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 20px 0 40px 0;
-  background-color: #000000;
+  background-color: #0100F2;
   text-align: center;
   margin-top: 5%;
   border-radius: 50px;
@@ -900,17 +869,17 @@ div.leftNav div {
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {
   background-color: #ffffff;
-  color: #000000;
+  color: #0100F2;
   border: 1px solid #ffffff;
-  -webkit-box-shadow: 5px 5px #000000;
-          box-shadow: 5px 5px #000000;
+  -webkit-box-shadow: 5px 5px #0100F2;
+          box-shadow: 5px 5px #0100F2;
 }
 
 footer {
   margin-top: 100px;
   height: 45vh;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #0100F2;
 }
 
 footer .footerTop {
@@ -988,13 +957,13 @@ footer .footerTop .footerLeft .newsSignUp {
 }
 
 footer .footerTop .footerLeft .newsSignUp input {
-  background-color: #000000;
+  background-color: #0100F2;
   border: none;
   text-align: left;
 }
 
 footer .footerTop .footerLeft .newsSignUp .formButton {
-  background-color: #000000;
+  background-color: #0100F2;
   color: #ffffff;
   font-size: 2rem;
   text-align: right;
@@ -1090,45 +1059,36 @@ footer .footerBottom .copyright p {
 }
 
 .sectionTwo {
-  background-color: #edece8;
+  background-color: #E9FFD6;
 }
 
 .sectionFour {
   background-color: #ffffff;
-  border-bottom: 1px solid #000000;
-}
-
-.intro {
-  background: #ffffff;
-  border-bottom: 1px solid #000000;
-}
-
-.intro .spacer {
-  width: 100px;
-  border: 1px solid #ffffff;
+  border-bottom: 1px solid #0100F2;
 }
 
 .sectionOne {
   background-color: #BAD79F;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #0100F2;
 }
 
 .sectionThree {
   background-color: #ffffff;
   color: #F7EAC2;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #0100F2;
 }
 
 .spacerOne {
   height: 100px;
   background-color: #ffffff;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #0100F2;
 }
 
 .spacerTwo {
   height: 100px;
   background-color: #ffffff;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #0100F2;
+  border-bottom: 1px solid #0100F2;
 }
 
 h2, h3 {

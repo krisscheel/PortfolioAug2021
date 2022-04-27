@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $outlineColor;
+	background-color: $primaryColorOne;
 	width: 100%;
 	z-index: 10;
 	display: flex;
@@ -12,8 +12,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 48px 0 48px;
-	border-bottom: 1px solid $outlineColor;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	//border-bottom: 1px solid $outlineColor;
+	//box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	.links {
 		height: 100%;
 		justify-content: center;
@@ -28,7 +28,7 @@ header {
 		justify-content: center;
 	}
 	nav a {
-		color: $primaryColorOne;
+		color: $outlineColor;
 		font-family: $bodyFont;
 		font-weight: 300;
 		padding: 25px;
@@ -43,17 +43,16 @@ header {
 		color: $primaryColorOne;
 	}
 	.aboutMeLink, .workLink, .skillsLink, .contactMeLink {
-		background-color: $outlineColor;
-		color: $primaryColorOne;
+		background-color: $primaryColorOne;
+		color: $outlineColor;
 		transition: background-color 0.5s ease-out;
 	}
 }
 
 header.scrolled {
-	background-color: $outlineColor;
-		.aboutMeLink, .workLink, .skillsLink, .contactMeLink {
-		background-color: $outlineColor;
-		}
+	background-color: $primaryColorOne;
+	border-bottom: 1px solid $outlineColor;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	// .aboutMeLink {
 	// 	background-color: $accentColorFive;
 	// 	border-left: 1px solid $outlineColor;

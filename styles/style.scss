@@ -19,21 +19,12 @@
 }
 
 .sectionTwo {
-	background-color: $backgroundColor2;
+	background-color: $accentColorOne;
 }
 
 .sectionFour {
   background-color: $primaryColorOne;
 	border-bottom: 1px solid $outlineColor;
-}
-
-.intro {
-	background: $primaryColorOne;
-	border-bottom: 1px solid $outlineColor;
-	.spacer {
-		width: 100px;
-		border: 1px solid $primaryColorOne;
-	}
 }
 
 .sectionOne {
@@ -57,6 +48,7 @@
 	height: 100px;
 	background-color: $primaryColorOne;
 	border-top: 1px solid $outlineColor;
+	border-bottom: 1px solid $outlineColor;
 }
 
 h2, h3 {
