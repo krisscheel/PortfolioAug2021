@@ -10,7 +10,6 @@
     align-content: center;
   }
   .contactBox {
-    background-color: $primaryColorOne;
     margin: 0 100px 0 100px;
     height: 70vh;
     display: flex;
@@ -21,14 +20,17 @@
     .contactRectangle {
       height: 100%;
       width: 100%;
-      background-color: $accentColorTwo;
+      background-color: $accentColorFour;
       border-right: 1px solid $outlineColor;
+      img {
+        width: 500px;
+      }
     }
     .contactBoxRight {
       display: grid;
       overflow: hidden;
       height: 100%;
-      background-color: $accentColorOne;
+      background-color: $accentColorTwo;
     }
     .front, 
     .back,
@@ -41,12 +43,12 @@
     }
     .front {
       transition: transform 0.8s ease;
-      background-color: $accentColorOne;
+      background-color: $accentColorTwo;
     }
     .contactForm {
       transition: transform 0.8s ease;
       z-index: 1;
-      background-color: $accentColorOne;
+      background-color: $accentColorTwo;
     }
 
     /* togle this class using javascript */
@@ -59,7 +61,7 @@
     }
 
     .front {
-      background-color: $accentColorOne;;
+      background-color: $accentColorTwo;
       color: $outlineColor;
       display: grid;
       place-items: left;

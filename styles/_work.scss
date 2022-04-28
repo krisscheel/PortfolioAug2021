@@ -11,6 +11,12 @@
     font-size: 6rem;
     color: $outlineColor;
   }
+  p {
+    font-family: $bodyFont;
+    font-size: 2rem;
+    font-weight: 100;
+    color: $outlineColor;
+  }
   }
   .workSamples {
     display: flex;
@@ -18,6 +24,8 @@
     padding-top: 100px;
     .sampleOneBox {
       width: 100%;
+      border: 40px solid $accentColorTwo;
+      margin-bottom: 40px;
       .sampleOne {
       background-color: #ffffff;
       border: 1px solid #000000;
@@ -33,6 +41,8 @@
 .sampleTwoBox {
   padding-top: 100px;
   align-items: center;
+  border: 40px solid $accentColorOne;
+  margin-bottom: 40px;
     .sampleTwo {
     background-color: $primaryColorOne;
     border: 1px solid $outlineColor;
@@ -70,6 +80,8 @@
 }
 .sampleThreeBox {
   padding-top: 100px;
+  border: 40px solid $accentColorTwo;
+  margin-bottom: 40px;
   .sampleThree {
     background-color: $primaryColorOne;
     border: 1px solid $outlineColor;

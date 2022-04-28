@@ -219,7 +219,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #F1C6C0;
+  background-color: #FFFFFF;
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -276,15 +276,15 @@ header nav a {
 }
 
 header p {
-  font-family: "Fredoka One", cursive;
-  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-size: 2rem;
-  color: #F1C6C0;
+  color: #FFFFFF;
 }
 
 header.scrolled {
-  background-color: #F1C6C0;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -316,7 +316,7 @@ a {
 }
 
 .intro {
-  min-height: 95vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,8 +329,8 @@ a {
 
 .intro .rightSide {
   width: 100%;
-  padding: 14% 0 0 20%;
-  background-color: #F1C6C0;
+  padding: 14% 0 0 10%;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,9 +347,9 @@ a {
 .intro .rightSide .words h1 {
   font-size: 18rem;
   max-width: 80%;
-  padding: 2% 0 2% 0;
+  padding: 14% 0 2% 0;
   color: #0100F2;
-  font-family: "Fredoka One", cursive;
+  font-family: "Fredoka One", sans-serif;
   font-weight: 400;
 }
 
@@ -357,9 +357,10 @@ a {
   max-width: 50%;
   font-size: 3rem;
   font-family: "Inter", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: #0100F2;
   margin: 2% 0 2% 0;
+  padding-left: 20px;
   line-height: 2.8rem;
 }
 
@@ -368,7 +369,7 @@ a {
 }
 
 .intro .rightSide .graphic img {
-  width: 950px;
+  width: 1000px;
   padding-right: 80px;
 }
 
@@ -406,12 +407,12 @@ div.leftNav div {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 80vh;
-  background-color: #F1C6C0;
+  background-color: #FFFFFF;
 }
 
 .aboutMe .myPhoto {
   padding: 120px 40px 40px 140px;
-  background-color: #F1C6C0;
+  background-color: #FFFFFF;
   width: 45%;
   height: 100%;
   -webkit-box-pack: center;
@@ -440,7 +441,7 @@ div.leftNav div {
 }
 
 .aboutMe .aboutMeContent {
-  background-color: #F1C6C0;
+  background-color: #FFFFFF;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -472,7 +473,7 @@ div.leftNav div {
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks button {
-  background-color: #F1C6C0;
+  background-color: #ffffff;
   color: #0100F2;
   border: 1px solid #0100F2;
   border-radius: 50px;
@@ -515,6 +516,13 @@ div.leftNav div {
   color: #0100F2;
 }
 
+.work .recentWork p {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #0100F2;
+}
+
 .work .workSamples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +536,8 @@ div.leftNav div {
 
 .work .workSamples .sampleOneBox {
   width: 100%;
+  border: 40px solid #B2C2F6;
+  margin-bottom: 40px;
 }
 
 .work .workSamples .sampleOneBox .sampleOne {
@@ -548,6 +558,8 @@ div.leftNav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 40px solid #E9FFD6;
+  margin-bottom: 40px;
 }
 
 .work .workSamples .sampleTwoBox .sampleTwo {
@@ -596,6 +608,8 @@ div.leftNav div {
 
 .work .workSamples .sampleThreeBox {
   padding-top: 100px;
+  border: 40px solid #B2C2F6;
+  margin-bottom: 40px;
 }
 
 .work .workSamples .sampleThreeBox .sampleThree {
@@ -682,7 +696,6 @@ div.leftNav div {
 }
 
 .contactMe .contactBox {
-  background-color: #ffffff;
   margin: 0 100px 0 100px;
   height: 70vh;
   display: -webkit-box;
@@ -701,8 +714,12 @@ div.leftNav div {
 .contactMe .contactBox .contactRectangle {
   height: 100%;
   width: 100%;
-  background-color: #B2C2F6;
+  background-color: #BEA3E6;
   border-right: 1px solid #0100F2;
+}
+
+.contactMe .contactBox .contactRectangle img {
+  width: 500px;
 }
 
 .contactMe .contactBox .contactBoxRight {
@@ -710,7 +727,7 @@ div.leftNav div {
   display: grid;
   overflow: hidden;
   height: 100%;
-  background-color: #E9FFD6;
+  background-color: #B2C2F6;
 }
 
 .contactMe .contactBox .front,
@@ -732,7 +749,7 @@ div.leftNav div {
   transition: -webkit-transform 0.8s ease;
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
-  background-color: #E9FFD6;
+  background-color: #B2C2F6;
 }
 
 .contactMe .contactBox .contactForm {
@@ -741,7 +758,7 @@ div.leftNav div {
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   z-index: 1;
-  background-color: #E9FFD6;
+  background-color: #B2C2F6;
 }
 
 .contactMe .contactBox .front.slide-up {
@@ -755,7 +772,7 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .front {
-  background-color: #E9FFD6;
+  background-color: #B2C2F6;
   color: #0100F2;
   display: -ms-grid;
   display: grid;
@@ -902,8 +919,8 @@ div.leftNav div {
 footer {
   margin-top: 100px;
   height: 45vh;
-  color: #ffffff;
-  background-color: #0100F2;
+  color: #0100F2;
+  background-color: #FFFFFF;
 }
 
 footer .footerTop {
@@ -926,9 +943,9 @@ footer .footerTop .footerRight .footerLogo {
 }
 
 footer .footerTop .footerRight .footerLogo p {
-  font-family: "Fredoka One", cursive;
+  font-family: "Inter", sans-serif;
   font-size: 5rem;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft {
@@ -947,7 +964,7 @@ footer .footerTop .footerLeft {
 }
 
 footer .footerTop .footerLeft h3 {
-  color: #ffffff;
+  color: #0100F2;
   font-size: 2rem;
   font-family: "Inter", sans-serif;
   padding: 10px 0 10px 0;
@@ -960,12 +977,12 @@ footer .footerTop .footerLeft .footerPara {
 footer .footerTop .footerLeft .footerPara p {
   font-weight: 100;
   font-family: "Inter", sans-serif;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft .newsSignUp {
   width: 60%;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #0100F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -987,8 +1004,8 @@ footer .footerTop .footerLeft .newsSignUp input {
 }
 
 footer .footerTop .footerLeft .newsSignUp .formButton {
-  background-color: #0100F2;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #0100F2;
   font-size: 2rem;
   text-align: right;
   border: none;
@@ -1010,7 +1027,7 @@ footer .footerTop .footerLeft .contactLinks .fab {
   font-size: 1.8rem;
   display: inline;
   padding: 20px;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft .contactLinks .fa-github {
@@ -1018,7 +1035,7 @@ footer .footerTop .footerLeft .contactLinks .fa-github {
 }
 
 footer .footerTop .footerLeft .contactLinks a {
-  color: #ffffff;
+  color: #0100F2;
   text-decoration: none;
 }
 
@@ -1028,7 +1045,7 @@ footer .footerBottom {
 
 footer .footerBottom .copyright {
   text-align: center;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 footer .footerBottom .copyright p {
@@ -1089,18 +1106,15 @@ footer .footerBottom .copyright p {
 
 .sectionFour {
   background-color: #ffffff;
-  border-bottom: 1px solid #0100F2;
 }
 
 .sectionOne {
   background-color: #BAD79F;
-  border-bottom: 1px solid #0100F2;
 }
 
 .sectionThree {
   background-color: #ffffff;
   color: #F7EAC2;
-  border-bottom: 1px solid #0100F2;
 }
 
 h2, h3 {

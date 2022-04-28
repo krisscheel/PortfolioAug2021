@@ -1,12 +1,12 @@
 
 .intro {
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   position: relative;
     .rightSide {
       width: 100%;
-      padding: 14% 0 0 20%;
+      padding: 14% 0 0 10%;
       background-color: $accentColorThree;
       display: flex;
       flex-direction: row;
@@ -15,25 +15,26 @@
         h1 {
           font-size: 18rem;
           max-width: 80%;
-          padding: 2% 0 2% 0;
+          padding: 14% 0 2% 0;
           color: $outlineColor;
-          font-family: $logoFont;
+          font-family: $introFont;
           font-weight: 400;
         }
         p {
           max-width: 50%;
           font-size: 3rem;
           font-family: $bodyFont;
-          font-weight: 100;
+          font-weight: 300;
           color: $outlineColor;
           margin: 2% 0 2% 0;
+          padding-left: 20px;
           line-height: 2.8rem;
         }
       }
       .graphic {
         width: 50%;
         img {
-          width: 950px;
+          width: 1000px;
           padding-right: 80px;
         }
       }
