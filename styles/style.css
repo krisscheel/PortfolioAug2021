@@ -316,7 +316,7 @@ a {
 }
 
 .intro {
-  min-height: 100vh;
+  min-height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,14 +406,14 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 80vh;
+  height: 90vh;
   background-color: #FFFFFF;
 }
 
 .aboutMe .myPhoto {
   padding: 120px 40px 40px 140px;
   background-color: #FFFFFF;
-  width: 45%;
+  width: 25%;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -432,16 +432,9 @@ div.leftNav div {
   margin: 0 auto;
 }
 
-.aboutMe h2 {
-  padding: 120px 0 40px 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 4rem;
-  color: #0100F2;
-}
-
 .aboutMe .aboutMeContent {
-  background-color: #FFFFFF;
+  background-color: #E9FFD6;
+  border: 1px solid #0100F2;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -457,7 +450,17 @@ div.leftNav div {
           align-items: left;
   line-height: 2.5rem;
   color: #0100F2;
-  width: 80%;
+  width: 60%;
+  padding-left: 13%;
+}
+
+.aboutMe .aboutMeContent .aboutMeParaAndLinks h2 {
+  padding: 120px 0 40px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #0100F2;
+  line-height: 4rem;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks p {
@@ -497,7 +500,7 @@ div.leftNav div {
 }
 
 .work {
-  height: 260vh;
+  height: 300vh;
 }
 
 .work .recentWork {
@@ -621,7 +624,7 @@ div.leftNav div {
 }
 
 .skills {
-  height: 90vh;
+  height: 120vh;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -920,7 +923,8 @@ footer {
   margin-top: 100px;
   height: 45vh;
   color: #0100F2;
-  background-color: #FFFFFF;
+  background-color: #E9FFD6;
+  border-top: 1px solid #0100F2;
 }
 
 footer .footerTop {
@@ -998,13 +1002,13 @@ footer .footerTop .footerLeft .newsSignUp {
 }
 
 footer .footerTop .footerLeft .newsSignUp input {
-  background-color: #0100F2;
+  background-color: #E9FFD6;
   border: none;
   text-align: left;
 }
 
 footer .footerTop .footerLeft .newsSignUp .formButton {
-  background-color: #FFFFFF;
+  background-color: #E9FFD6;
   color: #0100F2;
   font-size: 2rem;
   text-align: right;

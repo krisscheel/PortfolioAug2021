@@ -2,7 +2,8 @@ footer {
   margin-top: 100px;
   height: 45vh;
   color: $outlineColor;
-  background-color: $accentColorThree;
+  background-color: $accentColorOne;
+  border-top: 1px solid $outlineColor;
   .footerTop {
     display: flex;
     flex-direction: row;
@@ -47,12 +48,12 @@ footer {
       font-size: 1rem;
       padding-top: 3%;
       input {
-        background-color: $outlineColor;
+        background-color: $accentColorOne;
         border: none;
         text-align: left;
       }
       .formButton {
-        background-color: $accentColorThree;
+        background-color: $accentColorOne;
         color: $outlineColor;
         font-size: 2rem;
         text-align: right;
