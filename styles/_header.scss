@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $primaryColorOne;
+	background-color: $accentColorThree;
 	width: 100%;
 	z-index: 10;
 	display: flex;
@@ -34,17 +34,17 @@ header {
 		text-align: center;
 	}
 	p {
-		font-family: $h1Font;
-		font-weight: 300;
+		font-family: $logoFont;
+		font-weight: 100;
 		font-style: normal;
-		font-size: 3rem;
-		color: $outlineColor;
+		font-size: 2rem;
+		color: $accentColorThree;
 	}
 }
 
 header.scrolled {
-	background-color: $primaryColorOne;
-	border-bottom: 1px solid $outlineColor;
+	background-color: $accentColorThree;
+	//border-bottom: 1px solid $outlineColor;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	p {
 		color: $outlineColor;

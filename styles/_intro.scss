@@ -7,41 +7,36 @@
     .rightSide {
       width: 100%;
       padding: 14% 0 0 20%;
-      background-color: $primaryColorOne;
+      background-color: $accentColorThree;
+      display: flex;
+      flex-direction: row;
+      .words {
+        width: 100%;
         h1 {
-        font-size: 30rem;
-        max-width: 80%;
-        padding: 2% 0 2% 0;
-        color: $outlineColor;
-        font-family: $h1Font;
-        font-weight: 400;
+          font-size: 18rem;
+          max-width: 80%;
+          padding: 2% 0 2% 0;
+          color: $outlineColor;
+          font-family: $logoFont;
+          font-weight: 400;
         }
         p {
-        max-width: 50%;
-        font-size: 3rem;
-        font-family: $bodyFont;
-        font-weight: 100;
-        color: $outlineColor;
-        margin: 2% 0 2% 0;
-        line-height: 2.8rem;
+          max-width: 50%;
+          font-size: 3rem;
+          font-family: $bodyFont;
+          font-weight: 100;
+          color: $outlineColor;
+          margin: 2% 0 2% 0;
+          line-height: 2.8rem;
         }
-      //   button {
-      //   background-color: $primaryColorOne;
-      //   color: $outlineColor;
-      //   border: 1px solid $outlineColor;
-      //   border-radius: 50px;
-      //   box-shadow: 5px 5px;
-      //   width: 200px;
-      //   font-size: 1rem;
-      //   margin-top: 2px;
-      //   height: 80px;
-      //   align-items: center;
-      // }
-      // button:hover {
-      //   background-color: $outlineColor;
-      //   color: $primaryColorOne;
-      //   box-shadow: 5px 5px $backgroundColor;
-      // }
+      }
+      .graphic {
+        width: 50%;
+        img {
+          width: 950px;
+          padding-right: 80px;
+        }
+      }
     }
   }
 

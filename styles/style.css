@@ -219,7 +219,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #F1C6C0;
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -276,16 +276,15 @@ header nav a {
 }
 
 header p {
-  font-family: "Quarx", sans-serif;
-  font-weight: 300;
+  font-family: "Fredoka One", cursive;
+  font-weight: 100;
   font-style: normal;
-  font-size: 3rem;
-  color: #0100F2;
+  font-size: 2rem;
+  color: #F1C6C0;
 }
 
 header.scrolled {
-  background-color: #ffffff;
-  border-bottom: 1px solid #0100F2;
+  background-color: #F1C6C0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -331,19 +330,30 @@ a {
 .intro .rightSide {
   width: 100%;
   padding: 14% 0 0 20%;
-  background-color: #ffffff;
+  background-color: #F1C6C0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.intro .rightSide h1 {
-  font-size: 30rem;
+.intro .rightSide .words {
+  width: 100%;
+}
+
+.intro .rightSide .words h1 {
+  font-size: 18rem;
   max-width: 80%;
   padding: 2% 0 2% 0;
   color: #0100F2;
-  font-family: "Quarx", sans-serif;
+  font-family: "Fredoka One", cursive;
   font-weight: 400;
 }
 
-.intro .rightSide p {
+.intro .rightSide .words p {
   max-width: 50%;
   font-size: 3rem;
   font-family: "Inter", sans-serif;
@@ -351,6 +361,15 @@ a {
   color: #0100F2;
   margin: 2% 0 2% 0;
   line-height: 2.8rem;
+}
+
+.intro .rightSide .graphic {
+  width: 50%;
+}
+
+.intro .rightSide .graphic img {
+  width: 950px;
+  padding-right: 80px;
 }
 
 div.leftNav {
@@ -387,13 +406,12 @@ div.leftNav div {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 80vh;
-  background-color: #B2C2F6;
-  border-top: 1px solid #0100F2;
+  background-color: #F1C6C0;
 }
 
 .aboutMe .myPhoto {
   padding: 120px 40px 40px 140px;
-  background-color: #B2C2F6;
+  background-color: #F1C6C0;
   width: 45%;
   height: 100%;
   -webkit-box-pack: center;
@@ -422,7 +440,7 @@ div.leftNav div {
 }
 
 .aboutMe .aboutMeContent {
-  background-color: #B2C2F6;
+  background-color: #F1C6C0;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -454,7 +472,7 @@ div.leftNav div {
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks button {
-  background-color: #B2C2F6;
+  background-color: #F1C6C0;
   color: #0100F2;
   border: 1px solid #0100F2;
   border-radius: 50px;
@@ -908,7 +926,7 @@ footer .footerTop .footerRight .footerLogo {
 }
 
 footer .footerTop .footerRight .footerLogo p {
-  font-family: "Inter", sans-serif;
+  font-family: "Fredoka One", cursive;
   font-size: 5rem;
   color: #ffffff;
 }

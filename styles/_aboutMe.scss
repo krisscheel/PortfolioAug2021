@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: row;
   height: 80vh;
-  background-color: $accentColorTwo;
-  border-top: 1px solid $outlineColor;
+  background-color: $accentColorThree;
   .myPhoto {
     padding: 120px 40px 40px 140px;
-    background-color: $accentColorTwo;
+    background-color: $accentColorThree;
     width: 45%;
     height: 100%;
     justify-content: center;
@@ -27,7 +26,7 @@
     color: $outlineColor;
   }
   .aboutMeContent {
-    background-color: $accentColorTwo;
+    background-color: $accentColorThree;
     .aboutMeParaAndLinks {
       display: flex;
       flex-direction: column;
@@ -45,7 +44,7 @@
         color: $outlineColor;
       }
       button {
-        background-color: $accentColorTwo;
+        background-color: $accentColorThree;
         color: $outlineColor;
         border: 1px solid $outlineColor;
         border-radius: 50px;
