@@ -1,11 +1,14 @@
 .work {
   height: 260vh;
-    h2 {
+  .recentWork {
+    width: 60%;
+  h2 {
     padding: 120px 0 40px 0;
     font-family: $h2Font;
     font-weight: 400;
     font-size: 6rem;
     color: $outlineColor;
+  }
   }
   .workSamples {
     display: flex;
@@ -27,7 +30,6 @@
     }
 .sampleTwoBox {
   padding-top: 100px;
-  float: right;
   align-items: center;
     .sampleTwo {
     background-color: $primaryColorOne;
@@ -35,7 +37,6 @@
     width: 60%;
     height: 60vh;
     margin: 20px;
-    float: right;
     align-items: center;
     position: relative;
     img {

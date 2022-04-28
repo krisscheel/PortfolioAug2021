@@ -9,39 +9,39 @@
       padding: 14% 0 0 20%;
       background-color: $primaryColorOne;
         h1 {
-        font-size: 10rem;
+        font-size: 30rem;
         max-width: 80%;
-        padding: 4% 0 2% 0;
+        padding: 2% 0 2% 0;
         color: $outlineColor;
         font-family: $h1Font;
         font-weight: 400;
         }
-        h2 {
+        p {
         max-width: 50%;
         font-size: 3rem;
         font-family: $bodyFont;
         font-weight: 100;
         color: $outlineColor;
-        margin: 1% 0 2% 0;
+        margin: 2% 0 2% 0;
         line-height: 2.8rem;
         }
-        button {
-        background-color: $primaryColorOne;
-        color: $outlineColor;
-        border: 1px solid $outlineColor;
-        border-radius: 50px;
-        box-shadow: 5px 5px;
-        width: 200px;
-        font-size: 1rem;
-        margin-top: 2px;
-        height: 80px;
-        align-items: center;
-      }
-      button:hover {
-        background-color: $outlineColor;
-        color: $primaryColorOne;
-        box-shadow: 5px 5px $backgroundColor;
-      }
+      //   button {
+      //   background-color: $primaryColorOne;
+      //   color: $outlineColor;
+      //   border: 1px solid $outlineColor;
+      //   border-radius: 50px;
+      //   box-shadow: 5px 5px;
+      //   width: 200px;
+      //   font-size: 1rem;
+      //   margin-top: 2px;
+      //   height: 80px;
+      //   align-items: center;
+      // }
+      // button:hover {
+      //   background-color: $outlineColor;
+      //   color: $primaryColorOne;
+      //   box-shadow: 5px 5px $backgroundColor;
+      // }
     }
   }
 
@@ -60,5 +60,5 @@ div.leftNav {
         margin: 5px 10px 0 0;
       }
       .selected {
-        background-color: $accentColorTwo !important; 
+        background-color: $outlineColor !important; 
       }

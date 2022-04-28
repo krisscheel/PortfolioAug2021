@@ -246,7 +246,6 @@ header .links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 50px;
 }
 
 header nav {
@@ -264,31 +263,24 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 35px;
 }
 
 header nav a {
   color: #0100F2;
   font-family: "Inter", sans-serif;
-  font-weight: 300;
-  padding: 25px;
+  font-weight: 100;
+  padding: 0 25px 0 25px;
   font-size: 1.5rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  text-align: center;
 }
 
 header p {
-  font-family: "Inter", sans-serif;
+  font-family: "Quarx", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 3rem;
-  color: #ffffff;
-}
-
-header .aboutMeLink, header .workLink, header .skillsLink, header .contactMeLink {
-  background-color: #ffffff;
   color: #0100F2;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
 }
 
 header.scrolled {
@@ -299,7 +291,7 @@ header.scrolled {
 }
 
 header.scrolled p {
-  color: #ffffff;
+  color: #0100F2;
 }
 
 .name {
@@ -308,14 +300,14 @@ header.scrolled p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 200px;
+  width: 600px;
 }
 
 header h1, header.name header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: "Inter", sans-serif;
+  font-family: "Quarx", sans-serif;
   color: #ffffff;
 }
 
@@ -343,45 +335,22 @@ a {
 }
 
 .intro .rightSide h1 {
-  font-size: 10rem;
+  font-size: 30rem;
   max-width: 80%;
-  padding: 4% 0 2% 0;
+  padding: 2% 0 2% 0;
   color: #0100F2;
-  font-family: "Inter", sans-serif;
+  font-family: "Quarx", sans-serif;
   font-weight: 400;
 }
 
-.intro .rightSide h2 {
+.intro .rightSide p {
   max-width: 50%;
   font-size: 3rem;
   font-family: "Inter", sans-serif;
   font-weight: 100;
   color: #0100F2;
-  margin: 1% 0 2% 0;
+  margin: 2% 0 2% 0;
   line-height: 2.8rem;
-}
-
-.intro .rightSide button {
-  background-color: #ffffff;
-  color: #0100F2;
-  border: 1px solid #0100F2;
-  border-radius: 50px;
-  -webkit-box-shadow: 5px 5px;
-          box-shadow: 5px 5px;
-  width: 200px;
-  font-size: 1rem;
-  margin-top: 2px;
-  height: 80px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.intro .rightSide button:hover {
-  background-color: #0100F2;
-  color: #ffffff;
-  -webkit-box-shadow: 5px 5px #F7EAC2;
-          box-shadow: 5px 5px #F7EAC2;
 }
 
 div.leftNav {
@@ -406,7 +375,7 @@ div.leftNav div {
 }
 
 .selected {
-  background-color: #B2C2F6 !important;
+  background-color: #0100F2 !important;
 }
 
 .aboutMe {
@@ -417,14 +386,14 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 60vh;
-  background-color: #0100F2;
+  height: 80vh;
+  background-color: #B2C2F6;
   border-top: 1px solid #0100F2;
 }
 
 .aboutMe .myPhoto {
   padding: 120px 40px 40px 140px;
-  background-color: #0100F2;
+  background-color: #B2C2F6;
   width: 45%;
   height: 100%;
   -webkit-box-pack: center;
@@ -436,7 +405,7 @@ div.leftNav div {
 }
 
 .aboutMe .myPhoto img {
-  width: 300px;
+  width: 500px;
   border-radius: 50%;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -448,12 +417,12 @@ div.leftNav div {
   padding: 120px 0 40px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 6rem;
-  color: #ffffff;
+  font-size: 4rem;
+  color: #0100F2;
 }
 
 .aboutMe .aboutMeContent {
-  background-color: #0100F2;
+  background-color: #B2C2F6;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -464,7 +433,7 @@ div.leftNav div {
       -ms-flex-align: center;
           align-items: center;
   line-height: 2.5rem;
-  color: #ffffff;
+  color: #0100F2;
   width: 80%;
 }
 
@@ -477,14 +446,41 @@ div.leftNav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #0100F2;
+}
+
+.aboutMe .aboutMeContent .aboutMeParaAndLinks button {
+  background-color: #ffffff;
+  color: #0100F2;
+  border: 1px solid #0100F2;
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+  width: 200px;
+  font-size: 1rem;
+  margin-top: 2px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .aboutMeContent .aboutMeParaAndLinks button:hover {
+  background-color: #0100F2;
   color: #ffffff;
+  -webkit-box-shadow: 5px 5px #F7EAC2;
+          box-shadow: 5px 5px #F7EAC2;
 }
 
 .work {
   height: 260vh;
 }
 
-.work h2 {
+.work .recentWork {
+  width: 60%;
+}
+
+.work .recentWork h2 {
   padding: 120px 0 40px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -522,7 +518,6 @@ div.leftNav div {
 
 .work .workSamples .sampleTwoBox {
   padding-top: 100px;
-  float: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -534,7 +529,6 @@ div.leftNav div {
   width: 60%;
   height: 60vh;
   margin: 20px;
-  float: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1040,6 +1034,11 @@ footer .footerBottom .copyright p {
   background-color: black;
 }
 
+@font-face {
+  font-family: "Quarx";
+  src: url(./fonts/quarx-webfont.woff);
+}
+
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -1058,10 +1057,6 @@ footer .footerBottom .copyright p {
   }
 }
 
-.sectionTwo {
-  background-color: #E9FFD6;
-}
-
 .sectionFour {
   background-color: #ffffff;
   border-bottom: 1px solid #0100F2;
@@ -1075,19 +1070,6 @@ footer .footerBottom .copyright p {
 .sectionThree {
   background-color: #ffffff;
   color: #F7EAC2;
-  border-bottom: 1px solid #0100F2;
-}
-
-.spacerOne {
-  height: 100px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #0100F2;
-}
-
-.spacerTwo {
-  height: 100px;
-  background-color: #ffffff;
-  border-top: 1px solid #0100F2;
   border-bottom: 1px solid #0100F2;
 }
 

@@ -1,18 +1,18 @@
 .aboutMe {
   display: flex;
   flex-direction: row;
-  height: 60vh;
-  background-color: $outlineColor;
+  height: 80vh;
+  background-color: $accentColorTwo;
   border-top: 1px solid $outlineColor;
   .myPhoto {
     padding: 120px 40px 40px 140px;
-    background-color: $outlineColor;
+    background-color: $accentColorTwo;
     width: 45%;
     height: 100%;
     justify-content: center;
     align-items: center;
     img {
-    width: 300px;
+    width: 500px;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border: 1px solid $outlineColor;
@@ -23,17 +23,17 @@
     padding: 120px 0 40px 0;
     font-family: $h2Font;
     font-weight: 400;
-    font-size: 6rem;
-    color: $primaryColorOne;
+    font-size: 4rem;
+    color: $outlineColor;
   }
   .aboutMeContent {
-    background-color: $outlineColor;
+    background-color: $accentColorTwo;
     .aboutMeParaAndLinks {
       display: flex;
       align-items: center;
       //width: 75%;
       line-height: 2.5rem;
-      color: $primaryColorOne;
+      color: $outlineColor;
       width: 80%;
       p {
         padding: 0 200px 100px 0;
@@ -42,7 +42,24 @@
         font-weight: 100;
         line-height: 3rem;
         align-items: center;
+        color: $outlineColor;
+      }
+      button {
+        background-color: $primaryColorOne;
+        color: $outlineColor;
+        border: 1px solid $outlineColor;
+        border-radius: 50px;
+        box-shadow: 5px 5px;
+        width: 200px;
+        font-size: 1rem;
+        margin-top: 2px;
+        height: 80px;
+        align-items: center;
+      }
+      button:hover {
+        background-color: $outlineColor;
         color: $primaryColorOne;
+        box-shadow: 5px 5px $backgroundColor;
       }
     }
   }

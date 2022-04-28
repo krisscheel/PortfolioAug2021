@@ -13,13 +13,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
+@font-face {
+  font-family: "Quarx";
+  src: url(./fonts/quarx-webfont.woff);
+}
+
 @keyframes fadein {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
-}
-
-.sectionTwo {
-	background-color: $accentColorOne;
 }
 
 .sectionFour {
@@ -35,19 +36,6 @@
 .sectionThree {
   background-color: $primaryColorOne;
   color: $backgroundColor;
-	border-bottom: 1px solid $outlineColor;
-}
-
-.spacerOne {
-	height: 100px;
-	background-color: $primaryColorOne;
-	border-bottom: 1px solid $outlineColor;
-}
-
-.spacerTwo {
-	height: 100px;
-	background-color: $primaryColorOne;
-	border-top: 1px solid $outlineColor;
 	border-bottom: 1px solid $outlineColor;
 }
 
