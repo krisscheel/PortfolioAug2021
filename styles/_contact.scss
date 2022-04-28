@@ -93,7 +93,7 @@
         margin: 20px 0 40px 0;
         border: 1px solid $outlineColor;
         border-radius: 50px;
-        box-shadow: 5px 5px $outlineColor;
+        box-shadow: 3px 3px $outlineColor;
       }
       .register-button:hover {
         background-color: $outlineColor;
@@ -161,7 +161,7 @@
             text-align: center;
             margin-top: 5%;
             border-radius: 50px;
-            box-shadow: 5px 5px $primaryColorOne;
+            box-shadow: 3px 3px $primaryColorOne;
             &:hover {
               background-color: $primaryColorOne;
               color: $outlineColor;

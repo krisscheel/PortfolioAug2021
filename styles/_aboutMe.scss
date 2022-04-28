@@ -30,8 +30,8 @@
     background-color: $accentColorTwo;
     .aboutMeParaAndLinks {
       display: flex;
-      align-items: center;
-      //width: 75%;
+      flex-direction: column;
+      align-items: left;
       line-height: 2.5rem;
       color: $outlineColor;
       width: 80%;
@@ -45,13 +45,16 @@
         color: $outlineColor;
       }
       button {
-        background-color: $primaryColorOne;
+        background-color: $accentColorTwo;
         color: $outlineColor;
         border: 1px solid $outlineColor;
         border-radius: 50px;
-        box-shadow: 5px 5px;
+        box-shadow: 3px 3px $outlineColor;
         width: 200px;
-        font-size: 1rem;
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+        font-weight: 100;
+        cursor: pointer;
         margin-top: 2px;
         height: 80px;
         align-items: center;
@@ -59,7 +62,6 @@
       button:hover {
         background-color: $outlineColor;
         color: $primaryColorOne;
-        box-shadow: 5px 5px $backgroundColor;
       }
     }
   }

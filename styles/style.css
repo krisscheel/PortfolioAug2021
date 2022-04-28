@@ -429,9 +429,13 @@ div.leftNav div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   line-height: 2.5rem;
   color: #0100F2;
   width: 80%;
@@ -450,14 +454,17 @@ div.leftNav div {
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks button {
-  background-color: #ffffff;
+  background-color: #B2C2F6;
   color: #0100F2;
   border: 1px solid #0100F2;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px;
-          box-shadow: 5px 5px;
+  -webkit-box-shadow: 3px 3px #0100F2;
+          box-shadow: 3px 3px #0100F2;
   width: 200px;
-  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
   margin-top: 2px;
   height: 80px;
   -webkit-box-align: center;
@@ -468,8 +475,6 @@ div.leftNav div {
 .aboutMe .aboutMeContent .aboutMeParaAndLinks button:hover {
   background-color: #0100F2;
   color: #ffffff;
-  -webkit-box-shadow: 5px 5px #F7EAC2;
-          box-shadow: 5px 5px #F7EAC2;
 }
 
 .work {
@@ -477,7 +482,11 @@ div.leftNav div {
 }
 
 .work .recentWork {
-  width: 60%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 .work .recentWork h2 {
@@ -766,8 +775,8 @@ div.leftNav div {
   margin: 20px 0 40px 0;
   border: 1px solid #0100F2;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #0100F2;
-          box-shadow: 5px 5px #0100F2;
+  -webkit-box-shadow: 3px 3px #0100F2;
+          box-shadow: 3px 3px #0100F2;
 }
 
 .contactMe .contactBox .front .register-button:hover {
@@ -857,8 +866,8 @@ div.leftNav div {
   text-align: center;
   margin-top: 5%;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #ffffff;
-          box-shadow: 5px 5px #ffffff;
+  -webkit-box-shadow: 3px 3px #ffffff;
+          box-shadow: 3px 3px #ffffff;
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {
