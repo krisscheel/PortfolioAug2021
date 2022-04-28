@@ -557,8 +557,8 @@ div.leftNav div {
   color: #0100F2;
   border: 1px solid #0100F2;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px;
-          box-shadow: 5px 5px;
+  -webkit-box-shadow: 3px 3px;
+          box-shadow: 3px 3px;
   width: 200px;
   height: 80px;
   font-size: 1rem;
@@ -569,6 +569,7 @@ div.leftNav div {
 }
 
 .work .workSamples .sampleTwoBox .sampleTwo button:hover {
+  cursor: pointer;
   background-color: #0100F2;
   color: #ffffff;
   -webkit-box-shadow: 5px 5px #F7EAC2;
@@ -784,6 +785,7 @@ div.leftNav div {
   color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: pointer;
 }
 
 .contactMe .contactBox .contactForm {
@@ -876,6 +878,7 @@ div.leftNav div {
   border: 1px solid #ffffff;
   -webkit-box-shadow: 5px 5px #0100F2;
           box-shadow: 5px 5px #0100F2;
+  cursor: pointer;
 }
 
 footer {

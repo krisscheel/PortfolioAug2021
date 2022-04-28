@@ -53,7 +53,7 @@
       color: $outlineColor;
       border: 1px solid $outlineColor;
       border-radius: 50px;
-      box-shadow: 5px 5px;
+      box-shadow: 3px 3px;
       width: 200px;
       height: 80px;
       font-size: 1rem;
@@ -61,6 +61,7 @@
       align-items: center;
     }
     button:hover {
+      cursor: pointer;
       background-color: $outlineColor;
       color: $primaryColorOne;
       box-shadow: 5px 5px $backgroundColor;

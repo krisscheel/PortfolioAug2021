@@ -99,6 +99,7 @@
         background-color: $outlineColor;
         color: $primaryColorOne;
         box-shadow: none;
+        cursor: pointer;
       }
     }
 
@@ -167,6 +168,7 @@
               color: $outlineColor;
               border: 1px solid $primaryColorOne;
               box-shadow: 5px 5px $outlineColor;
+              cursor: pointer;
             }
           }
         }
