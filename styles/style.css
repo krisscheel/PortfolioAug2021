@@ -408,6 +408,7 @@ div.leftNav div {
           flex-direction: row;
   height: 90vh;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .aboutMe .myPhoto {
@@ -497,6 +498,20 @@ div.leftNav div {
 .aboutMe .aboutMeContent .aboutMeParaAndLinks button:hover {
   background-color: #0100F2;
   color: #ffffff;
+}
+
+.aboutMe .illustration {
+  position: absolute;
+  top: 350px;
+  right: 200px;
+  height: 1600px;
+  border-radius: 50%;
+}
+
+.aboutMe .illustration img {
+  height: 35%;
+  border-radius: 50px;
+  outline: 1px solid #0100F2;
 }
 
 .work {
@@ -889,7 +904,7 @@ div.leftNav div {
   font-size: 1rem;
   padding: 0 0 0 5px;
   border-style: none;
-  color: #8b8c89;
+  color: #0100F2;
   border: 2px solid #ffffff;
 }
 
@@ -1005,6 +1020,11 @@ footer .footerTop .footerLeft .newsSignUp input {
   background-color: #E9FFD6;
   border: none;
   text-align: left;
+  color: #0100F2;
+}
+
+footer .footerTop .footerLeft .newsSignUp input .email {
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft .newsSignUp .formButton {

@@ -51,6 +51,10 @@ footer {
         background-color: $accentColorOne;
         border: none;
         text-align: left;
+        color: $outlineColor;
+        .email {
+          color: $outlineColor;
+        }
       }
       .formButton {
         background-color: $accentColorOne;

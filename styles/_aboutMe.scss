@@ -3,6 +3,8 @@
   flex-direction: row;
   height: 90vh;
   background-color: $accentColorThree;
+  position: relative;
+
   .myPhoto {
     padding: 120px 40px 40px 140px;
     background-color: $accentColorThree;
@@ -68,5 +70,19 @@
       }
     }
   }
+
+  .illustration {
+    position: absolute;
+    top: 350px;
+    right: 200px;
+    height: 1600px;
+    border-radius: 50%;
+    img {
+      height: 35%;
+      border-radius: 50px;
+      outline: 1px solid $outlineColor;
+    }
+  }
+
 }
 
