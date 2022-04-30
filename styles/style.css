@@ -285,6 +285,7 @@ header p {
 
 header.scrolled {
   background-color: #FFFFFF;
+  border-bottom: 1px solid #0100F2;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -316,7 +317,7 @@ a {
 }
 
 .intro {
-  min-height: 95vh;
+  min-height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,6 +384,7 @@ div.leftNav {
           flex-direction: column;
   position: fixed;
   padding: 500px 0 0 20px;
+  z-index: 99;
 }
 
 div.leftNav div {
@@ -422,6 +424,7 @@ div.leftNav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .aboutMe .myPhoto img {
@@ -436,6 +439,7 @@ div.leftNav div {
 .aboutMe .aboutMeContent {
   background-color: #E9FFD6;
   border: 1px solid #0100F2;
+  z-index: 9;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -506,6 +510,7 @@ div.leftNav div {
   right: 200px;
   height: 1600px;
   border-radius: 50%;
+  z-index: 11;
 }
 
 .aboutMe .illustration img {
@@ -732,12 +737,14 @@ div.leftNav div {
 .contactMe .contactBox .contactRectangle {
   height: 100%;
   width: 100%;
-  background-color: #BEA3E6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #BBA1E2), to(#BEA5E6));
+  background: linear-gradient(to bottom, #BBA1E2 20%, #BEA5E6 100%);
   border-right: 1px solid #0100F2;
+  padding-top: 10%;
 }
 
 .contactMe .contactBox .contactRectangle img {
-  width: 500px;
+  width: 100%;
 }
 
 .contactMe .contactBox .contactBoxRight {
@@ -759,7 +766,13 @@ div.leftNav div {
 .contactMe .contactBox .front h2,
 .contactMe .contactBox .back h2,
 .contactMe .contactBox .contactThankYou h2 {
+  font-family: "Inter", sans-serif;
   color: #0100F2;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  width: 60%;
+  padding-left: 50px;
 }
 
 .contactMe .contactBox .front {
@@ -886,11 +899,10 @@ div.leftNav div {
 .contactMe .contactBox .contactForm .username, .contactMe .contactBox .contactForm .email {
   height: 40px;
   width: 100%;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 0 0;
   border-style: none;
-  color: #8b8c89;
+  color: #0100F2;
   line-height: 1;
-  padding-top: 30px;
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom {
@@ -913,16 +925,17 @@ div.leftNav div {
   height: 80px;
   display: block;
   font-family: "Inter", sans-serif;
-  color: #ffffff;
+  color: #0100F2;
   font-weight: 400;
   font-size: 1.5rem;
   margin: 20px 0 40px 0;
-  background-color: #0100F2;
+  background-color: #E9FFD6;
   text-align: center;
   margin-top: 5%;
   border-radius: 50px;
-  -webkit-box-shadow: 3px 3px #ffffff;
-          box-shadow: 3px 3px #ffffff;
+  border: 1px solid #0100F2;
+  -webkit-box-shadow: 3px 3px #0100F2;
+          box-shadow: 3px 3px #0100F2;
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {

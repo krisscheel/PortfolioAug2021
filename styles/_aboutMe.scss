@@ -12,6 +12,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 10;
     img {
     width: 500px;
     border-radius: 50%;
@@ -24,6 +25,7 @@
   .aboutMeContent {
     background-color: $accentColorOne;
     border: 1px solid $outlineColor;
+    z-index: 9;
     .aboutMeParaAndLinks {
       display: flex;
       flex-direction: column;
@@ -77,6 +79,7 @@
     right: 200px;
     height: 1600px;
     border-radius: 50%;
+    z-index: 11;
     img {
       height: 35%;
       border-radius: 50px;

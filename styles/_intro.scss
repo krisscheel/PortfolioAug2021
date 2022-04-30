@@ -1,6 +1,6 @@
 
 .intro {
-  min-height: 95vh;
+  min-height: 110vh;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -46,6 +46,7 @@ div.leftNav {
         flex-direction: column;
         position: fixed;
         padding: 500px 0 0 20px;
+        z-index: 99;
       }
       div.leftNav div {
         background-color: #ffffff;

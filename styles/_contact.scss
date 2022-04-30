@@ -20,10 +20,12 @@
     .contactRectangle {
       height: 100%;
       width: 100%;
-      background-color: $accentColorFour;
+      //background-color: $accentColorFour;
+      background: linear-gradient(to bottom, $accentColorFour 20%,  #BEA5E6 100%);
       border-right: 1px solid $outlineColor;
+      padding-top: 10%;
       img {
-        width: 500px;
+        width: 100%;
       }
     }
     .contactBoxRight {
@@ -37,9 +39,14 @@
     .contactThankYou {
       grid-area: 1/1;
       h2 {
-      color: $outlineColor;
+        font-family: $bodyFont;
+        color: $outlineColor;
+        font-size: 2.5rem;
+        font-weight: 100;
+        line-height: 2.5rem;
+        width: 60%;
+        padding-left: 50px;
       }
-      
     }
     .front {
       transition: transform 0.8s ease;
@@ -133,11 +140,12 @@
         .username, .email {
           height: 40px;
           width: 100%;
-          margin: 20px 0 10px 0;
+          margin: 10px 0 0 0;
           border-style: none;
-          color: $textGrey;
+          color: $outlineColor;
           line-height: 1;
-          padding-top: 30px;
+          // padding-top: 30px;
+          // padding-bottom: 10px;
         }
         .contactFormBottom {
           padding-top: 5%;
@@ -156,15 +164,16 @@
             height: 80px;
             display: block;
             font-family: $bodyFont;
-            color: $primaryColorOne;
+            color: $outlineColor;
             font-weight: 400;
             font-size: 1.5rem;
             margin: 20px 0 40px 0;
-            background-color: $outlineColor;
+            background-color: $accentColorOne;
             text-align: center;
             margin-top: 5%;
             border-radius: 50px;
-            box-shadow: 3px 3px $primaryColorOne;
+            border: 1px solid $outlineColor;
+            box-shadow: 3px 3px $outlineColor;
             &:hover {
               background-color: $primaryColorOne;
               color: $outlineColor;

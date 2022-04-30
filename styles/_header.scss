@@ -44,7 +44,7 @@ header {
 
 header.scrolled {
 	background-color: $accentColorThree;
-	//border-bottom: 1px solid $outlineColor;
+	border-bottom: 1px solid $outlineColor;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	p {
 		color: $outlineColor;
