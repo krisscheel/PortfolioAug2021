@@ -221,7 +221,7 @@ header {
   left: 0;
   background-color: #FFFFFF;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,6 +440,7 @@ div.leftNav div {
   background-color: #E9FFD6;
   border: 1px solid #0100F2;
   z-index: 9;
+  width: 60%;
 }
 
 .aboutMe .aboutMeContent .aboutMeParaAndLinks {
@@ -521,6 +522,7 @@ div.leftNav div {
 
 .work {
   height: 300vh;
+  padding-top: 10%;
 }
 
 .work .recentWork {
@@ -948,11 +950,26 @@ div.leftNav div {
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 20%;
   height: 45vh;
   color: #0100F2;
   background-color: #E9FFD6;
   border-top: 1px solid #0100F2;
+  position: relative;
+}
+
+footer .purpleIllustration {
+  position: absolute;
+  top: -100px;
+  right: 200px;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+footer .purpleIllustration img {
+  width: 700px;
+  border-radius: 50px;
+  outline: 1px solid #0100F2;
 }
 
 footer .footerTop {
@@ -1078,6 +1095,8 @@ footer .footerTop .footerLeft .contactLinks a {
 
 footer .footerBottom {
   padding-top: 30px;
+  background-color: #E9FFD6;
+  padding-bottom: 40px;
 }
 
 footer .footerBottom .copyright {
