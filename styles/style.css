@@ -215,13 +215,13 @@ textarea {
 }
 
 header {
-  height: 120px;
+  height: 90px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #FFFFFF;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,38 +236,62 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 48px 0 48px;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+}
+
+header .links {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+}
+
+header nav a {
+  color: #0100F2;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  padding: 0 25px 0 25px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+header p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+header.scrolled {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #0100F2;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav a {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  padding: 16px;
-  font-size: 1.5rem;
-}
-
-header p {
-  font-family: "swear-display-cilati", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 5rem;
-  color: #ffffff;
-}
-
-header.scrolled {
-  background-color: #ffffff;
-}
-
-header.scrolled a {
-  color: #000000;
-}
-
 header.scrolled p {
-  color: #000000;
+  color: #0100F2;
 }
 
 .name {
@@ -276,24 +300,24 @@ header.scrolled p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 200px;
+  width: 600px;
 }
 
 header h1, header.name header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-family: "swear-display", serif;
-  color: #000000;
+  font-family: "Quarx", sans-serif;
+  color: #ffffff;
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .intro {
-  min-height: 95vh;
+  min-height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,93 +328,50 @@ a {
   position: relative;
 }
 
-.intro .introCover {
-  background-color: #ffffff;
-  position: absolute;
-  top: 25%;
-  left: 30%;
-  width: 60%;
-  height: 70%;
-  border: 1px solid #000000;
-  -webkit-box-shadow: 5px 5px;
-          box-shadow: 5px 5px;
-}
-
-.intro .introCover .rightSide {
+.intro .rightSide {
   width: 100%;
-  padding: 3% 0 0 7%;
-  background-color: #ffffff;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.intro .introCover .rightSide .leftIntro {
+  padding: 14% 0 0 10%;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.intro .introCover .rightSide .leftIntro h1 {
-  font-size: 7rem;
+.intro .rightSide .words {
+  width: 100%;
+}
+
+.intro .rightSide .words h1 {
+  font-size: 22rem;
   max-width: 80%;
-  padding: 8% 0 2% 0;
-  color: #000000;
-  font-family: "swear-display", serif;
+  padding: 14% 0 2% 0;
+  color: #BBA1E2;
+  -webkit-text-stroke: 1px #0100F2;
+  font-family: "Fredoka One", sans-serif;
   font-weight: 400;
 }
 
-.intro .introCover .rightSide .leftIntro h2 {
+.intro .rightSide .words p {
   max-width: 50%;
-  font-size: 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  color: #000000;
-  margin: 4% 0 4% 0;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: #0100F2;
+  margin: 2% 0 2% 0;
+  padding-left: 20px;
+  line-height: 2.8rem;
 }
 
-.intro .introCover .rightSide .leftIntro button {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
-  border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #000000;
-          box-shadow: 5px 5px #000000;
-  width: 150px;
-  font-size: 1rem;
-  margin-top: 20px;
-  padding-top: 10px;
-  height: 40px;
+.intro .rightSide .graphic {
+  width: 40%;
 }
 
-.intro .introCover .rightSide .leftIntro button:hover {
-  background-color: #000000;
-  color: #ffffff;
-  -webkit-box-shadow: 5px 5px #ffffff;
-          box-shadow: 5px 5px #ffffff;
-}
-
-.intro .leftSide {
-  width: 70%;
-  padding-top: 15%;
-  background-image: url(../plant5.jpeg);
-  background-position: 50% 50%;
-  background-size: cover;
-  border: 1px solid #000000;
+.intro .rightSide .graphic img {
+  padding-right: 80px;
 }
 
 div.leftNav {
@@ -402,91 +383,148 @@ div.leftNav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  padding: 100px 0 0 20px;
+  padding: 500px 0 0 20px;
+  z-index: 99;
 }
 
 div.leftNav div {
   background-color: #ffffff;
   width: 30px;
   height: 30px;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   border-radius: 50%;
   margin: 5px 10px 0 0;
 }
 
 .selected {
-  background-color: #dececb !important;
+  background-color: #0100F2 !important;
 }
 
 .aboutMe {
-  padding: 0 0 20px 100px;
+  min-height: 100vh;
+  padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .greenBox {
+  width: 100%;
+  height: 1000px;
+  background-color: #E9FFD6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 70vh;
-  background-color: #000000;
-  color: #ffffff;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  line-height: 2.5rem;
+  color: #0100F2;
+  padding-left: 13%;
 }
 
-.aboutMe img {
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 100px 0 100px 0;
-  justify-items: right;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.aboutMe h2 {
-  padding: 100px 0 30px 0;
-  font-family: "swear-display", serif;
+.aboutMe .greenBox h2 {
+  padding: 20% 0 40px 16%;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
-  color: #ffffff;
+  color: #0100F2;
+  line-height: 4rem;
 }
 
-.aboutMe .aboutMeContent {
-  padding: 0 0 0 80px;
-}
-
-.aboutMe .aboutMeContent .aboutMeParaAndLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 75%;
-  line-height: 2.5rem;
-  color: #ffffff;
-}
-
-.aboutMe .aboutMeContent .aboutMeParaAndLinks p {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+.aboutMe .greenBox p {
+  padding: 5% 200px 100px 16%;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
   font-weight: 100;
-  line-height: 2.5rem;
+  line-height: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #0100F2;
+}
+
+.aboutMe .greenBox button {
+  background-color: #ffffff;
+  color: #0100F2;
+  border: 1px solid #0100F2;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px #0100F2;
+          box-shadow: 3px 3px #0100F2;
+  width: 200px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
+  margin-top: 2px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16%;
+}
+
+.aboutMe .greenBox button:hover {
+  background-color: #0100F2;
   color: #ffffff;
+}
+
+.aboutMe div.content {
+  position: relative;
+}
+
+.aboutMe div.circle img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 120px;
+  left: -50px;
+  border-radius: 50%;
+}
+
+.aboutMe div.square img {
+  width: 500px;
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
 }
 
 .work {
-  height: 260vh;
+  height: 300vh;
+  padding-top: 10%;
 }
 
-.work h2 {
-  padding-top: 100px;
-  font-family: "swear-display", serif;
+.work .recentWork {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.work .recentWork h2 {
+  padding: 120px 0 40px 0;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  color: #000000;
+  font-size: 6rem;
+  color: #0100F2;
+}
+
+.work .recentWork p {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #0100F2;
 }
 
 .work .workSamples {
@@ -502,6 +540,8 @@ div.leftNav div {
 
 .work .workSamples .sampleOneBox {
   width: 100%;
+  border: 40px solid #B2C2F6;
+  margin-bottom: 40px;
 }
 
 .work .workSamples .sampleOneBox .sampleOne {
@@ -513,30 +553,72 @@ div.leftNav div {
 }
 
 .work .workSamples .sampleOneBox .sampleOne img {
-  width: 400px;
+  width: 800px;
   padding: 10px;
 }
 
 .work .workSamples .sampleTwoBox {
   padding-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 40px solid #E9FFD6;
+  margin-bottom: 40px;
 }
 
 .work .workSamples .sampleTwoBox .sampleTwo {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   width: 60%;
   height: 60vh;
   margin: 20px;
-  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo img {
+  width: 800px;
+  padding: 10px;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo button {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  background-color: #ffffff;
+  color: #0100F2;
+  border: 1px solid #0100F2;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px;
+          box-shadow: 3px 3px;
+  width: 200px;
+  height: 80px;
+  font-size: 1rem;
+  margin-top: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work .workSamples .sampleTwoBox .sampleTwo button:hover {
+  cursor: pointer;
+  background-color: #0100F2;
+  color: #ffffff;
+  -webkit-box-shadow: 5px 5px #F7EAC2;
+          box-shadow: 5px 5px #F7EAC2;
 }
 
 .work .workSamples .sampleThreeBox {
   padding-top: 100px;
+  border: 40px solid #B2C2F6;
+  margin-bottom: 40px;
 }
 
 .work .workSamples .sampleThreeBox .sampleThree {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid #0100F2;
   width: 60%;
   height: 60vh;
   margin: 20px;
@@ -549,12 +631,11 @@ div.leftNav div {
 }
 
 .skills h2 {
-  padding: 100px 0 100px 0;
-  font-family: "swear-display", serif;
+  padding: 120px 0 40px 0;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  color: #ffffff;
-  padding: 100px 0 0 100px;
+  font-size: 6rem;
+  color: #0100F2;
 }
 
 .skills .skillsIcons ul {
@@ -568,7 +649,7 @@ div.leftNav div {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .skills .skillsIcons ul li {
@@ -589,17 +670,17 @@ div.leftNav div {
   width: 200px;
   height: 200px;
   padding: 150px;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 .skills .skillsIcons ul li p {
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
   padding-top: 4px;
 }
 
 .skills .skillsIcons ul li .fa-brands {
-  color: #ffffff;
+  color: #0100F2;
   font-size: 6rem;
 }
 
@@ -609,17 +690,16 @@ div.leftNav div {
 }
 
 .contactMe h2 {
-  padding: 100px 0 100px 0;
-  font-family: "swear-display", serif;
-  font-weight: 400;
+  padding: 120px 0 100px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   font-size: 4rem;
-  color: #000000;
+  color: #0100F2;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .contactMe .contactBox {
-  background-color: #000000;
   margin: 0 100px 0 100px;
   height: 70vh;
   display: -webkit-box;
@@ -629,24 +709,31 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: #ffffff;
-  border: 1px solid #000000;
-  -webkit-box-shadow: -5px -5px;
-          box-shadow: -5px -5px;
+  color: #0100F2;
+  border: 1px solid #0100F2;
+  margin-bottom: 100px;
   /* togle this class using javascript */
 }
 
-.contactMe .contactBox img {
+.contactMe .contactBox .contactRectangle {
   height: 100%;
-  border: 1px solid #000000;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #BBA1E2), to(#BEA5E6));
+  background: linear-gradient(to bottom, #BBA1E2 20%, #BEA5E6 100%);
+  border-right: 1px solid #0100F2;
+  padding-top: 10%;
+}
+
+.contactMe .contactBox .contactRectangle img {
+  width: 100%;
 }
 
 .contactMe .contactBox .contactBoxRight {
   display: -ms-grid;
   display: grid;
   overflow: hidden;
-  border: 1px solid #000000;
   height: 100%;
+  background-color: #B2C2F6;
 }
 
 .contactMe .contactBox .front,
@@ -660,7 +747,13 @@ div.leftNav div {
 .contactMe .contactBox .front h2,
 .contactMe .contactBox .back h2,
 .contactMe .contactBox .contactThankYou h2 {
-  color: white;
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  width: 60%;
+  padding-left: 50px;
 }
 
 .contactMe .contactBox .front {
@@ -668,6 +761,7 @@ div.leftNav div {
   transition: -webkit-transform 0.8s ease;
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  background-color: #B2C2F6;
 }
 
 .contactMe .contactBox .contactForm {
@@ -676,6 +770,7 @@ div.leftNav div {
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   z-index: 1;
+  background-color: #B2C2F6;
 }
 
 .contactMe .contactBox .front.slide-up {
@@ -689,8 +784,8 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .front {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #B2C2F6;
+  color: #0100F2;
   display: -ms-grid;
   display: grid;
   place-items: left;
@@ -701,15 +796,15 @@ div.leftNav div {
 
 .contactMe .contactBox .front h3 {
   padding: 50px 0 0 0;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 3rem;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 .contactMe .contactBox .front p {
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2.5rem;
@@ -718,25 +813,26 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .front .register-button {
-  background-color: #000000;
-  width: 150px;
-  height: 40px;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  background-color: #ffffff;
+  width: 200px;
+  height: 80px;
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
   font-weight: 400;
   font-size: 1rem;
   margin: 20px 0 40px 0;
-  border: 1px solid #ffffff;
+  border: 1px solid #0100F2;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #ffffff;
-          box-shadow: 5px 5px #ffffff;
+  -webkit-box-shadow: 3px 3px #0100F2;
+          box-shadow: 3px 3px #0100F2;
 }
 
 .contactMe .contactBox .front .register-button:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #0100F2;
+  color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: pointer;
 }
 
 .contactMe .contactBox .contactForm {
@@ -753,8 +849,8 @@ div.leftNav div {
           align-items: left;
   border-style: none;
   padding: 50px 50px 0 50px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #E9FFD6;
+  color: #ffffff;
 }
 
 .contactMe .contactBox .contactForm .contactFormTop {
@@ -770,25 +866,24 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .contactForm .contactFormTop label {
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
 }
 
 .contactMe .contactBox .contactForm .contactFormTop .nameField, .contactMe .contactBox .contactForm .contactFormTop .emailField {
   margin: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #ffffff;
 }
 
 .contactMe .contactBox .contactForm .username, .contactMe .contactBox .contactForm .email {
   height: 40px;
   width: 100%;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 0 0;
   border-style: none;
-  color: #8b8c89;
+  color: #0100F2;
   line-height: 1;
-  padding-top: 30px;
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom {
@@ -798,43 +893,62 @@ div.leftNav div {
 .contactMe .contactBox .contactForm .contactFormBottom textarea {
   width: 50%;
   height: 100px;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   padding: 0 0 0 5px;
   border-style: none;
-  color: #8b8c89;
-  border: 2px solid #000000;
+  color: #0100F2;
+  border: 2px solid #ffffff;
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton {
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 80px;
   display: block;
-  font-family: "Poppins", sans-serif;
-  color: #000000;
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
   font-weight: 400;
   font-size: 1.5rem;
   margin: 20px 0 40px 0;
-  background-color: #ffffff;
+  background-color: #E9FFD6;
   text-align: center;
   margin-top: 5%;
   border-radius: 50px;
-  -webkit-box-shadow: 5px 5px #000000;
-          box-shadow: 5px 5px #000000;
+  border: 1px solid #0100F2;
+  -webkit-box-shadow: 3px 3px #0100F2;
+          box-shadow: 3px 3px #0100F2;
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border: 1px solid #000000;
-  -webkit-box-shadow: 5px 5px #ffffff;
-          box-shadow: 5px 5px #ffffff;
+  background-color: #ffffff;
+  color: #0100F2;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 5px 5px #0100F2;
+          box-shadow: 5px 5px #0100F2;
+  cursor: pointer;
 }
 
 footer {
-  margin-top: 100px;
-  height: 70vh;
-  color: #ffffff;
+  margin-top: 20%;
+  height: 45vh;
+  color: #0100F2;
+  background-color: #E9FFD6;
+  border-top: 1px solid #0100F2;
+  position: relative;
+}
+
+footer .purpleIllustration {
+  position: absolute;
+  top: -100px;
+  right: 200px;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+footer .purpleIllustration img {
+  width: 700px;
+  border-radius: 50px;
+  outline: 1px solid #0100F2;
 }
 
 footer .footerTop {
@@ -857,9 +971,9 @@ footer .footerTop .footerRight .footerLogo {
 }
 
 footer .footerTop .footerRight .footerLogo p {
-  font-family: "swear-display-cilati", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 5rem;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft {
@@ -878,9 +992,9 @@ footer .footerTop .footerLeft {
 }
 
 footer .footerTop .footerLeft h3 {
-  color: #ffffff;
+  color: #0100F2;
   font-size: 2rem;
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   padding: 10px 0 10px 0;
 }
 
@@ -890,12 +1004,13 @@ footer .footerTop .footerLeft .footerPara {
 
 footer .footerTop .footerLeft .footerPara p {
   font-weight: 100;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft .newsSignUp {
   width: 60%;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #0100F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,14 +1026,19 @@ footer .footerTop .footerLeft .newsSignUp {
 }
 
 footer .footerTop .footerLeft .newsSignUp input {
-  background-color: #000000;
+  background-color: #E9FFD6;
   border: none;
   text-align: left;
+  color: #0100F2;
+}
+
+footer .footerTop .footerLeft .newsSignUp input .email {
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft .newsSignUp .formButton {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #E9FFD6;
+  color: #0100F2;
   font-size: 2rem;
   text-align: right;
   border: none;
@@ -940,7 +1060,7 @@ footer .footerTop .footerLeft .contactLinks .fab {
   font-size: 1.8rem;
   display: inline;
   padding: 20px;
-  color: #ffffff;
+  color: #0100F2;
 }
 
 footer .footerTop .footerLeft .contactLinks .fa-github {
@@ -948,20 +1068,23 @@ footer .footerTop .footerLeft .contactLinks .fa-github {
 }
 
 footer .footerTop .footerLeft .contactLinks a {
-  color: #ffffff;
+  color: #0100F2;
   text-decoration: none;
 }
 
 footer .footerBottom {
-  padding-top: 100px;
+  padding-top: 30px;
+  background-color: #E9FFD6;
+  padding-bottom: 40px;
 }
 
 footer .footerBottom .copyright {
   text-align: center;
+  color: #0100F2;
 }
 
 footer .footerBottom .copyright p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 100;
   font-size: 1rem;
 }
@@ -987,6 +1110,17 @@ footer .footerBottom .copyright p {
   }
 }
 
+.dataVisOne {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Quarx";
+  src: url(./fonts/quarx-webfont.woff);
+}
+
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -1005,21 +1139,8 @@ footer .footerBottom .copyright p {
   }
 }
 
-.sectionTwo, .sectionFour {
-  background-color: #ffffff;
-}
-
-.intro {
-  background: linear-gradient(45deg, #dececb, #ffffff);
-}
-
-.sectionOne, .sectionThree, footer {
-  background-color: #000000;
-  color: #ffffff;
-}
-
 h2, h3 {
-  font-family: "swear-display", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
 
@@ -1059,7 +1180,7 @@ div.stamps img {
 }
 
 .wrapper {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
   max-width: 1600px;
 }

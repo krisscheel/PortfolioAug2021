@@ -17,6 +17,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Work+Sans&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
   <!--Rubik fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
@@ -28,22 +32,29 @@
 
 <!--Adobe Fonts-->
 <link rel="stylesheet" href="https://use.typekit.net/ysd7khj.css">
-<link rel="stylesheet" href="https://use.typekit.net/ysd7khj.css">
   
   <title>Kristen Scheel</title>
 </head>
 
 <header>
   <div class="name">
-    <p>KS</p>
+    <p>KRISTEN SCHEEL</p>
   </div>
 
   <!--top navigation-->
   <nav>
-        <a href="#aboutMe">ABOUT</a>
-        <a href="#work">WORK</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#contactMe">CONTACT</a>
+    <div class=" links aboutMeLink">
+      <a href="#aboutMe">ABOUT</a>
+    </div>
+    <div class="links workLink">
+      <a href="#work">WORK</a>
+    </div>
+    <div class="links skillsLink">
+      <a href="#skills">SKILLS</a> 
+    </div>
+    <div class="links contactMeLink">
+      <a href="#contactMe">CONTACT</a>
+    </div>
   </nav>
 
 </header>
@@ -51,25 +62,21 @@
 <!--scroll progress bar
 <div class="progress"></div>
 -->
-
 <body>
 
   <section class="intro" data-sect="0">
 
-    <div class="introCover">
-      <div class="rightSide">
-        <div class="leftIntro">
-          <h1>Kristen Scheel</h1>
-          <h2>Freelance web developer based in Ottawa, Canada.</h2>
-          <button class="workWithMe">work with me
-            <i class="fa-thin fa-arrow-right-long"></i>
-          </button>
-        </div>
+    <div class="rightSide">
+      <div class="words">
+        <h1>HELLO.</h1>
+        <p>Nice to meet you.</p>
+      </div>
+      <div class="graphic">
+        <!-- <img src="computer.jpg"> -->
       </div>
     </div>
 
-    <div class="leftSide">
-      <!--left side navigation-->
+    <!--left side navigation-->
       <div class="leftNav">
         <div class="selected circle" data-circle="0"></div>
         <div class="circle" data-circle="1"></div>
@@ -78,29 +85,39 @@
         <div class="circle" data-circle="4"></div>
       </div>
 
-    </div>
-
-
-</section>
+  </section>
  
   <main>
+
     <!--ABOUT ME section-->
     <section class="sectionOne" data-sect="1">
-      <div class="aboutMe wrapper" id="aboutMe">
-        <img src="Kristen_web_B&W.png">
-        <div class="aboutMeContent">
-          <h2>About Me</h2>
-          <div class="aboutMeParaAndLinks">
-          <p>I'm a front-end web developer who loves smart, accessible design. I specialize in using digital media to tell compelling stories.</p>
-        </div>
-      </div>
+
+      <div class="aboutMe" id="aboutMe">
+
+        <div class="content">
+    <div class="circle" data-parallax="0.25">
+      <img src="Kristen_web_B&W.png">
     </div>
-  </section>
+    <div class="greenBox">
+      <h2>Let's get to know each other.</h2>
+      <p>I'm a front-end web developer based in Ottawa, Canada. I specialize in data visualization.</p>
+      <button class="workWithMe">work with me</button>
+    </div>
+    <div class="square" data-parallax="-0.4">
+      <img src="computer.jpg">
+    </div>
+  </div>
+</section>
 
     <!--WORK section-->
     <section class="sectionTwo" data-sect="2">
       <div class="work wrapper" id="work">
-        <h2>Featured Projects</h2>
+
+        <div class="recentWork">
+          <h2>My recent work</h2>
+          <p>Here's a sample of some project's i've been working on. You cand find more of my projects on Git Hub.</p>
+        </div>
+        
         <div class="workSamples">
 
           <div class="sampleOneBox">
@@ -110,7 +127,13 @@
           </div>
 
           <div class="sampleTwoBox">
-            <div class="sampleTwo"></div>
+            <div class="sampleTwo">
+              <img src="mockupTemp.png">
+              <a href="https://">
+                <button class="dataVis">more data vis</button>
+              </a> 
+            </div>
+
           </div>
         
           <div class="sampleThreeBox">
@@ -177,8 +200,9 @@
       <div class="contactMe wrapper" id="contactMe">
         <h2>Contact Me</h2>
         <div class="contactBox">
-          <img src="minimal1.jpeg">
-
+          <div class="contactRectangle">
+            <img src="email.jpeg">
+          </div>
           <div class="contactBoxRight">
             
             <div class="rightFormOverlay front">
@@ -205,9 +229,8 @@
             </div>
 
             <div id="contactThankYou" class="contactThankYou">
-              <h2>Thank you for submitting!</h2>
+              <h2>Thanks for reaching out!</h2>
             </div>
-
   </div>
   </div>
 </section>
@@ -219,7 +242,11 @@
   <!--Footer-->
   <footer>
 
-    <div class="footerTop">
+    <div class="purpleIllustration">
+      <img src="purpleComputer.jpg">
+    </div>
+
+      <div class="footerTop">
       <div class="footerLeft">
         <div class="footerPara">
           <h3>SIGN UP</h3>
@@ -244,16 +271,16 @@
         </div>
       </div>
       
-      <div class="footerRight">
+      <!-- <div class="footerRight">
         <div class="footerLogo">
           <p>KS</p>
         </div>
-      </div>
+      </div> -->
     </div>
 
       <div class="footerBottom">
         <div class="copyright">
-          <p>Copyright © 2021 Kristen Scheel</p>
+          <p>Copyright © 2022 Kristen Scheel</p>
         </div>
       </div>
       
@@ -261,7 +288,8 @@
 
 </body>
 
-<script src="scroll.js"></script>
+<!-- <script src="scroll.js"></script> -->
+<script src="parallax.js"></script>
 <script src="animation.js"></script>
   <!--<script src="stamps.js"></script>-->
 <script src="register.js"></script>

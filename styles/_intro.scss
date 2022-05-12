@@ -1,93 +1,61 @@
 
 .intro {
-  min-height: 95vh;
+  min-height: 110vh;
   display: flex;
   flex-direction: row;
   position: relative;
-  .introCover {
-    background-color: $backgroundColor;
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    width: 60%;
-    height: 70%;
-    border: 1px solid $primaryColorOne;
-    box-shadow: 5px 5px;
     .rightSide {
       width: 100%;
-      padding: 3% 0 0 7%;
-      background-color: $backgroundColor;
-      align-items: left;
-      justify-content: left;
-      .leftIntro {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
+      padding: 14% 0 0 10%;
+      background-color: $accentColorThree;
+      display: flex;
+      flex-direction: row;
+      .words {
+        width: 100%;
         h1 {
-        font-size: 7rem;
-        max-width: 80%;
-        padding: 8% 0 2% 0;
-        color: $primaryColorOne;
-        font-family: $h1Font;
-        font-weight: 400;
+          font-size: 22rem;
+          max-width: 80%;
+          padding: 14% 0 2% 0;
+          color: $accentColorFour;
+          -webkit-text-stroke: 1px $outlineColor;
+          font-family: $introFont;
+          font-weight: 400;
         }
-        h2 {
-        max-width: 50%;
-        font-size: 2rem;
-        font-family: $bodyFont;
-        font-weight: 100;
-        color: $primaryColorOne;
-        margin: 4% 0 4% 0;
-        line-height: 2.5rem;
+        p {
+          max-width: 50%;
+          font-size: 3rem;
+          font-family: $bodyFont;
+          font-weight: 300;
+          color: $outlineColor;
+          margin: 2% 0 2% 0;
+          padding-left: 20px;
+          line-height: 2.8rem;
         }
-        button {
-        background-color: $backgroundColor;
-        color: $primaryColorOne;
-        border: 1px solid $primaryColorOne;
-        border-radius: 50px;
-        box-shadow: 5px 5px $primaryColorOne;
-        width: 150px;
-        font-size: 1rem;
-        margin-top: 20px;
-        padding-top: 10px;
-        height: 40px;
       }
-      button:hover {
-        background-color: $primaryColorOne;
-        color: $backgroundColor;
-        box-shadow: 5px 5px $backgroundColor;
+      .graphic {
+        width: 40%;
+        img {
+          padding-right: 80px;
+        }
       }
     }
   }
-}
-  .leftSide {
-  width: 70%;
-  padding-top: 15%;
-  background-image: url(../plant5.jpeg);
-  background-position: 50% 50%;
-  background-size: cover;
-  border: 1px solid $primaryColorOne;
-  }
-}
 
 div.leftNav {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  padding: 100px 0 0 20px;
-}
-
-div.leftNav div {
-  background-color: #ffffff;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  margin: 5px 10px 0 0;
-}
-
-.selected {
-  background-color: $accentColorOne !important; 
-}
-
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding: 500px 0 0 20px;
+        z-index: 99;
+      }
+      div.leftNav div {
+        background-color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $outlineColor;
+        border-radius: 50%;
+        margin: 5px 10px 0 0;
+      }
+      .selected {
+        background-color: $outlineColor !important; 
+      }

@@ -8,26 +8,19 @@
 @import 'contact';
 @import 'footer';
 @import 'mediaQueries';
+@import 'dataVis';
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
+@font-face {
+  font-family: "Quarx";
+  src: url(./fonts/quarx-webfont.woff);
+}
+
 @keyframes fadein {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
-}
-
-.sectionTwo, .sectionFour {
-  background-color: $backgroundColor;
-}
-
-.intro {
-	background: linear-gradient(45deg, $accentColorOne, $backgroundColor);
-}
-
-.sectionOne, .sectionThree, footer {
-  background-color: $primaryColorOne;
-  color: $backgroundColor;
 }
 
 h2, h3 {
@@ -53,7 +46,7 @@ div.stamps img {
 }
 
 .wrapper {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
   max-width: 1600px;
 }

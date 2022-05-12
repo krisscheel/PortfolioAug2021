@@ -1,48 +1,61 @@
 .contactMe {
-  background-color: $backgroundColor;
+  background-color: $primaryColorOne;
   margin: 200px;
   h2 {
-    padding: 100px 0 100px 0;
+    padding: 120px 0 100px 0;
     font-family: $h2Font;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 4rem;
-    color: $primaryColorOne;
+    color: $outlineColor;
     align-content: center;
   }
   .contactBox {
-    background-color: $primaryColorOne;
     margin: 0 100px 0 100px;
     height: 70vh;
     display: flex;
     flex-direction: row;
-    color: $backgroundColor;
-    border: 1px solid $primaryColorOne;
-    box-shadow: -5px -5px;
-    img {
+    color: $outlineColor;
+    border: 1px solid $outlineColor;
+    margin-bottom: 100px;
+    .contactRectangle {
       height: 100%;
-      border: 1px solid $primaryColorOne;
+      width: 100%;
+      //background-color: $accentColorFour;
+      background: linear-gradient(to bottom, $accentColorFour 20%,  #BEA5E6 100%);
+      border-right: 1px solid $outlineColor;
+      padding-top: 10%;
+      img {
+        width: 100%;
+      }
     }
     .contactBoxRight {
       display: grid;
       overflow: hidden;
-      border: 1px solid $primaryColorOne;
       height: 100%;
+      background-color: $accentColorTwo;
     }
     .front, 
     .back,
     .contactThankYou {
       grid-area: 1/1;
       h2 {
-      color: white;
+        font-family: $bodyFont;
+        color: $outlineColor;
+        font-size: 2.5rem;
+        font-weight: 100;
+        line-height: 2.5rem;
+        width: 60%;
+        padding-left: 50px;
       }
-      
     }
     .front {
       transition: transform 0.8s ease;
+      background-color: $accentColorTwo;
     }
     .contactForm {
       transition: transform 0.8s ease;
       z-index: 1;
+      background-color: $accentColorTwo;
     }
 
     /* togle this class using javascript */
@@ -55,8 +68,8 @@
     }
 
     .front {
-      background-color: $primaryColorOne;
-      color: $backgroundColor;
+      background-color: $accentColorTwo;
+      color: $outlineColor;
       display: grid;
       place-items: left;
       z-index: 2;
@@ -67,11 +80,11 @@
         font-family: $h2Font;
         font-weight: 400;
         font-size: 3rem;
-        color: $backgroundColor;
+        color: $outlineColor;
         }
         p {
         font-family: $bodyFont;
-        color: $backgroundColor;
+        color: $outlineColor;
         font-size: 1.5rem;
         font-weight: 100;
         line-height: 2.5rem;
@@ -80,21 +93,22 @@
         }
       .register-button {
         background-color: $primaryColorOne;
-        width: 150px;
-        height: 40px;
+        width: 200px;
+        height: 80px;
         font-family: $bodyFont;
-        color: $backgroundColor;
+        color: $outlineColor;
         font-weight: 400;
         font-size: 1rem;
         margin: 20px 0 40px 0;
-        border: 1px solid $backgroundColor;
+        border: 1px solid $outlineColor;
         border-radius: 50px;
-        box-shadow: 5px 5px $backgroundColor;
+        box-shadow: 3px 3px $outlineColor;
       }
       .register-button:hover {
-        background-color: $backgroundColor;
+        background-color: $outlineColor;
         color: $primaryColorOne;
         box-shadow: none;
+        cursor: pointer;
       }
     }
 
@@ -105,7 +119,7 @@
       align-items: left;
       border-style: none;
       padding: 50px 50px 0 50px;
-      background-color: $backgroundColor;
+      background-color: $accentColorOne;
       color: $primaryColorOne;
       .contactFormTop {
         width: 50%;
@@ -126,11 +140,12 @@
         .username, .email {
           height: 40px;
           width: 100%;
-          margin: 20px 0 10px 0;
+          margin: 10px 0 0 0;
           border-style: none;
-          color: $textGrey;
+          color: $outlineColor;
           line-height: 1;
-          padding-top: 30px;
+          // padding-top: 30px;
+          // padding-bottom: 10px;
         }
         .contactFormBottom {
           padding-top: 5%;
@@ -141,28 +156,30 @@
             font-size: 1rem;
             padding: 0 0 0 5px;
             border-style: none;
-            color: $textGrey;
+            color: $outlineColor;
             border: 2px solid $primaryColorOne;
           }
           .submitButton {
-            width: 150px;
-            height: 40px;
+            width: 200px;
+            height: 80px;
             display: block;
             font-family: $bodyFont;
-            color: $primaryColorOne;
+            color: $outlineColor;
             font-weight: 400;
             font-size: 1.5rem;
             margin: 20px 0 40px 0;
-            background-color: $backgroundColor;
+            background-color: $accentColorOne;
             text-align: center;
             margin-top: 5%;
             border-radius: 50px;
-            box-shadow: 5px 5px $primaryColorOne;
+            border: 1px solid $outlineColor;
+            box-shadow: 3px 3px $outlineColor;
             &:hover {
               background-color: $primaryColorOne;
-              color: $backgroundColor;
+              color: $outlineColor;
               border: 1px solid $primaryColorOne;
-              box-shadow: 5px 5px $backgroundColor;
+              box-shadow: 5px 5px $outlineColor;
+              cursor: pointer;
             }
           }
         }
