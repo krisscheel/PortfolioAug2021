@@ -346,10 +346,11 @@ a {
 }
 
 .intro .rightSide .words h1 {
-  font-size: 18rem;
+  font-size: 22rem;
   max-width: 80%;
   padding: 14% 0 2% 0;
-  color: #0100F2;
+  color: #BBA1E2;
+  -webkit-text-stroke: 1px #0100F2;
   font-family: "Fredoka One", sans-serif;
   font-weight: 400;
 }
@@ -366,11 +367,10 @@ a {
 }
 
 .intro .rightSide .graphic {
-  width: 50%;
+  width: 40%;
 }
 
 .intro .rightSide .graphic img {
-  width: 1000px;
   padding-right: 80px;
 }
 
@@ -401,49 +401,23 @@ div.leftNav div {
 }
 
 .aboutMe {
+  min-height: 100vh;
+  padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 90vh;
-  background-color: #FFFFFF;
-  position: relative;
-}
-
-.aboutMe .myPhoto {
-  padding: 120px 40px 40px 140px;
-  background-color: #FFFFFF;
-  width: 25%;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
 }
 
-.aboutMe .myPhoto img {
-  width: 500px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #0100F2;
-  margin: 0 auto;
-}
-
-.aboutMe .aboutMeContent {
+.aboutMe .greenBox {
+  width: 100%;
+  height: 1000px;
   background-color: #E9FFD6;
-  border: 1px solid #0100F2;
-  z-index: 9;
-  width: 60%;
-}
-
-.aboutMe .aboutMeContent .aboutMeParaAndLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,12 +430,11 @@ div.leftNav div {
           align-items: left;
   line-height: 2.5rem;
   color: #0100F2;
-  width: 60%;
   padding-left: 13%;
 }
 
-.aboutMe .aboutMeContent .aboutMeParaAndLinks h2 {
-  padding: 120px 0 40px 0;
+.aboutMe .greenBox h2 {
+  padding: 20% 0 40px 16%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
@@ -469,8 +442,8 @@ div.leftNav div {
   line-height: 4rem;
 }
 
-.aboutMe .aboutMeContent .aboutMeParaAndLinks p {
-  padding: 0 200px 100px 0;
+.aboutMe .greenBox p {
+  padding: 5% 200px 100px 16%;
   font-family: "Inter", sans-serif;
   font-size: 2.5rem;
   font-weight: 100;
@@ -481,7 +454,7 @@ div.leftNav div {
   color: #0100F2;
 }
 
-.aboutMe .aboutMeContent .aboutMeParaAndLinks button {
+.aboutMe .greenBox button {
   background-color: #ffffff;
   color: #0100F2;
   border: 1px solid #0100F2;
@@ -498,26 +471,32 @@ div.leftNav div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 16%;
 }
 
-.aboutMe .aboutMeContent .aboutMeParaAndLinks button:hover {
+.aboutMe .greenBox button:hover {
   background-color: #0100F2;
   color: #ffffff;
 }
 
-.aboutMe .illustration {
-  position: absolute;
-  top: 350px;
-  right: 200px;
-  height: 1600px;
-  border-radius: 50%;
-  z-index: 11;
+.aboutMe div.content {
+  position: relative;
 }
 
-.aboutMe .illustration img {
-  height: 35%;
-  border-radius: 50px;
-  outline: 1px solid #0100F2;
+.aboutMe div.circle img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 120px;
+  left: -50px;
+  border-radius: 50%;
+}
+
+.aboutMe div.square img {
+  width: 500px;
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
 }
 
 .work {
@@ -1158,19 +1137,6 @@ footer .footerBottom .copyright p {
   100% {
     opacity: 1;
   }
-}
-
-.sectionFour {
-  background-color: #ffffff;
-}
-
-.sectionOne {
-  background-color: #BAD79F;
-}
-
-.sectionThree {
-  background-color: #ffffff;
-  color: #F7EAC2;
 }
 
 h2, h3 {
