@@ -1,12 +1,12 @@
 
 
-const sections = document.querySelectorAll("section");
+const parallaxSections = document.querySelectorAll("section");
 
 document.addEventListener("scroll", function () {
   const topViewport = window.pageYOffset;
   const midViewport = topViewport + window.innerHeight / 2;
 
-  sections.forEach((section) => {
+  parallaxSections.forEach((section) => {
     const topSection = section.offsetTop;
     const midSection = topSection + section.offsetHeight / 2;
 

@@ -2,15 +2,16 @@
   background-color: $primaryColorOne;
   margin: 200px;
   h2 {
-    padding: 120px 0 100px 0;
+    padding: 0 0 100px 0;
     font-family: $h2Font;
-    font-weight: 600;
-    font-size: 4rem;
+    font-weight: 400;
+    font-size: 6rem;
     color: $outlineColor;
     align-content: center;
   }
   .contactBox {
     margin: 0 100px 0 100px;
+    border-radius: 50px;
     height: 70vh;
     display: flex;
     flex-direction: row;
@@ -18,6 +19,7 @@
     border: 1px solid $outlineColor;
     margin-bottom: 100px;
     .contactRectangle {
+      border-radius: 50px 0 0 50px;
       height: 100%;
       width: 100%;
       background: linear-gradient(to bottom, $accentColorFour 20%,  #BEA5E6 100%);
@@ -28,6 +30,7 @@
       }
     }
     .contactBoxRight {
+      border-radius: 0 50px 50px 0;
       display: grid;
       overflow: hidden;
       height: 100%;
@@ -44,7 +47,7 @@
         font-weight: 100;
         line-height: 2.5rem;
         width: 60%;
-        padding-left: 50px;
+        padding: 100px 0 0 100px;
       }
     }
     .front {
@@ -55,6 +58,10 @@
       transition: transform 0.8s ease;
       z-index: 1;
       background-color: $accentColorTwo;
+      ::-webkit-input-placeholder {
+        color: $outlineColor;
+        opacity: 0.5;
+      }
     }
 
     /* togle this class using javascript */
@@ -143,8 +150,6 @@
           border-style: none;
           color: $outlineColor;
           line-height: 1;
-          // padding-top: 30px;
-          // padding-bottom: 10px;
         }
         .contactFormBottom {
           padding-top: 5%;

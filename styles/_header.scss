@@ -24,6 +24,10 @@ header {
 		align-items: center;
 		justify-content: center;
 		padding-top: 35px;
+		.contactMeLink {
+			border: 1px solid $outlineColor;
+			border-radius: 50px;
+		}
 	}
 	nav a {
 		color: $outlineColor;
@@ -31,7 +35,7 @@ header {
 		font-weight: 100;
 		padding: 0 25px 0 25px;
 		font-size: 1.5rem;
-		text-align: center;
+		text-align: center;  
 	}
 	p {
 		font-family: $logoFont;

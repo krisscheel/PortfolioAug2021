@@ -10,11 +10,11 @@ footer {
   .purpleIllustration {
     position: absolute;
     top: -100px;
-    right: 200px;
+    right: 300px;
     border-radius: 50%;
     z-index: 11;
     img {
-      width: 700px;
+      width: 500px;
       border-radius: 50px;
       outline: 1px solid $outlineColor;
     }
@@ -52,6 +52,7 @@ footer {
       font-weight: 100;
       font-family: $bodyFont;
       color: $outlineColor;
+      line-height: 1.5;
       }
     }
     .newsSignUp {
@@ -62,14 +63,16 @@ footer {
       justify-content: space-between;
       font-size: 1rem;
       padding-top: 3%;
+      ::-webkit-input-placeholder {
+        color: $outlineColor;
+        font-weight: 100;
+        opacity: 0.5;
+      }
       input {
         background-color: $accentColorOne;
         border: none;
         text-align: left;
         color: $outlineColor;
-        .email {
-          color: $outlineColor;
-        }
       }
       .formButton {
         background-color: $accentColorOne;

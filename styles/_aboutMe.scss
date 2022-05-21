@@ -15,43 +15,49 @@
   line-height: 2.5rem;
   color: $outlineColor;
   padding-left: 13%;
-  h2 {
-    padding: 20% 0 40px 16%;
-    font-family: $h2Font;
-    font-weight: 400;
-    font-size: 4rem;
-    color: $outlineColor;
-    line-height: 4rem;
-  }
-  p {
-    padding: 5% 200px 100px 16%;
-    font-family: $bodyFont;
-    font-size: 2.5rem;
-    font-weight: 100;
-    line-height: 3rem;
-    align-items: center;
-    color: $outlineColor;
-    }
-      button {
-        background-color: $primaryColorOne;
+  border: 1px solid $outlineColor;
+  border-radius: 50px;
+  .greenBoxContent {
+    padding-left: 8%;
+    width: 70%;
+      h2 {
+        padding: 20% 0 40px 16%;
+        font-family: $h2Font;
+        font-weight: 400;
+        font-size: 4rem;
         color: $outlineColor;
-        border: 1px solid $outlineColor;
-        border-radius: 50px;
-        box-shadow: 3px 3px $outlineColor;
-        width: 200px;
+        line-height: 4rem;
+      }
+      p {
+        padding: 5% 200px 100px 16%;
         font-family: $bodyFont;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: 100;
-        cursor: pointer;
-        margin-top: 2px;
-        height: 80px;
+        line-height: 3rem;
         align-items: center;
-        margin-left: 16%;
-      }
-      button:hover {
-        background-color: $outlineColor;
-        color: $primaryColorOne;
-      }
+        color: $outlineColor;
+        }
+        button {
+          background-color: $primaryColorOne;
+          color: $outlineColor;
+          border: 1px solid $outlineColor;
+          border-radius: 50px;
+          box-shadow: 3px 3px $outlineColor;
+          width: 200px;
+          font-family: $bodyFont;
+          font-size: 1.5rem;
+          font-weight: 100;
+          cursor: pointer;
+          margin-top: 2px;
+          height: 80px;
+          align-items: center;
+          margin-left: 16%;
+        }
+        button:hover {
+          background-color: $outlineColor;
+          color: $primaryColorOne;
+        }
+    }
 }
 
   div.content {
@@ -59,18 +65,21 @@
   }
 
   div.circle img {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: absolute;
     top: 120px;
     left: -50px;
     border-radius: 50%;
+    border: 1px solid $outlineColor;
   }
 
   div.square img {
-    width: 500px;
+    width: 600px;
     position: absolute;
     bottom: 50px;
     right: -50px;
+    border: 1px solid $outlineColor;
+    border-radius: 50px;
   }
 }

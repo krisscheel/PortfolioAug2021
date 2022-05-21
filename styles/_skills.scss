@@ -1,8 +1,8 @@
 .skills {
-  height: 120vh;
+  height: 100vh;
   align-content: center;
     h2 {
-    padding: 120px 0 40px 0;
+    padding: 0 0 40px 0;
     font-family: $h2Font;
     font-weight: 400;
     font-size: 6rem;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     margin: 100px auto;
     li {
     display: flex;
@@ -22,7 +22,7 @@
     text-align: center;
     width: 200px;
     height: 200px;
-    padding: 150px;
+    padding: 180px;
     color: $outlineColor;
     p {
       font-family: $bodyFont;

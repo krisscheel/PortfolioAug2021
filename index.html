@@ -68,9 +68,16 @@
 
     <div class="rightSide">
       <div class="words">
-        <h1>HELLO.</h1>
+        <span style="--i:1">H</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">L</span>
+        <span style="--i:5">L</span>
+        <span style="--i:6">O</span>
         <p>Nice to meet you.</p>
       </div>
+        <!-- <h1>HELLO.</h1> -->
+        
+      
       <div class="graphic">
         <!-- <img src="computer.jpg"> -->
       </div>
@@ -99,9 +106,11 @@
       <img src="Kristen_web_B&W.png">
     </div>
     <div class="greenBox">
+      <div class="greenBoxContent">
       <h2>Let's get to know each other.</h2>
-      <p>I'm a front-end web developer based in Ottawa, Canada. I specialize in data visualization.</p>
+      <p>I'm a front-end web developer based in Ottawa, Canada. I specialize in data visualization and svg aninimation.</p>
       <button class="workWithMe">work with me</button>
+      </div>
     </div>
     <div class="square" data-parallax="-0.4">
       <img src="computer.jpg">
@@ -115,31 +124,47 @@
 
         <div class="recentWork">
           <h2>My recent work</h2>
-          <p>Here's a sample of some project's i've been working on. You cand find more of my projects on Git Hub.</p>
+          <p>Here's a few of the projects I've completed recently. You cand find more of my work on <a href="https://github.com/krisscheel">GitHub</a>.</p>
         </div>
         
         <div class="workSamples">
 
-          <div class="sampleOneBox">
-            <div class="sampleOne">
-              <img src="mockup1.jpg">
+          <a href="" target="_blank" class="zoom">
+            <div class="sample sampleOneBox">
+              <div class="sampleOne">
+                <img src="mockup1.jpg">
+                <div class="description">
+                  <h3>Data Visualization</p>
+                  <p>What's the best city in Canada to raise a family?</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="sampleTwoBox">
-            <div class="sampleTwo">
-              <img src="mockupTemp.png">
-              <a href="https://">
-                <button class="dataVis">more data vis</button>
-              </a> 
+          <a href="" target="_blank" class="zoom">
+            <div class="sample sampleTwoBox">
+              <div class="sampleTwo">
+                <img src="mockupTemp.png">
+                <div class="description">
+                  <h3>100 Days of Typography</p>
+                  <p>In this project I showcase creativity and web design skills.</p>
+                </div>
+              </div>
             </div>
-
-          </div>
+          </a>
         
-          <div class="sampleThreeBox">
-            <div class="sampleThree"></div>
+          <a href="" target="_blank" class="zoom">
+            <div class="sample sampleThreeBox">
+              <div class="sampleThree">
+                <img src="mockup1.jpg">
+                <div class="description">
+                  <h3>Bookshelf</p>
+                  <p>Bookshelf app created fully in React. Lorem Ipsum Bookshelf project.</p>
+              </div>
+            </div>
           </div>
-          
+          </a>
+
         </div>      
       </div>
     </section>
@@ -223,7 +248,7 @@
                   </div>
                 </div>
                 <div class="contactFormBottom">
-                  <textarea name="comment" cols="55" rows="10" id="comment">Message</textarea>
+                  <textarea name="comment" cols="55" rows="10" id="comment" placeholder="Message"></textarea>
                   <button id="contactSubmit" class="submitButton">submit</button>
                 </div>
             </div>
@@ -250,13 +275,13 @@
       <div class="footerLeft">
         <div class="footerPara">
           <h3>SIGN UP</h3>
-          <p>Recieve monthly updates on the projects I'm working on.</p>
+          <p>Recieve monthly updates about projects I'm working on, and other things I'm interested in.</p>
         </div>
       
         <div class="footerForm">
           <form action="https://formspree.io/mqkyvaoa" method="POST">
             <div class="newsSignUp">
-              <input type="email" name="email" placeholder=" Email address" id="email" class="email">
+              <input type="email" name="email" placeholder="Email address" id="email" class="email">
               <button class="formButton">
                 <i class="fa-thin fa-arrow-right"></i>
               </button>
@@ -290,11 +315,12 @@
 
 <script src="scroll.js"></script> 
 <script src="parallax.js"></script>
+
 <script src="animation.js"></script>
   <!--<script src="stamps.js"></script>-->
 <script src="register.js"></script>
 <!-- <script src="background.js"></script>  -->
-<script src="form.js"></script>
+g<script src="form.js"></script>
 
 
 </html>

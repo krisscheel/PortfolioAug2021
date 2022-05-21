@@ -266,6 +266,11 @@ header nav {
   padding-top: 35px;
 }
 
+header nav .contactMeLink {
+  border: 1px solid #0100F2;
+  border-radius: 50px;
+}
+
 header nav a {
   color: #0100F2;
   font-family: "Inter", sans-serif;
@@ -328,6 +333,46 @@ a {
   position: relative;
 }
 
+.intro .words {
+  padding-top: 10%;
+  position: relative;
+  font-size: 16rem;
+}
+
+.intro .words span {
+  font-family: "Fredoka One", sans-serif;
+  color: #BBA1E2;
+  -webkit-text-stroke: 1px #0100F2;
+  position: relative;
+  display: inline-block;
+  -webkit-animation: words 2s 1;
+          animation: words 2s 1;
+  -webkit-animation-delay: calc(.2s * var(--i));
+          animation-delay: calc(.2s * var(--i));
+}
+
+@-webkit-keyframes words {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes words {
+  0%, 40%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
 .intro .rightSide {
   width: 100%;
   padding: 14% 0 0 10%;
@@ -343,16 +388,6 @@ a {
 
 .intro .rightSide .words {
   width: 100%;
-}
-
-.intro .rightSide .words h1 {
-  font-size: 22rem;
-  max-width: 80%;
-  padding: 14% 0 2% 0;
-  color: #BBA1E2;
-  -webkit-text-stroke: 1px #0100F2;
-  font-family: "Fredoka One", sans-serif;
-  font-weight: 400;
 }
 
 .intro .rightSide .words p {
@@ -431,9 +466,16 @@ div.leftNav div {
   line-height: 2.5rem;
   color: #0100F2;
   padding-left: 13%;
+  border: 1px solid #0100F2;
+  border-radius: 50px;
 }
 
-.aboutMe .greenBox h2 {
+.aboutMe .greenBox .greenBoxContent {
+  padding-left: 8%;
+  width: 70%;
+}
+
+.aboutMe .greenBox .greenBoxContent h2 {
   padding: 20% 0 40px 16%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -442,7 +484,7 @@ div.leftNav div {
   line-height: 4rem;
 }
 
-.aboutMe .greenBox p {
+.aboutMe .greenBox .greenBoxContent p {
   padding: 5% 200px 100px 16%;
   font-family: "Inter", sans-serif;
   font-size: 2.5rem;
@@ -454,7 +496,7 @@ div.leftNav div {
   color: #0100F2;
 }
 
-.aboutMe .greenBox button {
+.aboutMe .greenBox .greenBoxContent button {
   background-color: #ffffff;
   color: #0100F2;
   border: 1px solid #0100F2;
@@ -474,7 +516,7 @@ div.leftNav div {
   margin-left: 16%;
 }
 
-.aboutMe .greenBox button:hover {
+.aboutMe .greenBox .greenBoxContent button:hover {
   background-color: #0100F2;
   color: #ffffff;
 }
@@ -484,24 +526,41 @@ div.leftNav div {
 }
 
 .aboutMe div.circle img {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   position: absolute;
   top: 120px;
   left: -50px;
   border-radius: 50%;
+  border: 1px solid #0100F2;
 }
 
 .aboutMe div.square img {
-  width: 500px;
+  width: 600px;
   position: absolute;
   bottom: 50px;
   right: -50px;
+  border: 1px solid #0100F2;
+  border-radius: 50px;
 }
 
 .work {
-  height: 300vh;
-  padding-top: 10%;
+  height: 100vh;
+  width: 100%;
+}
+
+.work a {
+  color: #0100F2;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  width: 95%;
+}
+
+.work a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .work .recentWork {
@@ -513,7 +572,7 @@ div.leftNav div {
 }
 
 .work .recentWork h2 {
-  padding: 120px 0 40px 0;
+  padding-bottom: 40px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 6rem;
@@ -528,6 +587,30 @@ div.leftNav div {
 }
 
 .work .workSamples {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%;
+}
+
+.work .workSamples a {
+  width: 30%;
+}
+
+.work .workSamples .sample {
+  height: 80%;
+  border: 1px solid #0100F2;
+  border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,103 +618,42 @@ div.leftNav div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 100px;
+  background-color: #B2C2F6;
 }
 
-.work .workSamples .sampleOneBox {
-  width: 100%;
-  border: 40px solid #B2C2F6;
-  margin-bottom: 40px;
+.work .workSamples .sample img {
+  max-width: 100%;
+  height: 40%;
 }
 
-.work .workSamples .sampleOneBox .sampleOne {
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  width: 60%;
-  height: 60vh;
-  margin: 20px;
+.work .workSamples .sample .description {
+  height: 50%;
+  padding: 30px;
 }
 
-.work .workSamples .sampleOneBox .sampleOne img {
-  width: 800px;
-  padding: 10px;
-}
-
-.work .workSamples .sampleTwoBox {
-  padding-top: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 40px solid #E9FFD6;
-  margin-bottom: 40px;
-}
-
-.work .workSamples .sampleTwoBox .sampleTwo {
-  background-color: #ffffff;
-  border: 1px solid #0100F2;
-  width: 60%;
-  height: 60vh;
-  margin: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.work .workSamples .sampleTwoBox .sampleTwo img {
-  width: 800px;
-  padding: 10px;
-}
-
-.work .workSamples .sampleTwoBox .sampleTwo button {
-  position: absolute;
-  right: -20px;
-  bottom: -20px;
-  background-color: #ffffff;
+.work .workSamples .sample .description h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
   color: #0100F2;
-  border: 1px solid #0100F2;
-  border-radius: 50px;
-  -webkit-box-shadow: 3px 3px;
-          box-shadow: 3px 3px;
-  width: 200px;
-  height: 80px;
-  font-size: 1rem;
-  margin-top: 2px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.work .workSamples .sampleTwoBox .sampleTwo button:hover {
-  cursor: pointer;
-  background-color: #0100F2;
-  color: #ffffff;
-  -webkit-box-shadow: 5px 5px #F7EAC2;
-          box-shadow: 5px 5px #F7EAC2;
-}
-
-.work .workSamples .sampleThreeBox {
-  padding-top: 100px;
-  border: 40px solid #B2C2F6;
-  margin-bottom: 40px;
-}
-
-.work .workSamples .sampleThreeBox .sampleThree {
-  background-color: #ffffff;
-  border: 1px solid #0100F2;
-  width: 60%;
-  height: 60vh;
-  margin: 20px;
+.work .workSamples .sample .description p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #0100F2;
+  padding-top: 10px;
 }
 
 .skills {
-  height: 120vh;
+  height: 100vh;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .skills h2 {
-  padding: 120px 0 40px 0;
+  padding: 0 0 40px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 6rem;
@@ -648,7 +670,7 @@ div.leftNav div {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   margin: 100px auto;
 }
 
@@ -669,7 +691,7 @@ div.leftNav div {
   text-align: center;
   width: 200px;
   height: 200px;
-  padding: 150px;
+  padding: 180px;
   color: #0100F2;
 }
 
@@ -690,10 +712,10 @@ div.leftNav div {
 }
 
 .contactMe h2 {
-  padding: 120px 0 100px 0;
+  padding: 0 0 100px 0;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 4rem;
+  font-weight: 400;
+  font-size: 6rem;
   color: #0100F2;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -701,6 +723,7 @@ div.leftNav div {
 
 .contactMe .contactBox {
   margin: 0 100px 0 100px;
+  border-radius: 50px;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -716,6 +739,7 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .contactRectangle {
+  border-radius: 50px 0 0 50px;
   height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #BBA1E2), to(#BEA5E6));
@@ -729,6 +753,7 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .contactBoxRight {
+  border-radius: 0 50px 50px 0;
   display: -ms-grid;
   display: grid;
   overflow: hidden;
@@ -753,7 +778,7 @@ div.leftNav div {
   font-weight: 100;
   line-height: 2.5rem;
   width: 60%;
-  padding-left: 50px;
+  padding: 100px 0 0 100px;
 }
 
 .contactMe .contactBox .front {
@@ -771,6 +796,11 @@ div.leftNav div {
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
   z-index: 1;
   background-color: #B2C2F6;
+}
+
+.contactMe .contactBox .contactForm ::-webkit-input-placeholder {
+  color: #0100F2;
+  opacity: 0.5;
 }
 
 .contactMe .contactBox .front.slide-up {
@@ -940,13 +970,13 @@ footer {
 footer .purpleIllustration {
   position: absolute;
   top: -100px;
-  right: 200px;
+  right: 300px;
   border-radius: 50%;
   z-index: 11;
 }
 
 footer .purpleIllustration img {
-  width: 700px;
+  width: 500px;
   border-radius: 50px;
   outline: 1px solid #0100F2;
 }
@@ -1006,6 +1036,7 @@ footer .footerTop .footerLeft .footerPara p {
   font-weight: 100;
   font-family: "Inter", sans-serif;
   color: #0100F2;
+  line-height: 1.5;
 }
 
 footer .footerTop .footerLeft .newsSignUp {
@@ -1025,14 +1056,16 @@ footer .footerTop .footerLeft .newsSignUp {
   padding-top: 3%;
 }
 
+footer .footerTop .footerLeft .newsSignUp ::-webkit-input-placeholder {
+  color: #0100F2;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
 footer .footerTop .footerLeft .newsSignUp input {
   background-color: #E9FFD6;
   border: none;
   text-align: left;
-  color: #0100F2;
-}
-
-footer .footerTop .footerLeft .newsSignUp input .email {
   color: #0100F2;
 }
 
