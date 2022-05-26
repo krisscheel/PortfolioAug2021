@@ -264,11 +264,7 @@ header nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 35px;
-}
-
-header nav .contactMeLink {
-  border: 1px solid #0100F2;
-  border-radius: 50px;
+  text-align: center;
 }
 
 header nav a {
@@ -277,7 +273,11 @@ header nav a {
   font-weight: 100;
   padding: 0 25px 0 25px;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: middle;
+}
+
+header nav a:hover {
+  font-weight: 400;
 }
 
 header p {
@@ -322,7 +322,7 @@ a {
 }
 
 .intro {
-  min-height: 110vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,14 +334,14 @@ a {
 }
 
 .intro .words {
-  padding-top: 10%;
+  padding-top: 3%;
   position: relative;
-  font-size: 16rem;
 }
 
 .intro .words span {
   font-family: "Fredoka One", sans-serif;
   color: #BBA1E2;
+  font-size: 26rem;
   -webkit-text-stroke: 1px #0100F2;
   position: relative;
   display: inline-block;
@@ -401,14 +401,6 @@ a {
   line-height: 2.8rem;
 }
 
-.intro .rightSide .graphic {
-  width: 40%;
-}
-
-.intro .rightSide .graphic img {
-  padding-right: 80px;
-}
-
 div.leftNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,7 +428,7 @@ div.leftNav div {
 }
 
 .aboutMe {
-  min-height: 100vh;
+  height: 110vh;
   padding: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,7 +443,7 @@ div.leftNav div {
 
 .aboutMe .greenBox {
   width: 100%;
-  height: 1000px;
+  height: 90%;
   background-color: #E9FFD6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -471,12 +463,11 @@ div.leftNav div {
 }
 
 .aboutMe .greenBox .greenBoxContent {
-  padding-left: 8%;
-  width: 70%;
+  width: 80%;
+  padding: 10% 10% 10% 10%;
 }
 
 .aboutMe .greenBox .greenBoxContent h2 {
-  padding: 20% 0 40px 16%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4rem;
@@ -485,7 +476,7 @@ div.leftNav div {
 }
 
 .aboutMe .greenBox .greenBoxContent p {
-  padding: 5% 200px 100px 16%;
+  margin-top: 50px;
   font-family: "Inter", sans-serif;
   font-size: 2.5rem;
   font-weight: 100;
@@ -508,12 +499,11 @@ div.leftNav div {
   font-size: 1.5rem;
   font-weight: 100;
   cursor: pointer;
-  margin-top: 2px;
   height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 16%;
+  margin-top: 50px;
 }
 
 .aboutMe .greenBox .greenBoxContent button:hover {
@@ -526,26 +516,26 @@ div.leftNav div {
 }
 
 .aboutMe div.circle img {
-  width: 450px;
-  height: 450px;
+  width: 360px;
+  height: 360px;
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: -50px;
   border-radius: 50%;
   border: 1px solid #0100F2;
 }
 
 .aboutMe div.square img {
-  width: 600px;
+  width: 400px;
   position: absolute;
-  bottom: 50px;
+  bottom: 150px;
   right: -50px;
   border: 1px solid #0100F2;
   border-radius: 50px;
 }
 
 .work {
-  height: 100vh;
+  height: 130vh;
   width: 100%;
 }
 
@@ -584,6 +574,7 @@ div.leftNav div {
   font-size: 2rem;
   font-weight: 100;
   color: #0100F2;
+  width: 60%;
 }
 
 .work .workSamples {
@@ -622,8 +613,11 @@ div.leftNav div {
 }
 
 .work .workSamples .sample img {
-  max-width: 100%;
+  width: 100%;
   height: 40%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom: 1px solid #0100F2;
 }
 
 .work .workSamples .sample .description {
@@ -689,6 +683,10 @@ div.leftNav div {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
   width: 200px;
   height: 200px;
   padding: 180px;
@@ -706,9 +704,13 @@ div.leftNav div {
   font-size: 6rem;
 }
 
+.skills .skillsIcons ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .contactMe {
   background-color: #ffffff;
-  margin: 200px;
 }
 
 .contactMe h2 {
@@ -774,9 +776,9 @@ div.leftNav div {
 .contactMe .contactBox .contactThankYou h2 {
   font-family: "Inter", sans-serif;
   color: #0100F2;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 100;
-  line-height: 2.5rem;
+  line-height: 4rem;
   width: 60%;
   padding: 100px 0 0 100px;
 }
@@ -902,6 +904,15 @@ div.leftNav div {
   margin: 0;
 }
 
+.contactMe .contactBox .contactForm .contactFormTop .contactInfo p {
+  font-family: "Inter", sans-serif;
+  color: #0100F2;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  padding-bottom: 10px;
+}
+
 .contactMe .contactBox .contactForm .contactFormTop .nameField, .contactMe .contactBox .contactForm .contactFormTop .emailField {
   margin: 0;
   border-bottom: 2px solid #ffffff;
@@ -940,7 +951,7 @@ div.leftNav div {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 20px 0 40px 0;
-  background-color: #E9FFD6;
+  background-color: #ffffff;
   text-align: center;
   margin-top: 5%;
   border-radius: 50px;
@@ -950,9 +961,9 @@ div.leftNav div {
 }
 
 .contactMe .contactBox .contactForm .contactFormBottom .submitButton:hover {
-  background-color: #ffffff;
-  color: #0100F2;
-  border: 1px solid #ffffff;
+  background-color: #0100F2;
+  color: #ffffff;
+  border: 1px solid #0100F2;
   -webkit-box-shadow: 5px 5px #0100F2;
           box-shadow: 5px 5px #0100F2;
   cursor: pointer;

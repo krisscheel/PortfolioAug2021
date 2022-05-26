@@ -1,23 +1,24 @@
 
 .intro {
-  min-height: 110vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   position: relative;
   .words {
-    padding-top: 10%;
+    padding-top: 3%;
     position: relative;
-    font-size: 16rem;
   }
   .words span {
     font-family: $introFont;
     color: $accentColorFour;
+    font-size: 26rem;
     -webkit-text-stroke: 1px $outlineColor;
     position: relative;
     display: inline-block;
     animation: words 2s 1;
     animation-delay: calc(.2s * var(--i));
 }
+
 @keyframes words {
   0%,40%,100% {
     transform: translateY(0)
@@ -34,15 +35,6 @@
       flex-direction: row;
       .words {
         width: 100%;
-        // h1 {
-        //   font-size: 22rem;
-        //   max-width: 80%;
-        //   padding: 14% 0 2% 0;
-        //   color: $accentColorFour;
-        //   -webkit-text-stroke: 1px $outlineColor;
-        //   font-family: $introFont;
-        //   font-weight: 400;
-        // }
         p {
           max-width: 50%;
           font-size: 3rem;
@@ -53,15 +45,9 @@
           padding-left: 20px;
           line-height: 2.8rem;
         }
-      }
-      .graphic {
-        width: 40%;
-        img {
-          padding-right: 80px;
-        }
-      }
     }
   }
+}
 
 div.leftNav {
         display: flex;

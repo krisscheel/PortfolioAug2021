@@ -1,6 +1,5 @@
 .contactMe {
   background-color: $primaryColorOne;
-  margin: 200px;
   h2 {
     padding: 0 0 100px 0;
     font-family: $h2Font;
@@ -43,9 +42,9 @@
       h2 {
         font-family: $bodyFont;
         color: $outlineColor;
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: 100;
-        line-height: 2.5rem;
+        line-height: 4rem;
         width: 60%;
         padding: 100px 0 0 100px;
       }
@@ -138,6 +137,14 @@
           color: $primaryColorOne;
           margin: 0;
         }
+        .contactInfo p {
+          font-family: $bodyFont;
+          color: $outlineColor;
+          font-size: 1.5rem;
+          font-weight: 100;
+          line-height: 2.5rem;
+          padding-bottom: 10px;
+        }
         .nameField, .emailField {
           margin: 0;
           border-bottom: 2px solid $primaryColorOne;
@@ -172,16 +179,16 @@
             font-weight: 400;
             font-size: 1.5rem;
             margin: 20px 0 40px 0;
-            background-color: $accentColorOne;
+            background-color: $primaryColorOne;
             text-align: center;
             margin-top: 5%;
             border-radius: 50px;
             border: 1px solid $outlineColor;
             box-shadow: 3px 3px $outlineColor;
             &:hover {
-              background-color: $primaryColorOne;
-              color: $outlineColor;
-              border: 1px solid $primaryColorOne;
+              background-color: $outlineColor;
+              color: $primaryColorOne;
+              border: 1px solid $outlineColor;
               box-shadow: 5px 5px $outlineColor;
               cursor: pointer;
             }
