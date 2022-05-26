@@ -509,6 +509,8 @@ div.leftNav div {
 .aboutMe .greenBox .greenBoxContent button:hover {
   background-color: #0100F2;
   color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .aboutMe div.content {
@@ -534,8 +536,25 @@ div.leftNav div {
   border-radius: 50px;
 }
 
+@media (max-width: 1900px) {
+  .aboutMe .greenBox .greenBoxContent {
+    width: 60%;
+    padding-left: 10%;
+  }
+  .aboutMe .greenBox .greenBoxContent h2 {
+    font-size: 3rem;
+  }
+  .aboutMe div.circle img {
+    width: 300px;
+    height: 300px;
+  }
+  .aboutMe div.square img {
+    width: 300px;
+  }
+}
+
 .work {
-  height: 130vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -575,6 +594,10 @@ div.leftNav div {
   font-weight: 100;
   color: #0100F2;
   width: 60%;
+}
+
+.work .recentWork p a {
+  text-decoration: underline;
 }
 
 .work .workSamples {
@@ -641,7 +664,7 @@ div.leftNav div {
 }
 
 .skills {
-  height: 100vh;
+  height: 80vh;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -689,7 +712,7 @@ div.leftNav div {
   transition: transform .2s, -webkit-transform .2s;
   width: 200px;
   height: 200px;
-  padding: 180px;
+  padding: 20px 180px 20px 180px;
   color: #0100F2;
 }
 
@@ -964,8 +987,8 @@ div.leftNav div {
   background-color: #0100F2;
   color: #ffffff;
   border: 1px solid #0100F2;
-  -webkit-box-shadow: 5px 5px #0100F2;
-          box-shadow: 5px 5px #0100F2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: pointer;
 }
 
@@ -987,7 +1010,7 @@ footer .purpleIllustration {
 }
 
 footer .purpleIllustration img {
-  width: 500px;
+  width: 400px;
   border-radius: 50px;
   outline: 1px solid #0100F2;
 }

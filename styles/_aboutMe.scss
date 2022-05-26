@@ -54,6 +54,7 @@
         button:hover {
           background-color: $outlineColor;
           color: $primaryColorOne;
+          box-shadow: none;
         }
     }
 }
@@ -80,4 +81,26 @@
     border: 1px solid $outlineColor;
     border-radius: 50px;
   }
+}
+
+@media (max-width: 1900px) {
+  .aboutMe {
+    .greenBox {
+      .greenBoxContent {
+        width: 60%;
+        padding-left: 10%;
+        h2 {
+          font-size: 3rem;
+        }
+    }
+  }
+    div.circle img {
+    width: 300px;
+    height: 300px;
+  }
+    div.square img {
+    width: 300px;
+  }
+}
+
 }

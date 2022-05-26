@@ -1,5 +1,5 @@
 .skills {
-  height: 100vh;
+  height: 80vh;
   align-content: center;
     h2 {
     padding: 0 0 40px 0;
@@ -23,7 +23,7 @@
     transition: transform .2s; 
     width: 200px;
     height: 200px;
-    padding: 180px;
+    padding: 20px 180px 20px 180px;
     color: $outlineColor;
     p {
       font-family: $bodyFont;
