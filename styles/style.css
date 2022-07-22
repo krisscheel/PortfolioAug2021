@@ -536,23 +536,6 @@ div.leftNav div {
   border-radius: 50px;
 }
 
-@media (max-width: 1900px) {
-  .aboutMe .greenBox .greenBoxContent {
-    width: 60%;
-    padding-left: 10%;
-  }
-  .aboutMe .greenBox .greenBoxContent h2 {
-    font-size: 3rem;
-  }
-  .aboutMe div.circle img {
-    width: 300px;
-    height: 300px;
-  }
-  .aboutMe div.square img {
-    width: 300px;
-  }
-}
-
 .work {
   height: 90vh;
   width: 100%;
@@ -1174,6 +1157,29 @@ footer .footerBottom .copyright p {
   }
   .skills .skillsIcons ul {
     width: 100%;
+  }
+}
+
+@media (max-width: 1900px) {
+  .aboutMe .greenBox .greenBoxContent {
+    width: 90%;
+    padding-left: 10%;
+  }
+  .aboutMe .greenBox .greenBoxContent h2 {
+    font-size: 3rem;
+  }
+  .aboutMe div.circle img {
+    width: 300px;
+    height: 300px;
+  }
+  .aboutMe div.square img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .aboutMe .greenBox .greenBoxContent {
+    width: 80%;
   }
 }
 
