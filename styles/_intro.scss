@@ -30,9 +30,16 @@
     .rightSide {
       width: 100%;
       padding: 14% 0 0 10%;
-      background-color: $accentColorThree;
+      background-color: $primaryColorOne;
       display: flex;
       flex-direction: row;
+      position: relative;
+      img {
+        height: 10%;
+        position: absolute;
+        top: 900px;
+        right: 1100px;
+      }
       .words {
         width: 100%;
         p {

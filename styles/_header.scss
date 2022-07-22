@@ -4,7 +4,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $accentColorThree;
+	background-color: $primaryColorOne;
 	width: 100%;
 	z-index: 9999;
 	display: flex;
@@ -42,12 +42,12 @@ header {
 		font-weight: 300;
 		font-style: normal;
 		font-size: 2rem;
-		color: $accentColorThree;
+		color: $primaryColorOne;
 	}
 }
 
 header.scrolled {
-	background-color: $accentColorThree;
+	background-color: $primaryColorOne;
 	border-bottom: 1px solid $outlineColor;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	p {

@@ -219,7 +219,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   z-index: 9999;
   display: -webkit-box;
@@ -285,11 +285,11 @@ header p {
   font-weight: 300;
   font-style: normal;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 header.scrolled {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-bottom: 1px solid #0100F2;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -376,7 +376,7 @@ a {
 .intro .rightSide {
   width: 100%;
   padding: 14% 0 0 10%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,6 +384,14 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+}
+
+.intro .rightSide img {
+  height: 10%;
+  position: absolute;
+  top: 900px;
+  right: 1100px;
 }
 
 .intro .rightSide .words {
@@ -977,7 +985,7 @@ div.leftNav div {
 
 footer {
   margin-top: 20%;
-  height: 45vh;
+  height: 50vh;
   color: #0100F2;
   background-color: #E9FFD6;
   border-top: 1px solid #0100F2;
@@ -1109,17 +1117,24 @@ footer .footerTop .footerLeft .contactLinks {
 footer .footerTop .footerLeft .contactLinks .fab {
   font-size: 1.8rem;
   display: inline;
-  padding: 20px;
   color: #0100F2;
+}
+
+footer .footerTop .footerLeft .contactLinks a {
+  padding: 20px;
+  margin: 10px;
+  color: #0100F2;
+  text-decoration: none;
+  border: 1px solid #0100F2;
+  border-radius: 50%;
+}
+
+footer .footerTop .footerLeft .contactLinks a:hover {
+  background-color: white;
 }
 
 footer .footerTop .footerLeft .contactLinks .fa-github {
   padding-left: 0;
-}
-
-footer .footerTop .footerLeft .contactLinks a {
-  color: #0100F2;
-  text-decoration: none;
 }
 
 footer .footerBottom {
